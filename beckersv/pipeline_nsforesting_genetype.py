@@ -83,6 +83,8 @@ class NSForestComparison:
         if annotation_file not in ["", None]:
             self.annotation_file = annotation_file
             gencode = pd.read_csv(os.path.join(self.data_folder, self.annotation_file))
+            print(f"Feature Value Counts: {gencode['Feature'].value_counts()}")
+            print(f"Sum of Duplicated Gene Names: {gencode['gene_name'].duplicated().sum()}")
             
             # set gene_name as the index for joining
             gencode = gencode.set_index("gene_name")
