@@ -7,7 +7,7 @@ This script contains the code for running a comparative
 NS-Forest based analysis of a full dataset and a specificed gene type subset.
 
 The steps to run this script are as follows:
-1. Initialize a NSForestComparison object with the appropriate file paths.
+1. Initialize a NSLumberjack object with the appropriate configuration file paths.
 2. Set up the desired data using the set_data method.
 3. Set the gene type(s) subset using the set_genetype_subset method.
 4. Run the NS-Forest analysis on both the full dataset and the gene type(s) subset using
@@ -28,7 +28,7 @@ pio.renderers.default = "notebook"
 import nsforest as ns
 from nsforest import utils
 
-class NSForestComparison:
+class NSLumberjack:
     def __init__(self, code_folder: str, data_folder: str, output_folder: str):
         self.code_folder = code_folder
         self.data_folder = data_folder
