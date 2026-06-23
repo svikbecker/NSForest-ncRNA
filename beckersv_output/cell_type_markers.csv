@@ -1,16 +1,45 @@
 clusterName,markerGene,score
-endothelial cell,ENSG00000127329,0.833919271609205
-endothelial cell,ENSG00000102755,0.833919271609205
-podocyte,ENSG00000151490,0.9062856057728826
-podocyte,ENSG00000153246,0.9062856057728826
-epithelial cell of proximal tubule,ENSG00000183747,0.7736505024692891
-epithelial cell of proximal tubule,ENSG00000066813,0.7736505024692891
-neural cell,ENSG00000179915,0.7894736842105263
-neural cell,ENSG00000071991,0.7894736842105263
-parietal epithelial cell,ENSG00000000971,0.5534316402694338
-parietal epithelial cell,ENSG00000163347,0.5534316402694338
-papillary tips cell,ENSG00000176153,0.5971277399848829
-papillary tips cell,ENSG00000173267,0.5971277399848829
-papillary tips cell,ENSG00000064655,0.5971277399848829
-kidney interstitial fibroblast,ENSG00000107518,0.7048764131059589
-kidney interstitial fibroblast,ENSG00000143995,0.7048764131059589
+endothelial cell,ENSG00000127329,0.7821387940841866
+endothelial cell,ENSG00000172889,0.7821387940841866
+podocyte,ENSG00000151490,0.9254563894523327
+podocyte,ENSG00000161270,0.9254563894523327
+epithelial cell of proximal tubule,ENSG00000183747,0.5338145896656535
+epithelial cell of proximal tubule,ENSG00000066813,0.5338145896656535
+epithelial cell of proximal tubule,ENSG00000166825,0.5338145896656535
+neural cell,ENSG00000179915,0.8990536277602523
+parietal epithelial cell,ENSG00000000971,0.7257489300998573
+parietal epithelial cell,ENSG00000162692,0.7257489300998573
+papillary tips cell,ENSG00000176153,0.7226705796038151
+papillary tips cell,ENSG00000173267,0.7226705796038151
+kidney interstitial fibroblast,ENSG00000165124,0.6811487481590575
+kidney interstitial fibroblast,ENSG00000143995,0.6811487481590575
+kidney connecting tubule epithelial cell,ENSG00000104327,0.4858156028368794
+kidney connecting tubule epithelial cell,ENSG00000226674,0.4858156028368794
+kidney distal convoluted tubule epithelial cell,ENSG00000070915,0.8189158016147635
+kidney distal convoluted tubule epithelial cell,ENSG00000165685,0.8189158016147635
+kidney loop of Henle thick ascending limb epithelial cell,ENSG00000074803,0.6238489871086557
+kidney loop of Henle thin ascending limb epithelial cell,ENSG00000140600,0.798233695652174
+kidney loop of Henle thin descending limb epithelial cell,ENSG00000165443,0.5784383954154728
+kidney loop of Henle thin descending limb epithelial cell,ENSG00000007062,0.5784383954154728
+renal interstitial pericyte,ENSG00000133392,0.6885432473444613
+renal interstitial pericyte,ENSG00000107796,0.6885432473444613
+kidney collecting duct principal cell,ENSG00000112319,0.598
+kidney collecting duct principal cell,ENSG00000171435,0.598
+kidney collecting duct intercalated cell,ENSG00000147614,0.8027522935779816
+kidney collecting duct intercalated cell,ENSG00000249601,0.8027522935779816
+mast cell,ENSG00000185420,0.2688953488372093
+T cell,ENSG00000168685,0.6616889804325438
+neutrophil,ENSG00000143546,0.854673495518566
+neutrophil,ENSG00000163220,0.854673495518566
+mononuclear phagocyte,ENSG00000231389,0.6686046511627907
+mononuclear phagocyte,ENSG00000223865,0.6686046511627907
+plasma cell,ENSG00000170476,0.7380382775119617
+"plasmacytoid dendritic cell, human",ENSG00000267337,0.813953488372093
+B cell,ENSG00000156738,0.8346560846560847
+kidney interstitial alternatively activated macrophage,ENSG00000124491,0.6876843657817109
+kidney interstitial alternatively activated macrophage,ENSG00000260314,0.6876843657817109
+conventional dendritic cell,ENSG00000231873,0.7299270072992701
+conventional dendritic cell,ENSG00000229140,0.7299270072992701
+non-classical monocyte,ENSG00000203747,0.6995412844036697
+non-classical monocyte,ENSG00000204482,0.6995412844036697
+lymphocyte,ENSG00000105374,0.8817073170731707

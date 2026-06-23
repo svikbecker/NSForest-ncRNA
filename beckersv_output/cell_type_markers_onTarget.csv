@@ -1,0 +1,27 @@
+clusterName,onTarget
+endothelial cell,1.0
+podocyte,1.0
+epithelial cell of proximal tubule,1.0
+neural cell,1.0
+parietal epithelial cell,1.0
+papillary tips cell,1.0
+kidney interstitial fibroblast,1.0
+kidney connecting tubule epithelial cell,1.0
+kidney distal convoluted tubule epithelial cell,0.84647363
+kidney loop of Henle thick ascending limb epithelial cell,1.0
+kidney loop of Henle thin ascending limb epithelial cell,1.0
+kidney loop of Henle thin descending limb epithelial cell,1.0
+renal interstitial pericyte,1.0
+kidney collecting duct principal cell,1.0
+kidney collecting duct intercalated cell,1.0
+mast cell,0.19613509
+T cell,1.0
+neutrophil,0.837058
+mononuclear phagocyte,0.41603404
+plasma cell,1.0
+"plasmacytoid dendritic cell, human",1.0
+B cell,1.0
+kidney interstitial alternatively activated macrophage,1.0
+conventional dendritic cell,1.0
+non-classical monocyte,0.78389585
+lymphocyte,1.0
