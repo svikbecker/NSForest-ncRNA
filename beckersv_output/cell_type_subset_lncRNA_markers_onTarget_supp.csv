@@ -1,0 +1,32 @@
+clusterName,markerGene,onTarget_per_gene,onTarget
+podocyte,ENSG00000230027,1.0,1.0
+epithelial cell of proximal tubule,ENSG00000228262,0.2176763,0.2176763
+neural cell,ENSG00000230490,1.0,1.0
+papillary tips cell,ENSG00000229807,1.0,0.65100205
+papillary tips cell,ENSG00000260032,1.0,0.65100205
+papillary tips cell,ENSG00000153113,0.3020041,0.65100205
+papillary tips cell,ENSG00000250903,0.14550507,0.65100205
+kidney interstitial fibroblast,ENSG00000237187,1.0,0.6868099
+kidney interstitial fibroblast,ENSG00000247809,0.37361982,0.6868099
+kidney connecting tubule epithelial cell,ENSG00000226674,1.0,0.6187921
+kidney connecting tubule epithelial cell,ENSG00000236283,0.2375842,0.6187921
+kidney distal convoluted tubule epithelial cell,ENSG00000233154,1.0,0.20566963
+kidney distal convoluted tubule epithelial cell,ENSG00000236283,0.20566963,0.20566963
+kidney distal convoluted tubule epithelial cell,ENSG00000247809,0.021147475,0.20566963
+kidney loop of Henle thick ascending limb epithelial cell,ENSG00000228262,0.21634227,0.15763083
+kidney loop of Henle thick ascending limb epithelial cell,ENSG00000242086,0.09891941,0.15763083
+kidney loop of Henle thin ascending limb epithelial cell,ENSG00000245694,1.0,1.0
+kidney loop of Henle thin ascending limb epithelial cell,ENSG00000236432,1.0,1.0
+kidney loop of Henle thin descending limb epithelial cell,ENSG00000241158,0.63171244,0.56598145
+kidney loop of Henle thin descending limb epithelial cell,ENSG00000228262,0.56598145,0.56598145
+kidney loop of Henle thin descending limb epithelial cell,ENSG00000272168,0.4637354,0.56598145
+renal interstitial pericyte,ENSG00000249669,1.0,1.0
+kidney collecting duct principal cell,ENSG00000203709,1.0,0.33227956
+kidney collecting duct principal cell,ENSG00000229847,0.45822662,0.33227956
+kidney collecting duct principal cell,ENSG00000225470,0.19886744,0.33227956
+kidney collecting duct principal cell,ENSG00000236283,0.20633247,0.33227956
+kidney collecting duct intercalated cell,ENSG00000249601,1.0,1.0
+"plasmacytoid dendritic cell, human",ENSG00000267337,1.0,1.0
+conventional dendritic cell,ENSG00000231873,1.0,1.0
+conventional dendritic cell,ENSG00000229140,1.0,1.0
+non-classical monocyte,ENSG00000177410,1.0,1.0
