@@ -44,9 +44,9 @@ def dendrogram(adata, cluster_header, *, tl_kwargs = {}, pl_kwargs = {}, save = 
             save = "png"
         sc.settings.verbosity = 0
         sc.settings.figdir = output_folder
-        save = f"_{outputfilename_suffix}.{save}"
+        save = f"dendrogram_{outputfilename_suffix}.{save}"
         print(f"Saving dendrogram as...\n{output_folder}{save}")
-    if not adata.obsm and "X_pca" not in adata.obsm: 
+    if not adata.obsm or "X_pca" not in adata.obsm: 
         sc.pp.pca(adata)
     sc.tl.dendrogram(adata, cluster_header, use_rep="X_pca", **tl_kwargs)
     if not figsize: 
@@ -179,7 +179,7 @@ def prep_binary_scores(adata, cluster_header, medians_header = "medians_"):
 
     return adata
 
-def plot_varm(adata, varm_key, nonzero = False, scale = None, figsize = (6, 4), show = True, save = False, output_folder = ""): 
+def plot_varm(adata, varm_key, bins = 25, nonzero = False, scale = None, figsize = (6, 4), show = True, save = False, output_folder = ""): 
     """\
     Plotting histogram of median expression per gene per cluster.  
 
@@ -215,10 +215,10 @@ def plot_varm(adata, varm_key, nonzero = False, scale = None, figsize = (6, 4), 
     else: 
         values = adata.varm[varm_key].unstack()
 
-    plt.hist(values, bins = 100)
+    plt.hist(values, bins = bins)
 
     # If y-axis is log scaled
-    if scale == "log": plt.yscale("log")
+    if scale: plt.yscale(scale)
     plt.xlabel(varm_key)
 
     # Adding title
