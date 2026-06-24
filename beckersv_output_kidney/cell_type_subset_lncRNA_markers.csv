@@ -1,0 +1,31 @@
+clusterName,markerGene,score
+podocyte,ENSG00000230027,0.7488394820425116
+epithelial cell of proximal tubule,ENSG00000241158,0.5193269013186316
+neural cell,ENSG00000230490,0.22727272727272727
+neural cell,ENSG00000231607,0.22727272727272727
+neural cell,ENSG00000278996,0.22727272727272727
+papillary tips cell,ENSG00000260032,0.015847347994825355
+papillary tips cell,ENSG00000229807,0.015847347994825355
+papillary tips cell,ENSG00000153113,0.015847347994825355
+kidney interstitial fibroblast,ENSG00000237187,0.49318950543925405
+kidney interstitial fibroblast,ENSG00000247809,0.49318950543925405
+kidney connecting tubule epithelial cell,ENSG00000226674,0.4148055942007762
+kidney connecting tubule epithelial cell,ENSG00000236283,0.4148055942007762
+kidney distal convoluted tubule epithelial cell,ENSG00000233154,0.318920963065675
+kidney distal convoluted tubule epithelial cell,ENSG00000236283,0.318920963065675
+kidney distal convoluted tubule epithelial cell,ENSG00000241684,0.318920963065675
+kidney loop of Henle thick ascending limb epithelial cell,ENSG00000228262,0.3402767245703886
+kidney loop of Henle thin ascending limb epithelial cell,ENSG00000258667,0.33179222192004354
+kidney loop of Henle thin ascending limb epithelial cell,ENSG00000245694,0.33179222192004354
+kidney loop of Henle thin ascending limb epithelial cell,ENSG00000274265,0.33179222192004354
+kidney loop of Henle thin descending limb epithelial cell,ENSG00000228262,0.3636139021577994
+kidney loop of Henle thin descending limb epithelial cell,ENSG00000272168,0.3636139021577994
+kidney loop of Henle thin descending limb epithelial cell,ENSG00000241158,0.3636139021577994
+renal interstitial pericyte,ENSG00000249669,0.3243567663483117
+kidney collecting duct principal cell,ENSG00000229847,0.3042056851554275
+kidney collecting duct principal cell,ENSG00000236283,0.3042056851554275
+kidney collecting duct intercalated cell,ENSG00000249601,0.7380279595478881
+"plasmacytoid dendritic cell, human",ENSG00000225885,0.625
+conventional dendritic cell,ENSG00000231873,0.43859649122807015
+conventional dendritic cell,ENSG00000231607,0.43859649122807015
+non-classical monocyte,ENSG00000177410,0.05119149543378995

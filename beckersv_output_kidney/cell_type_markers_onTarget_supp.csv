@@ -1,0 +1,49 @@
+clusterName,markerGene,onTarget_per_gene,onTarget
+endothelial cell,ENSG00000127329,1.0,1.0
+endothelial cell,ENSG00000102755,1.0,1.0
+podocyte,ENSG00000151490,1.0,1.0
+podocyte,ENSG00000161270,1.0,1.0
+epithelial cell of proximal tubule,ENSG00000183747,1.0,1.0
+epithelial cell of proximal tubule,ENSG00000066813,1.0,1.0
+neural cell,ENSG00000071991,1.0,1.0
+parietal epithelial cell,ENSG00000000971,1.0,1.0
+parietal epithelial cell,ENSG00000168785,1.0,1.0
+papillary tips cell,ENSG00000173267,1.0,1.0
+papillary tips cell,ENSG00000164266,1.0,1.0
+papillary tips cell,ENSG00000112378,1.0,1.0
+kidney interstitial fibroblast,ENSG00000079931,1.0,1.0
+kidney interstitial fibroblast,ENSG00000107518,1.0,1.0
+kidney connecting tubule epithelial cell,ENSG00000104327,1.0,1.0
+kidney connecting tubule epithelial cell,ENSG00000226674,1.0,1.0
+kidney connecting tubule epithelial cell,ENSG00000165685,0.29414287,1.0
+kidney distal convoluted tubule epithelial cell,ENSG00000070915,1.0,1.0
+kidney loop of Henle thick ascending limb epithelial cell,ENSG00000074803,1.0,1.0
+kidney loop of Henle thin ascending limb epithelial cell,ENSG00000140600,1.0,1.0
+kidney loop of Henle thin ascending limb epithelial cell,ENSG00000178538,1.0,1.0
+kidney loop of Henle thin descending limb epithelial cell,ENSG00000007062,1.0,1.0
+kidney loop of Henle thin descending limb epithelial cell,ENSG00000165443,1.0,1.0
+renal interstitial pericyte,ENSG00000149591,1.0,1.0
+renal interstitial pericyte,ENSG00000133392,1.0,1.0
+kidney collecting duct principal cell,ENSG00000150201,1.0,1.0
+kidney collecting duct principal cell,ENSG00000112319,1.0,1.0
+kidney collecting duct principal cell,ENSG00000138696,1.0,1.0
+kidney collecting duct intercalated cell,ENSG00000147614,1.0,1.0
+kidney collecting duct intercalated cell,ENSG00000249601,1.0,1.0
+mast cell,ENSG00000163751,1.0,1.0
+T cell,ENSG00000168685,1.0,1.0
+neutrophil,ENSG00000143546,1.0,0.8366296
+neutrophil,ENSG00000163220,0.6732592,0.8366296
+mononuclear phagocyte,ENSG00000231389,0.4060181,0.3816747
+mononuclear phagocyte,ENSG00000223865,0.3573313,0.3816747
+plasma cell,ENSG00000170476,1.0,1.0
+"plasmacytoid dendritic cell, human",ENSG00000225885,1.0,1.0
+B cell,ENSG00000156738,1.0,0.7598835
+B cell,ENSG00000227507,0.5197671,0.7598835
+kidney interstitial alternatively activated macrophage,ENSG00000177575,1.0,1.0
+kidney interstitial alternatively activated macrophage,ENSG00000260314,1.0,1.0
+conventional dendritic cell,ENSG00000231873,1.0,1.0
+conventional dendritic cell,ENSG00000140090,1.0,1.0
+non-classical monocyte,ENSG00000203747,1.0,0.75647926
+non-classical monocyte,ENSG00000204482,0.5129586,0.75647926
+lymphocyte,ENSG00000105374,1.0,1.0
+lymphocyte,ENSG00000271503,1.0,1.0
