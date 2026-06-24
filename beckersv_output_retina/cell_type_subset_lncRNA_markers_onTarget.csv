@@ -1,0 +1,18 @@
+clusterName,onTarget
+astrocyte,0.8630891
+amacrine cell,0.20631358
+retinal cone cell,0.41151178
+retinal rod cell,1.0
+Mueller cell,1.0
+retinal ganglion cell,0.52104497
+retinal bipolar neuron,0.18124962
+rod bipolar cell,1.0
+retinal pigment epithelial cell,1.0
+S cone cell,1.0
+H1 horizontal cell,0.36759096
+H2 horizontal cell,1.0
+starburst amacrine cell,0.6228377
+midget ganglion cell of retina,0.41458458
+parasol ganglion cell of retina,1.0
+GABAergic amacrine cell,0.608698
+glycinergic amacrine cell,0.1871338
