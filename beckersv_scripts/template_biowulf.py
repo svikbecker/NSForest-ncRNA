@@ -176,22 +176,22 @@ ns.pl.matrixplot(adata, markers_dict, cluster_header, dendrogram = dendrogram, s
 ns.pl.matrixplot(adata_subset, markers_dict_subset, cluster_header, dendrogram = dendrogram_subset, save = "svg", output_folder = output_folder, outputfilename_suffix = outputfilename_prefix_subset)
 
 # classification metrics
-ns.pl.boxplot(results, ["f_score", "precision", "recall", "onTarget"], save = "svg", output_folder = output_folder, outputfilename_prefix = outputfilename_prefix)
-ns.pl.boxplot(results_subset, ["f_score", "precision", "recall", "onTarget"], save = "svg", output_folder = output_folder, outputfilename_prefix = outputfilename_prefix_subset)
+ns.pl.boxplot(results, ["f_score", "precision", "recall", "onTarget"], save = True, output_folder = output_folder, outputfilename_prefix = outputfilename_prefix)
+ns.pl.boxplot(results_subset, ["f_score", "precision", "recall", "onTarget"], save = True, output_folder = output_folder, outputfilename_prefix = outputfilename_prefix_subset)
 
 # metrics vs cluster size
 # f_score
-ns.pl.scatter_w_clusterSize(results, "f_score", save = "svg", output_folder = output_folder, outputfilename_prefix = outputfilename_prefix)
-ns.pl.scatter_w_clusterSize(results_subset, "f_score", save = "svg", output_folder = output_folder, outputfilename_prefix = outputfilename_prefix_subset)
+ns.pl.scatter_w_clusterSize(results, "f_score", save = True, output_folder = output_folder, outputfilename_prefix = outputfilename_prefix)
+ns.pl.scatter_w_clusterSize(results_subset, "f_score", save = True, output_folder = output_folder, outputfilename_prefix = outputfilename_prefix_subset)
 
 # precision
-ns.pl.scatter_w_clusterSize(results, "precision", save = "svg", output_folder = output_folder, outputfilename_prefix = outputfilename_prefix)
-ns.pl.scatter_w_clusterSize(results_subset, "precision", save = "svg", output_folder = output_folder, outputfilename_prefix = outputfilename_prefix_subset)
+ns.pl.scatter_w_clusterSize(results, "precision", save = True, output_folder = output_folder, outputfilename_prefix = outputfilename_prefix)
+ns.pl.scatter_w_clusterSize(results_subset, "precision", save = True, output_folder = output_folder, outputfilename_prefix = outputfilename_prefix_subset)
 
 # recall
-ns.pl.scatter_w_clusterSize(results, "recall", save = "svg", output_folder = output_folder, outputfilename_prefix = outputfilename_prefix)
-ns.pl.scatter_w_clusterSize(results_subset, "recall", save = "svg", output_folder = output_folder, outputfilename_prefix = outputfilename_prefix_subset)
+ns.pl.scatter_w_clusterSize(results, "recall", save = True, output_folder = output_folder, outputfilename_prefix = outputfilename_prefix)
+ns.pl.scatter_w_clusterSize(results_subset, "recall", save = True, output_folder = output_folder, outputfilename_prefix = outputfilename_prefix_subset)
 
 # onTarget
-ns.pl.scatter_w_clusterSize(results, "onTarget", save = "svg", output_folder = output_folder, outputfilename_prefix = outputfilename_prefix)
-ns.pl.scatter_w_clusterSize(results_subset, "onTarget", save = "svg", output_folder = output_folder, outputfilename_prefix = outputfilename_prefix_subset)
+ns.pl.scatter_w_clusterSize(results, "onTarget", save = True, output_folder = output_folder, outputfilename_prefix = outputfilename_prefix)
+ns.pl.scatter_w_clusterSize(results_subset, "onTarget", save = True, output_folder = output_folder, outputfilename_prefix = outputfilename_prefix_subset)
