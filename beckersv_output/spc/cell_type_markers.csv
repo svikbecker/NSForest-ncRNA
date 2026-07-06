@@ -1,0 +1,35 @@
+clusterName,markerGene,score
+fibroblast,ENSG00000138061,0.7336956521739131
+fibroblast,ENSG00000011465,0.7336956521739131
+ependymal cell,ENSG00000197057,0.8426966292134831
+T cell,ENSG00000172673,0.8561643835616438
+T cell,ENSG00000116824,0.8561643835616438
+endothelial cell,ENSG00000118777,0.9329608938547486
+endothelial cell,ENSG00000085276,0.9329608938547486
+astrocyte,ENSG00000131095,0.9552341008302662
+oligodendrocyte,ENSG00000168314,0.9841215547194267
+oligodendrocyte,ENSG00000147488,0.9841215547194267
+microglial cell,ENSG00000204287,0.8524535253726344
+vascular associated smooth muscle cell,ENSG00000149591,0.75
+vascular associated smooth muscle cell,ENSG00000112837,0.75
+neuron,ENSG00000185008,0.9741773513852775
+neuron,ENSG00000198216,0.9741773513852775
+monocyte,ENSG00000111348,0.4
+monocyte,ENSG00000130066,0.4
+monocyte,ENSG00000132475,0.4
+natural killer cell,ENSG00000100453,0.9375
+Bergmann glial cell,ENSG00000279082,0.7407407407407407
+pericyte,ENSG00000185633,0.9228187919463087
+pericyte,ENSG00000018625,0.9228187919463087
+choroid plexus epithelial cell,ENSG00000187889,1.0
+central nervous system macrophage,ENSG00000260314,0.8426966292134831
+cerebellar granule cell,ENSG00000286679,0.8903703703703704
+cerebellar granule cell,ENSG00000081803,0.8903703703703704
+oligodendrocyte precursor cell,ENSG00000231424,0.9162169108198407
+oligodendrocyte precursor cell,ENSG00000157890,0.9162169108198407
+intratelencephalic-projecting glutamatergic cortical neuron,ENSG00000156374,1.0
+cerebellar inhibitory GABAergic interneuron,ENSG00000175445,0.7
+cerebellar inhibitory GABAergic interneuron,ENSG00000100362,0.7
+committed oligodendrocyte precursor,ENSG00000144230,0.9239130434782609
+caudal ganglionic eminence derived cortical interneuron,ENSG00000231764,1.0
+midbrain-derived inhibitory neuron,ENSG00000239513,1.0

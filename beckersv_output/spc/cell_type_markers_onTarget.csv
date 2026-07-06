@@ -1,0 +1,23 @@
+clusterName,onTarget
+fibroblast,0.6666667
+ependymal cell,1.0
+T cell,1.0
+endothelial cell,1.0
+astrocyte,0.82758623
+oligodendrocyte,0.95238096
+microglial cell,0.4
+vascular associated smooth muscle cell,1.0
+neuron,0.3266691
+monocyte,0.5
+natural killer cell,1.0
+Bergmann glial cell,1.0
+pericyte,0.6724599
+choroid plexus epithelial cell,1.0
+central nervous system macrophage,1.0
+cerebellar granule cell,0.66176474
+oligodendrocyte precursor cell,0.7
+intratelencephalic-projecting glutamatergic cortical neuron,1.0
+cerebellar inhibitory GABAergic interneuron,1.0
+committed oligodendrocyte precursor,1.0
+caudal ganglionic eminence derived cortical interneuron,1.0
+midbrain-derived inhibitory neuron,1.0
