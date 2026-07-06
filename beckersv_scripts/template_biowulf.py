@@ -14,6 +14,7 @@ import nsforest as ns
 from nsforest import utils
 import celltypist as ct
 
+
 ### CONFIGURATION -- Set the paths to the code folder, data folder, and output folder
 code_folder = "[]/" # path to the NSForest-ncRNA folder
 sys.path.insert(0, os.path.abspath(code_folder))
@@ -23,10 +24,6 @@ file = data_folder + "[].h5ad"
 
 output_folder = "output/neuron/"
 
-cluster_header = "author_cell_type" # column name in adata.obs that contains the cluster labels
-subset_col = "feature_type"         # column name in adata.var that contains the gene feature type
-subset_gene = "lncRNA"              # feature type to subset the data by (EX: "lncRNA" or "protein_coding")
-
 to_downsample = False  # True if you want to downsample the dataset to a specific number of cells, 
                        # False otherwise
 to_downsample_n = None # number of cells to downsample each cluster to, if to_downsample is True
@@ -35,6 +32,9 @@ seed = 0 # random seed for reproducibility
 np.random.seed(seed) # set np seed
 random.seed(seed) # set random seed
 
+cluster_header = "author_cell_type" # column name in adata.obs that contains the cluster labels
+subset_col = "feature_type"         # column name in adata.var that contains the gene feature type
+subset_gene = "lncRNA"              # feature type to subset the data by (EX: "lncRNA" or "protein_coding")
 
 
 ### IMPORT DATA -- Load the data and explore the dataset
@@ -48,7 +48,10 @@ else:
     adata = adata_raw
     
 ### CREATE GENE TYPE SUBSET -- Subset the data to only include genes of a specific feature type (EX: "lncRNA" or "protein_coding")# keep only lncRNA genes
-adata_subset = adata[:, adata.var[subset_col] == subset_gene].copy()
+# adata_subset = adata[:, adata.var[subset_col] == subset_gene].copy()
+# OR: compute lncrna mask on the adata_raw object
+lncrna_mask = adata_raw.var[subset_col].isin([subset_gene])
+adata_subset = adata[:, lncrna_mask]
 
 ### PREPROCESS DATA -- Dendrogram, cluster median, and binary score generation.
 
@@ -58,12 +61,18 @@ if not adata.obsm or "X_pca" not in adata.obsm:
     sc.pp.pca(adata, random_state=seed)
 
 ns.pp.dendrogram(adata, cluster_header, save = "svg", output_folder = output_folder, outputfilename_suffix = f"{cluster_header}_full")
+Path(f"dendrogram_{cluster_header}.svg").rename(
+    output_folder + f"dendrogram_{cluster_header}_full.svg"
+)
 
 # subset adata
 if not adata_subset.obsm or "X_pca" not in adata_subset.obsm:
     sc.pp.pca(adata_subset, random_state=seed)
 
 ns.pp.dendrogram(adata_subset, cluster_header, save = "svg", output_folder = output_folder, outputfilename_suffix =  f"{cluster_header}_subset")
+Path(f"dendrogram_{cluster_header}.svg").rename(
+    output_folder + f"dendrogram_{cluster_header}_subset.svg"
+)
 
 ## CLUSTER MEDIAN
 adata = ns.pp.prep_medians(adata, cluster_header)
