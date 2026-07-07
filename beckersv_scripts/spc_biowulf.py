@@ -16,13 +16,13 @@ import celltypist as ct
 
 
 ### CONFIGURATION -- Set the paths to the code folder, data folder, and output folder
-code_folder = "[]/" # path to the NSForest-ncRNA folder
+code_folder = "/Users/vbecker/NSForest-ncRNA" # path to the NSForest-ncRNA folder
 sys.path.insert(0, os.path.abspath(code_folder))
 
-data_folder = "[]/" # path to folder containing the input data file (.h5ad format)
-file = data_folder + "[].h5ad"
+data_folder = "beckersv_data/" # path to folder containing the input data file (.h5ad format)
+file = data_folder + "data_spc.h5ad"
 
-output_folder = "[]/"
+output_folder = "beckersv_output/spc/"
 
 to_downsample = False  # True if you want to downsample the dataset to a specific number of cells, 
                        # False otherwise
@@ -32,7 +32,7 @@ seed = 0 # random seed for reproducibility
 np.random.seed(seed) # set np seed
 random.seed(seed) # set random seed
 
-cluster_header = "author_cell_type" # column name in adata.obs that contains the cluster labels
+cluster_header = "cell_type" # column name in adata.obs that contains the cluster labels
 subset_col = "feature_type"         # column name in adata.var that contains the gene feature type
 subset_gene = "lncRNA"              # feature type to subset the data by (EX: "lncRNA" or "protein_coding")
 
