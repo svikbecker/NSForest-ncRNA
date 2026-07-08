@@ -34,7 +34,6 @@ cluster_header = "author_cell_type" # column name in adata.obs that contains the
 subset_col = "feature_type"         # column name in adata.var that contains the gene feature type
 subset_gene = "lncRNA"              # feature type to subset the data by (EX: "lncRNA" or "protein_coding")
 
-
 ### IMPORT DATA -- Load the data and explore the dataset
 adata = sc.read_h5ad(file) # load the data into an AnnData object
     
