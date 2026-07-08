@@ -20,13 +20,11 @@ code_folder = "[]/" # path to the NSForest-ncRNA folder
 sys.path.insert(0, os.path.abspath(code_folder))
 
 data_folder = "[]/" # path to folder containing the input data file (.h5ad format)
-file = data_folder + "[].h5ad"
+filename = "[].h5ad"
+file = data_folder + filename
 
 output_folder = "[]/"
-
-to_downsample = False  # True if you want to downsample the dataset to a specific number of cells, 
-                       # False otherwise
-to_downsample_n = None # number of cells to downsample each cluster to, if to_downsample is True
+preprocessed_folder = "[]/"
 
 seed = 0 # random seed for reproducibility
 np.random.seed(seed) # set np seed
@@ -38,19 +36,12 @@ subset_gene = "lncRNA"              # feature type to subset the data by (EX: "l
 
 
 ### IMPORT DATA -- Load the data and explore the dataset
-adata_raw = sc.read_h5ad(file) # load the data into an AnnData object
-
-### DOWNSAMPLE (OPTIONAL) -- Downsample the dataset to a specific number of cells per cluster
-if to_downsample:
-    adata = ct.samples.downsample_adata(adata_raw, mode = "each", n_cells = to_downsample_n, by = cluster_header,
-                                        random_state = seed, return_index = False)
-else:
-    adata = adata_raw
+adata = sc.read_h5ad(file) # load the data into an AnnData object
     
 ### CREATE GENE TYPE SUBSET -- Subset the data to only include genes of a specific feature type (EX: "lncRNA" or "protein_coding")# keep only lncRNA genes
 # adata_subset = adata[:, adata.var[subset_col] == subset_gene].copy()
-# OR: compute lncrna mask on the adata_raw object
-lncrna_mask = adata_raw.var[subset_col].isin([subset_gene])
+# OR: compute lncrna mask on the adata object
+lncrna_mask = adata.var[subset_col].isin([subset_gene])
 adata_subset = adata[:, lncrna_mask]
 
 ### PREPROCESS DATA -- Dendrogram, cluster median, and binary score generation.
@@ -81,6 +72,17 @@ adata_subset = ns.pp.prep_medians(adata_subset, cluster_header)
 ## BINARY SCORE
 adata = ns.pp.prep_binary_scores(adata, cluster_header)
 adata_subset = ns.pp.prep_binary_scores(adata_subset, cluster_header)
+
+## SAVE PREPROCESSED DATA AS NEW .h5ad
+# full adata
+filepp = filename.replace(".h5ad", "_preprocessed.h5ad")
+print(f"Saving new anndata object as...\n{preprocessed_folder + filepp}")
+adata.write_h5ad(preprocessed_folder + filepp)
+    
+# subset adata
+filepp = file.replace(".h5ad", f"_subset_{subset_gene}_preprocessed.h5ad")
+print(f"Saving new anndata object as...\n{filepp}")
+adata_subset.write_h5ad(preprocessed_folder + filepp)
 
 ### VISUALIZE PREPROCESSING
 # cluster medians (unscaled)
