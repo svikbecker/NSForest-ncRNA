@@ -12,7 +12,6 @@ import plotly.io as pio
 pio.renderers.default = "notebook"
 import nsforest as ns
 from nsforest import utils
-import celltypist as ct
 
 ## HEADER FUNCTION!
 def print_header(title):
