@@ -23,15 +23,15 @@ def print_header(title):
 ### CONFIGURATION -- Set the paths to the code folder, data folder, and output folder
 print_header("Configuring Environment")
 
-code_folder = "[]/" # path to the NSForest-ncRNA folder
+code_folder = "/Users/vbecker/NSForest-ncRNA/" # path to the NSForest-ncRNA folder
 sys.path.insert(0, os.path.abspath(code_folder))
 
-data_folder = "[]/" # path to folder containing the input data file (.h5ad format)
-filename = "[].h5ad"
+data_folder = "beckersv_data_clean/" # path to folder containing the input data file (.h5ad format)
+filename = "data_m1_ds.h5ad"
 file = data_folder + filename
 
-output_folder = "[]/"
-preprocessed_folder = "[]/"
+output_folder = "beckersv_output/m1"
+preprocessed_folder = "beckersv_data_preprocessed/"
 
 seed = 0 # random seed for reproducibility
 np.random.seed(seed) # set np seed
@@ -46,12 +46,10 @@ print_header("Importing/Loading Data")
 adata = sc.read_h5ad(file) # load the data into an AnnData object
 
 ### NORMALIZE/SCALE DATA -- Normalize and scale (log1p)
-print_header("Normalize/Scale Data")
-
 if adata.raw is not None and hasattr(adata.raw, "X"):
     print_header("Normalize/Scale Data")
     
-    if sys.argv[2] in ["mtg", "m1"]:
+    if True:
         adata.raw._var.index = adata.raw.var["gene"]
         adata.X = adata.raw[:, adata.var_names].X.copy()
     else:
