@@ -1,0 +1,80 @@
+---
+title: "KDE Plots of Gene-Cluster Scores"
+date: "Summer 2026"
+author: "Vik Becker"
+output: html_document
+---
+
+```{r setup, include=FALSE, eval=TRUE}
+# libraries
+library(tidyverse)
+library(knitr)
+library(patchwork)
+library(oeli)
+library(DescTools)
+library(stringr)
+
+# chunk settings
+opts_chunk$set(echo=TRUE, warning=FALSE, digits=4)
+set.seed(123)
+```
+
+```{r df}
+df <- read_csv("../output_biowulf/aggregated/geneclusterscores_og.csv")
+```
+
+```{r df_bs}
+df_bs <- df |>
+  select(!c(median, is_zero_median)) |>
+  filter(is_zero_binary_score == "nonzero")|>
+  # cliff delta from data_preprocessed_analysis.py
+  mutate(type = ifelse(type == "Neural",
+                       paste(type, "(Cliff's δ = 0.228)"),
+                       paste(type, "(Cliff's δ = -0.032)")))
+```
+
+```{r df_med}
+df_med <- df |>
+  select(!c(binary_score, is_zero_binary_score)) |>
+  filter(is_zero_median == "nonzero")|>
+  # cliff delta from data_preprocessed_analysis.py
+  mutate(type = ifelse(type == "Neural",
+                       paste(type, "(Cliff's δ = -0.021)"),
+                       paste(type, "(Cliff's δ = 0.185)")))
+```
+
+```{r plot_bs}
+plot_bs <- ggplot(data = df_bs) + 
+  geom_density(aes(x = binary_score, y = after_stat(density), col = gene_set, fill = gene_set), alpha = 0.5) +
+  scale_fill_manual(values = c("dodgerblue", "darkorange")) +
+  scale_color_manual(values = c("dodgerblue", "darkorange")) +
+  facet_wrap(~type, scales = "free", ncol = 1, nrow = 2) +
+  scale_x_continuous(labels = scales::label_number(drop0trailing=TRUE), 
+                     limits = c(0,1)) +
+  labs(title = "",
+       x = "Gene-Cluster Binary Score (non-zero)",
+       y = "Density",
+       fill = "Gene Set",
+       col = "Gene Set") +
+  theme_classic() +
+  theme(panel.spacing.x = unit(4, "mm"))
+
+plot_bs
+```
+
+```{r plot_med}
+plot_med <- ggplot(data = df_med) + 
+  geom_density(aes(x = median, y = after_stat(density), col = gene_set, fill = gene_set), alpha = 0.5) +
+  scale_fill_manual(values = c("dodgerblue", "darkorange")) +
+  scale_color_manual(values = c("dodgerblue", "darkorange")) +
+  facet_wrap(~type, scales = "free", ncol = 1, nrow = 2) +
+  labs(title = "",
+       x = "Gene-Cluster Median Expression (non-zero)",
+       y = "Density",
+       fill = "Gene Set",
+       col = "Gene Set") +
+  theme_classic() +
+  theme(panel.spacing.x = unit(4, "mm"))
+
+plot_med
+```

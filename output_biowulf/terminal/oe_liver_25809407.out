@@ -1,0 +1,49 @@
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/scanpy/preprocessing/_pca/__init__.py:384: ImplicitModificationWarning: Setting element `.obsm['X_pca']` of view, initializing view as actual.
+  adata.obsm[key_obsm] = x_pca
+
+====================
+CONFIGURING ENVIRONMENT
+====================
+
+====================
+IMPORTING/LOADING DATA
+====================
+
+====================
+NORMALIZE/SCALE DATA
+====================
+
+====================
+CREATE PROTEIN_CODING SUBSET
+====================
+
+====================
+PREPROCESS: DENDROGRAMS
+====================
+Saving dendrogram as...
+../output/liver/dendrogram_Curated_annotation_subset.svg
+
+====================
+PREPROCESS: CLUSTER MEDIANS
+====================
+Calculating medians per cluster:   0%|          | 0/29 [00:00<?, ?it/s]Calculating medians per cluster:   3%|▎         | 1/29 [00:00<00:15,  1.85it/s]Calculating medians per cluster:   7%|▋         | 2/29 [00:03<00:56,  2.10s/it]Calculating medians per cluster:  10%|█         | 3/29 [00:06<01:07,  2.58s/it]Calculating medians per cluster:  14%|█▍        | 4/29 [00:08<00:54,  2.18s/it]Calculating medians per cluster:  17%|█▋        | 5/29 [00:11<00:59,  2.48s/it]Calculating medians per cluster:  21%|██        | 6/29 [00:12<00:44,  1.95s/it]Calculating medians per cluster:  24%|██▍       | 7/29 [00:16<01:01,  2.81s/it]Calculating medians per cluster:  28%|██▊       | 8/29 [00:17<00:42,  2.05s/it]Calculating medians per cluster:  31%|███       | 9/29 [00:17<00:30,  1.54s/it]Calculating medians per cluster:  34%|███▍      | 10/29 [00:18<00:22,  1.19s/it]Calculating medians per cluster:  38%|███▊      | 11/29 [00:19<00:21,  1.22s/it]Calculating medians per cluster:  41%|████▏     | 12/29 [00:21<00:26,  1.56s/it]Calculating medians per cluster:  45%|████▍     | 13/29 [00:24<00:31,  1.99s/it]Calculating medians per cluster:  48%|████▊     | 14/29 [00:31<00:48,  3.26s/it]Calculating medians per cluster:  52%|█████▏    | 15/29 [00:31<00:35,  2.53s/it]Calculating medians per cluster:  59%|█████▊    | 17/29 [00:32<00:17,  1.46s/it]Calculating medians per cluster:  62%|██████▏   | 18/29 [00:32<00:13,  1.25s/it]Calculating medians per cluster:  66%|██████▌   | 19/29 [00:36<00:17,  1.74s/it]Calculating medians per cluster:  69%|██████▉   | 20/29 [00:37<00:13,  1.55s/it]Calculating medians per cluster:  72%|███████▏  | 21/29 [00:44<00:25,  3.13s/it]Calculating medians per cluster:  76%|███████▌  | 22/29 [00:44<00:16,  2.35s/it]Calculating medians per cluster:  79%|███████▉  | 23/29 [00:52<00:24,  4.00s/it]Calculating medians per cluster:  83%|████████▎ | 24/29 [00:53<00:14,  2.98s/it]Calculating medians per cluster:  86%|████████▌ | 25/29 [00:53<00:08,  2.20s/it]Calculating medians per cluster:  90%|████████▉ | 26/29 [00:54<00:05,  1.70s/it]Calculating medians per cluster:  93%|█████████▎| 27/29 [00:57<00:04,  2.15s/it]Calculating medians per cluster:  97%|█████████▋| 28/29 [01:06<00:04,  4.25s/it]Calculating medians per cluster: 100%|██████████| 29/29 [01:06<00:00,  3.10s/it]Calculating medians per cluster: 100%|██████████| 29/29 [01:06<00:00,  2.31s/it]
+Saving medians as adata.varm.medians_Curated_annotation
+median: 0.0
+mean: 0.04
+std: 0.299
+Only positive genes selected. 3031 positive genes out of 18181 total genes
+--- 70.8627758026123 seconds ---
+
+====================
+PREPROCESS: BINARY SCORE
+====================
+Calculating binary scores per cluster:   0%|          | 0/29 [00:00<?, ?it/s]Calculating binary scores per cluster:   3%|▎         | 1/29 [00:00<00:06,  4.66it/s]Calculating binary scores per cluster:   7%|▋         | 2/29 [00:00<00:05,  5.24it/s]Calculating binary scores per cluster:  10%|█         | 3/29 [00:00<00:04,  5.47it/s]Calculating binary scores per cluster:  14%|█▍        | 4/29 [00:00<00:04,  5.58it/s]Calculating binary scores per cluster:  17%|█▋        | 5/29 [00:00<00:04,  5.64it/s]Calculating binary scores per cluster:  21%|██        | 6/29 [00:01<00:04,  5.68it/s]Calculating binary scores per cluster:  24%|██▍       | 7/29 [00:01<00:03,  5.70it/s]Calculating binary scores per cluster:  28%|██▊       | 8/29 [00:01<00:03,  5.72it/s]Calculating binary scores per cluster:  31%|███       | 9/29 [00:01<00:03,  5.74it/s]Calculating binary scores per cluster:  34%|███▍      | 10/29 [00:01<00:03,  5.76it/s]Calculating binary scores per cluster:  38%|███▊      | 11/29 [00:01<00:03,  5.78it/s]Calculating binary scores per cluster:  41%|████▏     | 12/29 [00:02<00:02,  5.79it/s]Calculating binary scores per cluster:  45%|████▍     | 13/29 [00:02<00:02,  5.81it/s]Calculating binary scores per cluster:  48%|████▊     | 14/29 [00:02<00:02,  5.83it/s]Calculating binary scores per cluster:  52%|█████▏    | 15/29 [00:02<00:02,  5.84it/s]Calculating binary scores per cluster:  55%|█████▌    | 16/29 [00:02<00:02,  5.85it/s]Calculating binary scores per cluster:  59%|█████▊    | 17/29 [00:02<00:02,  5.85it/s]Calculating binary scores per cluster:  62%|██████▏   | 18/29 [00:03<00:01,  5.84it/s]Calculating binary scores per cluster:  66%|██████▌   | 19/29 [00:03<00:01,  5.81it/s]Calculating binary scores per cluster:  69%|██████▉   | 20/29 [00:03<00:01,  5.80it/s]Calculating binary scores per cluster:  72%|███████▏  | 21/29 [00:03<00:01,  5.80it/s]Calculating binary scores per cluster:  76%|███████▌  | 22/29 [00:03<00:01,  5.79it/s]Calculating binary scores per cluster:  79%|███████▉  | 23/29 [00:04<00:01,  5.78it/s]Calculating binary scores per cluster:  83%|████████▎ | 24/29 [00:04<00:00,  5.78it/s]Calculating binary scores per cluster:  86%|████████▌ | 25/29 [00:04<00:00,  5.77it/s]Calculating binary scores per cluster:  90%|████████▉ | 26/29 [00:04<00:00,  5.76it/s]Calculating binary scores per cluster:  93%|█████████▎| 27/29 [00:04<00:00,  5.75it/s]Calculating binary scores per cluster:  97%|█████████▋| 28/29 [00:04<00:00,  5.75it/s]Calculating binary scores per cluster: 100%|██████████| 29/29 [00:05<00:00,  5.75it/s]Calculating binary scores per cluster: 100%|██████████| 29/29 [00:05<00:00,  5.74it/s]
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+slurmstepd: error: *** JOB 25809407 ON cn0038 CANCELLED AT 2026-07-23T10:57:45 ***

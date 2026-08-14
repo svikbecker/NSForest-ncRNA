@@ -1,0 +1,803 @@
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/scanpy/tools/_dendrogram.py:192: ImplicitModificationWarning: Trying to modify attribute `._uns` of view, initializing view as actual.
+  adata.uns[key_added] = dat
+
+====================
+CONFIGURING ENVIRONMENT
+====================
+
+====================
+IMPORTING/LOADING DATA
+====================
+
+====================
+NORMALIZE/SCALE DATA
+====================
+
+====================
+CREATE LNCRNA SUBSET
+====================
+
+====================
+PREPROCESS: DENDROGRAMS
+====================
+Saving dendrogram as...
+../output/spc/dendrogram_ThirdAnnotation_full.svg
+Saving dendrogram as...
+../output/spc/dendrogram_ThirdAnnotation_subset.svg
+
+====================
+PREPROCESS: CLUSTER MEDIANS
+====================
+Calculating medians per cluster:   0%|          | 0/43 [00:00<?, ?it/s]Calculating medians per cluster:   2%|▏         | 1/43 [00:01<00:47,  1.14s/it]Calculating medians per cluster:   5%|▍         | 2/43 [00:01<00:39,  1.03it/s]Calculating medians per cluster:   7%|▋         | 3/43 [00:03<00:44,  1.11s/it]Calculating medians per cluster:  12%|█▏        | 5/43 [00:03<00:19,  1.95it/s]Calculating medians per cluster:  16%|█▋        | 7/43 [00:03<00:11,  3.06it/s]Calculating medians per cluster:  19%|█▊        | 8/43 [00:03<00:10,  3.48it/s]Calculating medians per cluster:  23%|██▎       | 10/43 [00:03<00:06,  4.91it/s]Calculating medians per cluster:  26%|██▌       | 11/43 [00:04<00:06,  5.20it/s]Calculating medians per cluster:  28%|██▊       | 12/43 [00:04<00:05,  5.86it/s]Calculating medians per cluster:  33%|███▎      | 14/43 [00:04<00:03,  8.21it/s]Calculating medians per cluster:  37%|███▋      | 16/43 [00:04<00:03,  7.47it/s]Calculating medians per cluster:  42%|████▏     | 18/43 [00:04<00:03,  7.71it/s]Calculating medians per cluster:  44%|████▍     | 19/43 [00:04<00:03,  7.91it/s]Calculating medians per cluster:  49%|████▉     | 21/43 [00:05<00:02, 10.07it/s]Calculating medians per cluster:  53%|█████▎    | 23/43 [00:05<00:01, 10.47it/s]Calculating medians per cluster:  58%|█████▊    | 25/43 [00:05<00:01, 10.25it/s]Calculating medians per cluster:  63%|██████▎   | 27/43 [00:05<00:01, 10.32it/s]Calculating medians per cluster:  67%|██████▋   | 29/43 [00:05<00:01, 10.09it/s]Calculating medians per cluster:  72%|███████▏  | 31/43 [00:06<00:02,  4.88it/s]Calculating medians per cluster:  74%|███████▍  | 32/43 [00:07<00:03,  2.94it/s]Calculating medians per cluster:  77%|███████▋  | 33/43 [00:08<00:04,  2.22it/s]Calculating medians per cluster:  79%|███████▉  | 34/43 [00:09<00:04,  2.09it/s]Calculating medians per cluster:  81%|████████▏ | 35/43 [00:09<00:03,  2.46it/s]Calculating medians per cluster:  84%|████████▎ | 36/43 [00:09<00:02,  3.03it/s]Calculating medians per cluster:  88%|████████▊ | 38/43 [00:11<00:02,  1.84it/s]Calculating medians per cluster:  91%|█████████ | 39/43 [00:13<00:03,  1.08it/s]Calculating medians per cluster:  93%|█████████▎| 40/43 [00:17<00:05,  1.68s/it]Calculating medians per cluster:  95%|█████████▌| 41/43 [00:18<00:03,  1.54s/it]Calculating medians per cluster:  98%|█████████▊| 42/43 [00:19<00:01,  1.40s/it]Calculating medians per cluster: 100%|██████████| 43/43 [00:19<00:00,  2.21it/s]
+Saving medians as adata.varm.medians_ThirdAnnotation
+median: 0.0
+mean: 0.062
+std: 0.273
+Only positive genes selected. 8425 positive genes out of 35467 total genes
+--- 20.192325592041016 seconds ---
+Calculating medians per cluster:   0%|          | 0/43 [00:00<?, ?it/s]Calculating medians per cluster:   2%|▏         | 1/43 [00:00<00:20,  2.03it/s]Calculating medians per cluster:   5%|▍         | 2/43 [00:00<00:17,  2.36it/s]Calculating medians per cluster:   7%|▋         | 3/43 [00:01<00:17,  2.29it/s]Calculating medians per cluster:  16%|█▋        | 7/43 [00:01<00:05,  7.07it/s]Calculating medians per cluster:  23%|██▎       | 10/43 [00:01<00:03, 10.33it/s]Calculating medians per cluster:  30%|███       | 13/43 [00:01<00:02, 13.56it/s]Calculating medians per cluster:  37%|███▋      | 16/43 [00:01<00:01, 15.85it/s]Calculating medians per cluster:  44%|████▍     | 19/43 [00:01<00:01, 17.80it/s]Calculating medians per cluster:  53%|█████▎    | 23/43 [00:02<00:00, 21.82it/s]Calculating medians per cluster:  60%|██████    | 26/43 [00:02<00:00, 22.37it/s]Calculating medians per cluster:  67%|██████▋   | 29/43 [00:02<00:00, 23.65it/s]Calculating medians per cluster:  74%|███████▍  | 32/43 [00:02<00:01, 10.47it/s]Calculating medians per cluster:  79%|███████▉  | 34/43 [00:03<00:01,  7.88it/s]Calculating medians per cluster:  84%|████████▎ | 36/43 [00:03<00:00,  9.21it/s]Calculating medians per cluster:  88%|████████▊ | 38/43 [00:04<00:00,  6.07it/s]Calculating medians per cluster:  93%|█████████▎| 40/43 [00:06<00:01,  2.30it/s]Calculating medians per cluster:  95%|█████████▌| 41/43 [00:07<00:00,  2.25it/s]Calculating medians per cluster:  98%|█████████▊| 42/43 [00:07<00:00,  2.24it/s]Calculating medians per cluster: 100%|██████████| 43/43 [00:07<00:00,  5.73it/s]
+Saving medians as adata.varm.medians_ThirdAnnotation
+median: 0.0
+mean: 0.007
+std: 0.099
+Only positive genes selected. 703 positive genes out of 15488 total genes
+--- 7.781712293624878 seconds ---
+
+====================
+PREPROCESS: BINARY SCORE
+====================
+Calculating binary scores per cluster:   0%|          | 0/43 [00:00<?, ?it/s]Calculating binary scores per cluster:   2%|▏         | 1/43 [00:00<00:33,  1.24it/s]Calculating binary scores per cluster:   5%|▍         | 2/43 [00:01<00:26,  1.56it/s]Calculating binary scores per cluster:   7%|▋         | 3/43 [00:01<00:23,  1.70it/s]Calculating binary scores per cluster:   9%|▉         | 4/43 [00:02<00:21,  1.78it/s]Calculating binary scores per cluster:  12%|█▏        | 5/43 [00:02<00:20,  1.82it/s]Calculating binary scores per cluster:  14%|█▍        | 6/43 [00:03<00:20,  1.85it/s]Calculating binary scores per cluster:  16%|█▋        | 7/43 [00:03<00:19,  1.85it/s]Calculating binary scores per cluster:  19%|█▊        | 8/43 [00:04<00:18,  1.86it/s]Calculating binary scores per cluster:  21%|██        | 9/43 [00:05<00:18,  1.87it/s]Calculating binary scores per cluster:  23%|██▎       | 10/43 [00:05<00:17,  1.88it/s]Calculating binary scores per cluster:  26%|██▌       | 11/43 [00:06<00:16,  1.89it/s]Calculating binary scores per cluster:  28%|██▊       | 12/43 [00:06<00:16,  1.90it/s]Calculating binary scores per cluster:  30%|███       | 13/43 [00:07<00:15,  1.90it/s]Calculating binary scores per cluster:  33%|███▎      | 14/43 [00:07<00:15,  1.91it/s]Calculating binary scores per cluster:  35%|███▍      | 15/43 [00:08<00:14,  1.91it/s]Calculating binary scores per cluster:  37%|███▋      | 16/43 [00:08<00:14,  1.91it/s]Calculating binary scores per cluster:  40%|███▉      | 17/43 [00:09<00:13,  1.91it/s]Calculating binary scores per cluster:  42%|████▏     | 18/43 [00:09<00:13,  1.91it/s]Calculating binary scores per cluster:  44%|████▍     | 19/43 [00:10<00:12,  1.91it/s]Calculating binary scores per cluster:  47%|████▋     | 20/43 [00:10<00:12,  1.91it/s]Calculating binary scores per cluster:  49%|████▉     | 21/43 [00:11<00:11,  1.91it/s]Calculating binary scores per cluster:  51%|█████     | 22/43 [00:11<00:10,  1.91it/s]Calculating binary scores per cluster:  53%|█████▎    | 23/43 [00:12<00:10,  1.91it/s]Calculating binary scores per cluster:  56%|█████▌    | 24/43 [00:12<00:09,  1.91it/s]Calculating binary scores per cluster:  58%|█████▊    | 25/43 [00:13<00:09,  1.91it/s]Calculating binary scores per cluster:  60%|██████    | 26/43 [00:13<00:08,  1.91it/s]Calculating binary scores per cluster:  63%|██████▎   | 27/43 [00:14<00:08,  1.91it/s]Calculating binary scores per cluster:  65%|██████▌   | 28/43 [00:14<00:07,  1.91it/s]Calculating binary scores per cluster:  67%|██████▋   | 29/43 [00:15<00:07,  1.91it/s]Calculating binary scores per cluster:  70%|██████▉   | 30/43 [00:16<00:06,  1.90it/s]Calculating binary scores per cluster:  72%|███████▏  | 31/43 [00:16<00:06,  1.90it/s]Calculating binary scores per cluster:  74%|███████▍  | 32/43 [00:17<00:05,  1.90it/s]Calculating binary scores per cluster:  77%|███████▋  | 33/43 [00:17<00:05,  1.90it/s]Calculating binary scores per cluster:  79%|███████▉  | 34/43 [00:18<00:04,  1.89it/s]Calculating binary scores per cluster:  81%|████████▏ | 35/43 [00:18<00:04,  1.89it/s]Calculating binary scores per cluster:  84%|████████▎ | 36/43 [00:19<00:03,  1.89it/s]Calculating binary scores per cluster:  86%|████████▌ | 37/43 [00:19<00:03,  1.89it/s]Calculating binary scores per cluster:  88%|████████▊ | 38/43 [00:20<00:02,  1.89it/s]Calculating binary scores per cluster:  91%|█████████ | 39/43 [00:20<00:02,  1.89it/s]Calculating binary scores per cluster:  93%|█████████▎| 40/43 [00:21<00:01,  1.89it/s]Calculating binary scores per cluster:  95%|█████████▌| 41/43 [00:21<00:01,  1.89it/s]Calculating binary scores per cluster:  98%|█████████▊| 42/43 [00:22<00:00,  1.88it/s]Calculating binary scores per cluster: 100%|██████████| 43/43 [00:22<00:00,  1.87it/s]Calculating binary scores per cluster: 100%|██████████| 43/43 [00:22<00:00,  1.88it/s]
+Saving binary scores as adata.varm.binary_scores_ThirdAnnotation
+median: 0.0
+mean: 0.179
+std: 0.288
+--- 22.989813566207886 seconds ---
+Calculating binary scores per cluster:   0%|          | 0/43 [00:00<?, ?it/s]Calculating binary scores per cluster:   7%|▋         | 3/43 [00:00<00:01, 21.17it/s]Calculating binary scores per cluster:  14%|█▍        | 6/43 [00:00<00:01, 22.00it/s]Calculating binary scores per cluster:  21%|██        | 9/43 [00:00<00:01, 22.26it/s]Calculating binary scores per cluster:  28%|██▊       | 12/43 [00:00<00:01, 22.34it/s]Calculating binary scores per cluster:  35%|███▍      | 15/43 [00:00<00:01, 22.36it/s]Calculating binary scores per cluster:  42%|████▏     | 18/43 [00:00<00:01, 22.40it/s]Calculating binary scores per cluster:  49%|████▉     | 21/43 [00:00<00:00, 22.44it/s]Calculating binary scores per cluster:  56%|█████▌    | 24/43 [00:01<00:00, 22.47it/s]Calculating binary scores per cluster:  63%|██████▎   | 27/43 [00:01<00:00, 22.47it/s]Calculating binary scores per cluster:  70%|██████▉   | 30/43 [00:01<00:00, 22.49it/s]Calculating binary scores per cluster:  77%|███████▋  | 33/43 [00:01<00:00, 22.51it/s]Calculating binary scores per cluster:  84%|████████▎ | 36/43 [00:01<00:00, 22.50it/s]Calculating binary scores per cluster:  91%|█████████ | 39/43 [00:01<00:00, 22.50it/s]Calculating binary scores per cluster:  98%|█████████▊| 42/43 [00:01<00:00, 22.49it/s]Calculating binary scores per cluster: 100%|██████████| 43/43 [00:01<00:00, 22.41it/s]
+Saving binary scores as adata.varm.binary_scores_ThirdAnnotation
+median: 0.0
+mean: 0.129
+std: 0.279
+--- 1.9269731044769287 seconds ---
+
+====================
+PREPROCESS: SAVING PREPROCESSED DATA
+====================
+Saving new anndata object as...
+../data_preprocessed/data_spc_ds_preprocessed.h5ad
+Saving new anndata object as...
+../data_clean/data_spc_ds_subset_lncRNA_preprocessed.h5ad
+
+====================
+PREPROCESS: VISUALIZING PREPROCESSED DATA
+====================
+Saving adata.varm[medians_ThirdAnnotation] as histogram as...
+../output/spc/histogram_medians_ThirdAnnotation.svg
+Saving adata.varm[medians_ThirdAnnotation] as histogram as...
+../output/spc/histogram_medians_ThirdAnnotation.svg
+Saving adata.varm[medians_ThirdAnnotation] as histogram as...
+../output/spc/histogram_medians_ThirdAnnotation.svg
+Saving adata.varm[medians_ThirdAnnotation] as histogram as...
+../output/spc/histogram_medians_ThirdAnnotation.svg
+Saving adata.varm[binary_scores_ThirdAnnotation] as histogram as...
+../output/spc/histogram_binary_scores_ThirdAnnotation.svg
+Saving adata.varm[binary_scores_ThirdAnnotation] as histogram as...
+../output/spc/histogram_binary_scores_ThirdAnnotation.svg
+Saving adata.varm[binary_scores_ThirdAnnotation] as histogram as...
+../output/spc/histogram_binary_scores_ThirdAnnotation.svg
+Saving adata.varm[binary_scores_ThirdAnnotation] as histogram as...
+../output/spc/histogram_binary_scores_ThirdAnnotation.svg
+
+====================
+NS-FOREST: FULL DATA RUN
+====================
+Running NS-Forest version 4.1
+
+Preparing adata...
+Pre-selecting genes based on binary scores...
+	BinaryFirst_high Threshold (mean + 2 * std): 0.756
+	Average number of genes after gene_selection in each cluster: 515.1860465116279
+Saving number of genes selected per cluster as...
+../output/spc/ThirdAnnotation_gene_selection.csv
+--- 0.2998669147491455 seconds ---
+
+Number of clusters to evaluate: 43
+1 out of 43:
+	Astro_1
+	Pre-selected 221 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000160111', 'ENSG00000287704']
+	fbeta: 0.827
+	precision: 0.854
+	recall: 0.736
+2 out of 43:
+	Astro_2
+	Pre-selected 217 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000132164', 'ENSG00000234377']
+	fbeta: 0.71
+	precision: 0.764
+	recall: 0.555
+3 out of 43:
+	Astro_3
+	Pre-selected 231 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000129521', 'ENSG00000172572']
+	fbeta: 0.559
+	precision: 0.636
+	recall: 0.376
+4 out of 43:
+	EX_1
+	Pre-selected 1072 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000164142', 'ENSG00000102468', 'ENSG00000235537', 'ENSG00000132911', 'ENSG00000189056']
+	fbeta: 0.242
+	precision: 0.273
+	recall: 0.167
+5 out of 43:
+	EX_2
+	Pre-selected 935 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000268089', 'ENSG00000174417', 'ENSG00000164483']
+	fbeta: 0.796
+	precision: 0.973
+	recall: 0.462
+6 out of 43:
+	EX_3
+	Pre-selected 286 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000091490', 'ENSG00000250039']
+	fbeta: 0.812
+	precision: 0.852
+	recall: 0.684
+7 out of 43:
+	EX_4
+	Pre-selected 921 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000175344', 'ENSG00000138741']
+	fbeta: 0.819
+	precision: 0.986
+	recall: 0.489
+8 out of 43:
+	EX_5
+	Pre-selected 1424 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000109255', 'ENSG00000047617']
+	fbeta: 0.768
+	precision: 0.812
+	recall: 0.631
+9 out of 43:
+	EX_6
+	Pre-selected 1069 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000147655', 'ENSG00000262655', 'ENSG00000183662']
+	fbeta: 0.833
+	precision: 0.968
+	recall: 0.536
+10 out of 43:
+	EX_7
+	Pre-selected 1476 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000054938', 'ENSG00000215218', 'ENSG00000102362']
+	fbeta: 0.858
+	precision: 1.0
+	recall: 0.548
+11 out of 43:
+	EX_8
+	Pre-selected 454 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000282890', 'ENSG00000128655']
+	fbeta: 0.785
+	precision: 0.912
+	recall: 0.504
+12 out of 43:
+	EX_9
+	Pre-selected 282 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000228526', 'ENSG00000256654', 'ENSG00000107105']
+	fbeta: 0.504
+	precision: 0.569
+	recall: 0.345
+13 out of 43:
+	EX_10
+	Pre-selected 275 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000128578', 'ENSG00000221818', 'ENSG00000158352']
+	fbeta: 0.195
+	precision: 1.0
+	recall: 0.046
+14 out of 43:
+	EX_11
+	Pre-selected 372 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000228824', 'ENSG00000235537', 'ENSG00000249937']
+	fbeta: 0.66
+	precision: 0.867
+	recall: 0.338
+15 out of 43:
+	EX_12
+	Pre-selected 456 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000163032', 'ENSG00000163630']
+	fbeta: 0.736
+	precision: 0.956
+	recall: 0.384
+16 out of 43:
+	EX_13
+	Pre-selected 1141 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000144229', 'ENSG00000182348']
+	fbeta: 0.741
+	precision: 0.919
+	recall: 0.417
+17 out of 43:
+	Endothelial_1
+	Pre-selected 206 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000110799', 'ENSG00000102755']
+	fbeta: 0.86
+	precision: 1.0
+	recall: 0.55
+18 out of 43:
+	Ependymal_1
+	Pre-selected 323 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000155761', 'ENSG00000154099']
+	fbeta: 0.871
+	precision: 1.0
+	recall: 0.574
+19 out of 43:
+	INH_1
+	Pre-selected 524 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000144227', 'ENSG00000158258', 'ENSG00000077943']
+	fbeta: 0.839
+	precision: 0.945
+	recall: 0.58
+20 out of 43:
+	INH_2
+	Pre-selected 1455 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000183625', 'ENSG00000157404']
+	fbeta: 0.817
+	precision: 0.895
+	recall: 0.607
+21 out of 43:
+	INH_3
+	Pre-selected 1140 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000127863', 'ENSG00000117069', 'ENSG00000256463']
+	fbeta: 0.797
+	precision: 1.0
+	recall: 0.439
+22 out of 43:
+	INH_4
+	Pre-selected 661 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000138795', 'ENSG00000196549']
+	fbeta: 0.769
+	precision: 0.857
+	recall: 0.545
+23 out of 43:
+	INH_5
+	Pre-selected 664 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000164484', 'ENSG00000122585', 'ENSG00000165970']
+	fbeta: 0.718
+	precision: 1.0
+	recall: 0.337
+24 out of 43:
+	INH_6
+	Pre-selected 716 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000101327', 'ENSG00000136099']
+	fbeta: 0.723
+	precision: 0.857
+	recall: 0.444
+25 out of 43:
+	INH_7
+	Pre-selected 1148 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000196092', 'ENSG00000185551', 'ENSG00000158258']
+	fbeta: 0.788
+	precision: 0.929
+	recall: 0.491
+26 out of 43:
+	Lymphocyte_1
+	Pre-selected 175 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000205045', 'ENSG00000172673']
+	fbeta: 0.838
+	precision: 0.966
+	recall: 0.548
+27 out of 43:
+	MN_1
+	Pre-selected 226 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000137267', 'ENSG00000277586']
+	fbeta: 0.867
+	precision: 1.0
+	recall: 0.565
+28 out of 43:
+	Macro_1
+	Pre-selected 212 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000260314', 'ENSG00000124491']
+	fbeta: 0.817
+	precision: 0.954
+	recall: 0.519
+29 out of 43:
+	Meninges_1
+	Pre-selected 300 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000144644', 'ENSG00000126778']
+	fbeta: 0.809
+	precision: 0.926
+	recall: 0.538
+30 out of 43:
+	Meninges_2
+	Pre-selected 103 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000103888']
+	fbeta: 0.712
+	precision: 0.787
+	recall: 0.515
+31 out of 43:
+	Micro_1
+	Pre-selected 262 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000095585', 'ENSG00000176124', 'ENSG00000059377']
+	fbeta: 0.562
+	precision: 0.58
+	recall: 0.499
+32 out of 43:
+	Micro_2
+	Pre-selected 243 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000286618', 'ENSG00000231131']
+	fbeta: 0.481
+	precision: 0.562
+	recall: 0.305
+33 out of 43:
+	Micro_3
+	Pre-selected 256 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000136235', 'ENSG00000145703']
+	fbeta: 0.483
+	precision: 0.595
+	recall: 0.275
+34 out of 43:
+	Micro_4
+	Pre-selected 135 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000145685', 'ENSG00000077420']
+	fbeta: 0.134
+	precision: 0.112
+	recall: 0.629
+35 out of 43:
+	Micro_5
+	Pre-selected 216 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000051108', 'ENSG00000120063']
+	fbeta: 0.394
+	precision: 0.763
+	recall: 0.134
+36 out of 43:
+	Micro_6
+	Pre-selected 322 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000008988', 'ENSG00000177600', 'ENSG00000173369']
+	fbeta: 0.347
+	precision: 0.6
+	recall: 0.129
+37 out of 43:
+	OligoProg_1
+	Pre-selected 213 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000253807', 'ENSG00000227036']
+	fbeta: 0.335
+	precision: 0.481
+	recall: 0.151
+38 out of 43:
+	Oligo_1
+	Pre-selected 677 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000286438']
+	fbeta: 0.698
+	precision: 0.781
+	recall: 0.49
+39 out of 43:
+	Oligo_2
+	Pre-selected 297 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000156049', 'ENSG00000158865', 'ENSG00000249484']
+	fbeta: 0.421
+	precision: 0.416
+	recall: 0.439
+40 out of 43:
+	Oligo_3
+	Pre-selected 239 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000253877']
+	fbeta: 0.715
+	precision: 0.692
+	recall: 0.827
+41 out of 43:
+	Oligo_4
+	Pre-selected 310 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000164161', 'ENSG00000135643', 'ENSG00000227088', 'ENSG00000105894', 'ENSG00000259070']
+	fbeta: 0.273
+	precision: 0.261
+	recall: 0.334
+42 out of 43:
+	Opc_1
+	Pre-selected 188 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000157890', 'ENSG00000134853']
+	fbeta: 0.923
+	precision: 0.991
+	recall: 0.724
+43 out of 43:
+	Pericyte_1
+	Pre-selected 110 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000187498', 'ENSG00000134871']
+	fbeta: 0.553
+	precision: 0.737
+	recall: 0.277
+--- 783.3247208595276 seconds ---
+
+Saving supplementary table as...
+../output/spc/ThirdAnnotation_supplementary.csv
+Saving markers table as...
+../output/spc/ThirdAnnotation_markers.csv
+using median
+Calculating medians per cluster:   0%|          | 0/43 [00:00<?, ?it/s]Calculating medians per cluster:  19%|█▊        | 8/43 [00:00<00:00, 74.81it/s]Calculating medians per cluster:  53%|█████▎    | 23/43 [00:00<00:00, 114.47it/s]Calculating medians per cluster:  81%|████████▏ | 35/43 [00:00<00:00, 112.49it/s]Calculating medians per cluster: 100%|██████████| 43/43 [00:00<00:00, 79.81it/s] 
+Saving supplementary table as...
+../output/spc/ThirdAnnotation_markers_onTarget_supp.csv
+Saving supplementary table as...
+../output/spc/ThirdAnnotation_markers_onTarget.csv
+
+Saving final results table as...
+../output/spc/ThirdAnnotation_results.csv
+Saving final results table as...
+../output/spc/ThirdAnnotation_results.pkl
+
+====================
+NS-FOREST: LNCRNA SUBSET RUN
+====================
+Running NS-Forest version 4.1
+
+Preparing adata...
+Pre-selecting genes based on binary scores...
+	BinaryFirst_high Threshold (mean + 2 * std): 0.688
+	Average number of genes after gene_selection in each cluster: 61.627906976744185
+Saving number of genes selected per cluster as...
+../output/spc/ThirdAnnotation_subset_lncRNA_gene_selection.csv
+--- 0.03209948539733887 seconds ---
+
+Number of clusters to evaluate: 43
+1 out of 43:
+	Astro_1
+	Pre-selected 38 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000280809', 'ENSG00000287704']
+	fbeta: 0.796
+	precision: 0.882
+	recall: 0.573
+2 out of 43:
+	Astro_2
+	Pre-selected 28 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000284977', 'ENSG00000234377']
+	fbeta: 0.576
+	precision: 0.627
+	recall: 0.436
+3 out of 43:
+	Astro_3
+	Pre-selected 31 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000233611', 'ENSG00000287862']
+	fbeta: 0.332
+	precision: 0.363
+	recall: 0.25
+4 out of 43:
+	EX_1
+	Pre-selected 175 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000251055', 'ENSG00000235537', 'ENSG00000224842', 'ENSG00000248673']
+	fbeta: 0.431
+	precision: 0.5
+	recall: 0.278
+5 out of 43:
+	EX_2
+	Pre-selected 118 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000225249', 'ENSG00000267586', 'ENSG00000255595']
+	fbeta: 0.714
+	precision: 1.0
+	recall: 0.333
+6 out of 43:
+	EX_3
+	Pre-selected 61 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000279249', 'ENSG00000250039']
+	fbeta: 0.79
+	precision: 0.878
+	recall: 0.566
+7 out of 43:
+	EX_4
+	Pre-selected 114 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000259199', 'ENSG00000251209', 'ENSG00000253661']
+	fbeta: 0.69
+	precision: 0.838
+	recall: 0.404
+8 out of 43:
+	EX_5
+	Pre-selected 164 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000226903', 'ENSG00000234021']
+	fbeta: 0.735
+	precision: 0.836
+	recall: 0.495
+9 out of 43:
+	EX_6
+	Pre-selected 123 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000224223', 'ENSG00000261348', 'ENSG00000286685', 'ENSG00000267761']
+	fbeta: 0.508
+	precision: 0.722
+	recall: 0.232
+10 out of 43:
+	EX_7
+	Pre-selected 132 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000287881', 'ENSG00000204832', 'ENSG00000265643']
+	fbeta: 0.611
+	precision: 0.917
+	recall: 0.262
+11 out of 43:
+	EX_8
+	Pre-selected 94 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000224865', 'ENSG00000250092']
+	fbeta: 0.661
+	precision: 0.907
+	recall: 0.317
+12 out of 43:
+	EX_9
+	Pre-selected 52 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000249781', 'ENSG00000228526', 'ENSG00000256654']
+	fbeta: 0.517
+	precision: 0.615
+	recall: 0.315
+13 out of 43:
+	EX_10
+	Pre-selected 48 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000232046', 'ENSG00000249484', 'ENSG00000207955']
+	fbeta: 0.188
+	precision: 0.166
+	recall: 0.415
+14 out of 43:
+	EX_11
+	Pre-selected 93 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000248636', 'ENSG00000228824', 'ENSG00000235537']
+	fbeta: 0.592
+	precision: 0.87
+	recall: 0.26
+15 out of 43:
+	EX_12
+	Pre-selected 71 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000254092', 'ENSG00000223930']
+	fbeta: 0.625
+	precision: 0.818
+	recall: 0.321
+16 out of 43:
+	EX_13
+	Pre-selected 109 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000241956', 'ENSG00000253693']
+	fbeta: 0.676
+	precision: 0.847
+	recall: 0.374
+17 out of 43:
+	Endothelial_1
+	Pre-selected 2 genes to feed into Random Forest.
+	Only 2 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000233237']
+	fbeta: 0.118
+	precision: 0.099
+	recall: 0.444
+18 out of 43:
+	Ependymal_1
+	Pre-selected 25 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000258752']
+	fbeta: 0.666
+	precision: 0.683
+	recall: 0.603
+19 out of 43:
+	INH_1
+	Pre-selected 89 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000288105', 'ENSG00000271774', 'ENSG00000249776']
+	fbeta: 0.648
+	precision: 0.78
+	recall: 0.387
+20 out of 43:
+	INH_2
+	Pre-selected 191 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000255178', 'ENSG00000254987']
+	fbeta: 0.625
+	precision: 0.818
+	recall: 0.321
+21 out of 43:
+	INH_3
+	Pre-selected 130 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000263146', 'ENSG00000267659', 'ENSG00000283982']
+	fbeta: 0.652
+	precision: 1.0
+	recall: 0.273
+22 out of 43:
+	INH_4
+	Pre-selected 84 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000248174', 'ENSG00000234350', 'ENSG00000255367']
+	fbeta: 0.656
+	precision: 0.87
+	recall: 0.331
+23 out of 43:
+	INH_5
+	Pre-selected 101 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000223944', 'ENSG00000224116', 'ENSG00000229588']
+	fbeta: 0.603
+	precision: 0.828
+	recall: 0.289
+24 out of 43:
+	INH_6
+	Pre-selected 66 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000233355', 'ENSG00000250842']
+	fbeta: 0.706
+	precision: 0.828
+	recall: 0.444
+25 out of 43:
+	INH_7
+	Pre-selected 130 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000275443', 'ENSG00000263958', 'ENSG00000228526']
+	fbeta: 0.619
+	precision: 0.933
+	recall: 0.264
+26 out of 43:
+	Lymphocyte_1
+	Pre-selected 5 genes to feed into Random Forest.
+	Only 5 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000234663', 'ENSG00000281103']
+	fbeta: 0.667
+	precision: 0.909
+	recall: 0.323
+27 out of 43:
+	MN_1
+	Pre-selected 1 genes to feed into Random Forest.
+	Only 1 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000260032']
+	fbeta: 0.21
+	precision: 0.205
+	recall: 0.232
+28 out of 43:
+	Macro_1
+	Pre-selected 4 genes to feed into Random Forest.
+	Only 4 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000237484', 'ENSG00000287616', 'ENSG00000231535']
+	fbeta: 0.208
+	precision: 0.3
+	recall: 0.094
+29 out of 43:
+	Meninges_1
+	Pre-selected 23 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000262769', 'ENSG00000285336']
+	fbeta: 0.74
+	precision: 0.891
+	recall: 0.441
+30 out of 43:
+	Meninges_2
+	Pre-selected 7 genes to feed into Random Forest.
+	Only 7 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000243620', 'ENSG00000249307']
+	fbeta: 0.559
+	precision: 0.693
+	recall: 0.315
+31 out of 43:
+	Micro_1
+	Pre-selected 14 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000229140', 'ENSG00000237484']
+	fbeta: 0.473
+	precision: 0.574
+	recall: 0.278
+32 out of 43:
+	Micro_2
+	Pre-selected 12 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000286618', 'ENSG00000250125']
+	fbeta: 0.475
+	precision: 0.601
+	recall: 0.258
+33 out of 43:
+	Micro_3
+	Pre-selected 10 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000264031', 'ENSG00000231535']
+	fbeta: 0.252
+	precision: 0.326
+	recall: 0.132
+34 out of 43:
+	Micro_4
+	Pre-selected 7 genes to feed into Random Forest.
+	Only 7 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000285534', 'ENSG00000176124']
+	fbeta: 0.13
+	precision: 0.112
+	recall: 0.351
+35 out of 43:
+	Micro_5
+	Pre-selected 8 genes to feed into Random Forest.
+	Only 8 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000258667']
+	fbeta: 0.297
+	precision: 0.511
+	recall: 0.111
+36 out of 43:
+	Micro_6
+	Pre-selected 9 genes to feed into Random Forest.
+	Only 9 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000228655', 'ENSG00000250125', 'ENSG00000231131']
+	fbeta: 0.089
+	precision: 0.075
+	recall: 0.353
+37 out of 43:
+	OligoProg_1
+	Pre-selected 21 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000262223', 'ENSG00000253807', 'ENSG00000227036']
+	fbeta: 0.387
+	precision: 0.786
+	recall: 0.128
+38 out of 43:
+	Oligo_1
+	Pre-selected 104 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000286438']
+	fbeta: 0.698
+	precision: 0.781
+	recall: 0.49
+39 out of 43:
+	Oligo_2
+	Pre-selected 46 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000231373', 'ENSG00000249484', 'ENSG00000228793']
+	fbeta: 0.392
+	precision: 0.404
+	recall: 0.348
+40 out of 43:
+	Oligo_3
+	Pre-selected 37 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000253877']
+	fbeta: 0.715
+	precision: 0.692
+	recall: 0.827
+41 out of 43:
+	Oligo_4
+	Pre-selected 46 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000224924', 'ENSG00000261329', 'ENSG00000227088', 'ENSG00000259070']
+	fbeta: 0.24
+	precision: 0.217
+	recall: 0.417
+42 out of 43:
+	Opc_1
+	Pre-selected 26 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000231424', 'ENSG00000278254']
+	fbeta: 0.865
+	precision: 0.994
+	recall: 0.568
+43 out of 43:
+	Pericyte_1
+	Pre-selected 1 genes to feed into Random Forest.
+	Only 1 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000247809']
+	fbeta: 0.217
+	precision: 0.206
+	recall: 0.277
+--- 330.57380080223083 seconds ---
+
+Saving supplementary table as...
+../output/spc/ThirdAnnotation_subset_lncRNA_supplementary.csv
+Saving markers table as...
+../output/spc/ThirdAnnotation_subset_lncRNA_markers.csv
+using median
+Calculating medians per cluster:   0%|          | 0/43 [00:00<?, ?it/s]Calculating medians per cluster:  28%|██▊       | 12/43 [00:00<00:00, 116.27it/s]Calculating medians per cluster:  67%|██████▋   | 29/43 [00:00<00:00, 147.45it/s]Calculating medians per cluster: 100%|██████████| 43/43 [00:00<00:00, 108.06it/s]
+Saving supplementary table as...
+../output/spc/ThirdAnnotation_subset_lncRNA_markers_onTarget_supp.csv
+Saving supplementary table as...
+../output/spc/ThirdAnnotation_subset_lncRNA_markers_onTarget.csv
+
+Saving final results table as...
+../output/spc/ThirdAnnotation_subset_lncRNA_results.csv
+Saving final results table as...
+../output/spc/ThirdAnnotation_subset_lncRNA_results.pkl
+
+====================
+PREPARING FOR VISUALIZATION
+====================
+
+====================
+VISUALIZATION: SELECTED MARKER
+====================
+Traceback (most recent call last):
+  File "/vf/users/beckersv/lncnsf/beckersv_scripts/beckersv_biowulf_script.py", line 206, in <module>
+    ns.pl.dotplot(adata, markers_dict, cluster_header, dendrogram = dendrogram, save = "svg", kwargs = {'show': False}, output_folder = output_folder, outputfilename_suffix = outputfilename_prefix)
+  File "/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/nsforest/plotting/_make_plots.py", line 142, in dotplot
+    sc.pl.dotplot(adata, markers, cluster_header, categories_order = dendrogram, save = save, **kwargs)
+  File "/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/legacy_api_wrap/__init__.py", line 88, in fn_compatible
+    return fn(*args_all, **kw)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/scanpy/plotting/_dotplot.py", line 1027, in dotplot
+    dp.make_figure()
+  File "/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/scanpy/plotting/_baseplot_class.py", line 800, in make_figure
+    normalize = self._mainplot(main_ax)
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/scanpy/plotting/_dotplot.py", line 590, in _mainplot
+    normalize, dot_min, dot_max = self._dotplot(
+                                  ^^^^^^^^^^^^^^
+  File "/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/scanpy/plotting/_dotplot.py", line 779, in _dotplot
+    dot_ax.scatter(x, y, **kwds)
+  File "/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/matplotlib/_api/deprecation.py", line 477, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/matplotlib/__init__.py", line 1528, in inner
+    return func(
+           ^^^^^
+  File "/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/matplotlib/axes/_axes.py", line 5453, in scatter
+    collection._internal_update(kwargs)
+  File "/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/matplotlib/artist.py", line 1313, in _internal_update
+    return self._update_props(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/matplotlib/artist.py", line 1271, in _update_props
+    raise AttributeError(
+AttributeError: PathCollection.set() got an unexpected keyword argument 'kwargs'

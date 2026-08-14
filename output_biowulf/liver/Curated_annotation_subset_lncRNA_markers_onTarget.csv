@@ -1,0 +1,25 @@
+clusterName,onTarget
+B cells,1.0
+CD4 T cells,0.08600723
+CD16+ NK cells,0.22807157
+CD16- NK cells,0.05506824
+Central venous LSECs,0.22533342
+Cholangiocytes,0.1319787
+Classical monocytes,0.6284177
+DC1,0.25526983
+DC2,0.16906735
+Fibroblasts,0.85716486
+Inflammatory macrophages,0.0874284
+Interzonal hepatocytes,0.7640804
+MAIT cells,0.069718905
+Macrophages,0.11458973
+Migratory DCs,0.1276742
+NK cells,0.43699768
+Non-classical monocytes,0.10505489
+Non-inflammatory macrophages,0.05134233
+Pericentral hepatocytes,1.0
+Periportal hepatocytes,0.041424207
+Plasma cells,0.1777511
+Portal endothelial cells,0.051806405
+Stellate cells,1.0
+pDC,1.0

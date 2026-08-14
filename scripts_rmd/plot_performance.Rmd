@@ -1,0 +1,565 @@
+---
+title: "Scatter/Quadrant Plot of Performance Metrics"
+date: "Summer 2026"
+author: "Vik Becker"
+output: html_document
+---
+
+```{r setup, include=FALSE, eval=TRUE}
+# libraries
+library(tidyverse)
+library(knitr)
+library(ggExtra)
+library(patchwork)
+library(oeli)
+library(DescTools)
+library(stringr)
+
+# chunk settings
+opts_chunk$set(echo=TRUE, warning=FALSE, digits=4)
+set.seed(123)
+```
+
+# Dataframe Loading Functions
+
+```{r load_df_join}
+load_df_join <- function(tissue, n_status, filepath, cluster_header) {
+  # selected cols
+  select_full <- c('clusterName', 'clusterSize', 'f_score', 'precision', 'recall', 'onTarget')
+  select_lncr <- c('clusterName', 'f_score', 'precision', 'recall', 'onTarget')
+  
+  # load dfs
+  df_join <- read_csv(paste0(filepath, cluster_header, "_results.csv")) |>
+    select(select_full) |>
+    mutate(tissue = tissue,
+           n_status = n_status) |>
+    rename(f_score_full = f_score,
+           precision_full = precision,
+           recall_full = recall,
+           onTarget_full = onTarget)
+  
+  df_lncr <- read_csv(paste0(filepath, cluster_header, "_subset_lncRNA_results.csv")) |>
+    select(select_lncr) |>
+    rename(f_score_lncRNA = f_score,
+           precision_lncRNA = precision,
+           recall_lncRNA = recall,
+           onTarget_lncRNA = onTarget) |>
+    mutate(lncRNA_passed = TRUE)
+  
+  
+  df_code <- read_csv(paste0(filepath, "dscoding_results_agg_", tissue, ".csv")) |>
+    rename(f_score_coding = avg_f_score,
+           precision_coding = avg_precision,
+           recall_coding = avg_recall,
+           onTarget_coding = avg_onTarget) |>
+    mutate(f_score_coding = as.numeric(f_score_coding),
+           precision_coding = as.numeric(precision_coding),
+           recall_coding = as.numeric(recall_coding),
+           onTarget_coding = as.numeric(onTarget_coding))
+
+  # get clusters with no passed lncRNA
+  res <- df_join$clusterName[is.na(pmatch(df_join$clusterName, df_lncr$clusterName))]
+  
+  # add missing clusters to df_lncr with all 0s
+  for (i in 1:length(res)) {
+    df_lncr <- add_row(df_lncr, clusterName = res[i], f_score_lncRNA = 0, precision_lncRNA = 0, recall_lncRNA = 0, onTarget_lncRNA = 0, lncRNA_passed = FALSE)
+  }
+  
+  # join dfs together
+  df_temp <- inner_join(df_join, df_lncr, by = 'clusterName')
+  left_join(df_temp, df_code, by = 'clusterName')
+}
+```
+
+```{r load_df_bind}
+load_df_bind <- function(tissue, n_status, filepath, cluster_header) {
+  # selected cols
+  select_full <- c('clusterName', 'f_score', 'precision', 'recall', 'onTarget')
+  select_lncr <- c('clusterName', 'f_score', 'precision', 'recall', 'onTarget')
+  
+  # load dfs
+  df_join <- read_csv(paste0(filepath, cluster_header, "_results.csv")) |>
+    select(select_full) |>
+    mutate(set = "Full",
+           tissue = tissue,
+           n_status = n_status)
+
+  
+  df_lncr <- read_csv(paste0(filepath, cluster_header, "_subset_lncRNA_results.csv")) |>
+    select(select_lncr) |>
+    mutate(set = "lncRNA",
+           tissue = tissue,
+           n_status = n_status)
+  
+  df_code <- read_csv(paste0(filepath, "dscoding_results_agg_", tissue, ".csv")) |>
+    rename(f_score = avg_f_score,
+           precision = avg_precision,
+           recall = avg_recall,
+           onTarget = avg_onTarget) |>
+    mutate(set = "Coding",
+           tissue = tissue,
+           n_status = n_status)
+
+  # concatenate dfs
+  rbind(df_join, df_lncr, df_code)
+}
+```
+
+# Dataframe Call
+
+```{r df_join}
+# bind dfs
+df_join <- rbind(quiet(load_df_join("m1", "neural", "../output_biowulf/m1/", "cluster_id")), 
+                 quiet(load_df_join("mtg", "neural", "../output_biowulf/mtg/", "cluster_id")), 
+                 quiet(load_df_join("retina", "neural", "../output_biowulf/retina/", "author_cell_type")), 
+                 quiet(load_df_join("spc", "neural", "../output_biowulf/spc/", "ThirdAnnotation")),
+                 quiet(load_df_join("breast", "non-neural", "../output_biowulf/breast/", "level2")), 
+                 quiet(load_df_join("liver", "non-neural", "../output_biowulf/liver/", "Curated_annotation")), 
+                 quiet(load_df_join("kidney", "non-neural", "../output_biowulf/kidney/", "subclass.full")), 
+                 quiet(load_df_join("lung", "non-neural", "../output_biowulf/lung/", "ann_finest_level")), 
+                 quiet(load_df_join("bm", "non-neural", "../output_biowulf/bm/", "Curated_annotation"))) |>
+  mutate(precision_retention = precision_lncRNA / precision_full,
+         precision_dif = precision_lncRNA - precision_full,
+         log_precision_retention = log10(precision_retention),
+         f_score_retention = f_score_lncRNA / f_score_full,
+         f_score_dif = f_score_lncRNA - f_score_full,
+         log_f_score_retention = log10(f_score_retention),
+         recall_retention = recall_lncRNA / recall_full,
+         recall_dif = recall_lncRNA - recall_full,
+         log_recall_retention = log10(recall_retention),
+         onTarget_retention = onTarget_lncRNA / onTarget_full,
+         onTarget_dif = onTarget_lncRNA - onTarget_full,
+         log_onTarget_retention = log10(onTarget_retention),
+         n_status = str_to_title(n_status)) |>
+  filter(lncRNA_passed == TRUE)
+```
+
+```{r df_bind}
+df_bind <- rbind(quiet(load_df_bind("m1", "neural", "../output_biowulf/m1/", "cluster_id")), 
+                quiet(load_df_bind("mtg", "neural", "../output_biowulf/mtg/", "cluster_id")), 
+                quiet(load_df_bind("retina", "neural", "../output_biowulf/retina/", "author_cell_type")), 
+                quiet(load_df_bind("spc", "neural", "../output_biowulf/spc/", "ThirdAnnotation")),
+                quiet(load_df_bind("breast", "non-neural", "../output_biowulf/breast/", "level2")), 
+                quiet(load_df_bind("liver", "non-neural", "../output_biowulf/liver/", "Curated_annotation")), 
+                quiet(load_df_bind("kidney", "non-neural", "../output_biowulf/kidney/", "subclass.full")), 
+                quiet(load_df_bind("lung", "non-neural", "../output_biowulf/lung/", "ann_finest_level")), 
+                quiet(load_df_bind("bm", "non-neural", "../output_biowulf/bm/", "Curated_annotation"))) |>
+  mutate(n_status = str_to_title(n_status))
+```
+
+# lncRNA-Full Plot Creation
+
+```{r precision}
+p1 <- ggplot(data = df_join, aes(x=precision_full, y=precision_lncRNA)) +
+  geom_abline(intercept = 0, slope = 1, col = "lightgray", lty = "dotted") +
+  geom_density_2d(col = "gray") +
+  geom_point(aes(col = tissue), size = 1.5, alpha = 0.5) +
+  labs(title = "Precision",
+       x = "Precision (Full Gene Set)",
+       y = "Precision (lncRNA Set)",
+       col = "Tissue") +
+  scale_color_hue(labels = c("Bone Marrow", "Breast", "Kidney", "Liver", "Lung",
+                             "M1", "MTG", "Retina", "Spinal Cord")) +
+  scale_x_continuous(labels = scales::label_number(drop0trailing=TRUE),
+                     limits = c(0,1)) +
+  scale_y_continuous(labels = scales::label_number(drop0trailing=TRUE),
+                     limits = c(0,1)) +
+  facet_wrap(~n_status) +
+  theme_classic() +
+  theme(panel.spacing.x = unit(4, "mm")) +
+  theme(legend.position="bottom",
+        legend.spacing.x = unit(0, 'cm'))+
+  guides(fill = guide_legend(label.position = "bottom"))
+
+p2 <- ggplot(data = df_bind |> filter(set != "Coding")) + 
+  geom_density(aes(x = precision, y = after_stat(density), col = set, fill = set), alpha = 0.5) +
+  scale_fill_manual(values = c("dodgerblue", "darkorange")) +
+  scale_color_manual(values = c("dodgerblue", "darkorange")) +
+  facet_wrap(~n_status, scales = "free") +
+  scale_x_continuous(labels = scales::label_number(drop0trailing=TRUE), 
+                     limits = c(0,1)) +
+  labs(title = "Distribution of Precision",
+       x = "Precision",
+       y = "Density",
+       fill = "Gene Set",
+       col = "Gene Set") +
+  theme_classic() +
+  theme(panel.spacing.x = unit(4, "mm")) +
+  theme(legend.position="bottom",
+        legend.spacing.x = unit(0, 'cm'))+
+  guides(fill = guide_legend(label.position = "bottom"))
+
+p_precision <- p1 / p2
+p_precision
+```
+
+```{r recall}
+p1 <- ggplot(data = df_join, aes(x=recall_full, y=recall_lncRNA)) +
+  geom_abline(intercept = 0, slope = 1, col = "lightgray", lty = "dotted") +
+  geom_density_2d(col = "gray") +
+  geom_point(aes(col = tissue), size = 1.5, alpha = 0.5) +
+  labs(title = "Recall",
+       x = "Recall (Full Gene Set)",
+       y = "Recall (lncRNA Set)",
+       col = "Tissue") +
+  scale_color_hue(labels = c("Bone Marrow", "Breast", "Kidney", "Liver", "Lung",
+                            "M1", "MTG", "Retina", "Spinal Cord")) +
+  scale_x_continuous(labels = scales::label_number(drop0trailing=TRUE),
+                     limits = c(0,1)) +
+  scale_y_continuous(labels = scales::label_number(drop0trailing=TRUE),
+                     limits = c(0,1)) +
+  facet_wrap(~n_status) +
+  theme_classic() +
+  theme(panel.spacing.x = unit(4, "mm")) +
+  theme(legend.position="bottom",
+        legend.spacing.x = unit(0, 'cm'))+
+  guides(fill = guide_legend(label.position = "bottom"))
+
+p2 <- ggplot(data = df_bind |> filter(set != "Coding")) + 
+  geom_density(aes(x = recall, y = after_stat(density), col = set, fill = set), alpha = 0.5) +
+  scale_fill_manual(values = c("dodgerblue", "darkorange")) +
+  scale_color_manual(values = c("dodgerblue", "darkorange")) +
+  facet_wrap(~n_status, scales = "free") +
+  scale_x_continuous(labels = scales::label_number(drop0trailing=TRUE), 
+                     limits = c(0,1)) +
+  labs(title = "Distribution of Recall",
+       x = "Recall",
+       y = "Density",
+       fill = "Gene Set",
+       col = "Gene Set") +
+  theme_classic() +
+  theme(panel.spacing.x = unit(4, "mm")) +
+  theme(legend.position="bottom",
+        legend.spacing.x = unit(0, 'cm'))+
+  guides(fill = guide_legend(label.position = "bottom"))
+
+p_recall <- p1 / p2
+```
+
+```{r prec_recall}
+design <- "AAACCC
+           AAACCC
+           BBBCCC
+           BBBCCC
+           DDDDDD"
+
+prec_recall <- (p_precision + p_recall + guide_area()) +
+  plot_layout(guides = "collect", design = design) & 
+  theme(legend.position = 'bottom')
+```
+
+# Coding-Full Plot Creation
+
+```{r precision_c_full}
+p1 <- ggplot(data = df_join, aes(x=precision_full, y=precision_coding)) +
+  geom_abline(intercept = 0, slope = 1, col = "lightgray", lty = "dotted") +
+  geom_density_2d(col = "gray") +
+  geom_point(aes(col = tissue), size = 1.5, alpha = 0.5) +
+  labs(title = "Precision",
+       x = "Precision (Full Gene Set)",
+       y = "Precision (Coding Set)",
+       col = "Tissue") +
+  scale_color_hue(labels = c("Bone Marrow", "Breast", "Kidney", "Liver", "Lung",
+                            "M1", "MTG", "Spinal Cord")) +
+  scale_x_continuous(labels = scales::label_number(drop0trailing=TRUE),
+                     limits = c(0,1)) +
+  scale_y_continuous(labels = scales::label_number(drop0trailing=TRUE),
+                     limits = c(0,1)) +
+  facet_wrap(~n_status) +
+  theme_classic() +
+  theme(panel.spacing.x = unit(4, "mm"))
+
+p2 <- ggplot(data = df_bind |> filter(set != "lncRNA")) + 
+  geom_density(aes(x = precision, y = after_stat(density), col = set, fill = set), alpha = 0.5) +
+  scale_fill_manual(values = c("Full" = "dodgerblue",
+                               "Coding" =  "darkorange")) +
+  scale_color_manual(values = c("Full" = "dodgerblue",
+                               "Coding" =  "darkorange")) +
+  facet_wrap(~n_status, scales = "free") +
+  scale_x_continuous(labels = scales::label_number(drop0trailing=TRUE), 
+                     limits = c(0,1)) +
+  labs(title = "Distribution of Precision",
+       x = "Precision",
+       y = "Density",
+       fill = "Gene Set",
+       col = "Gene Set") +
+  theme_classic() +
+  theme(panel.spacing.x = unit(4, "mm"))
+
+p_precision <- p1 / p2
+```
+
+```{r recall_c_full}
+p1 <- ggplot(data = df_join, aes(x=recall_full, y=recall_coding)) +
+  geom_abline(intercept = 0, slope = 1, col = "lightgray", lty = "dotted") +
+  geom_density_2d(col = "gray") +
+  geom_point(aes(col = tissue), size = 1.5, alpha = 0.5) +
+  labs(title = "Recall",
+       x = "Recall (Full Gene Set)",
+       y = "Recall (Coding Set)",
+       col = "Tissue") +
+  scale_color_hue(labels = c("Bone Marrow", "Breast", "Kidney", "Liver", "Lung",
+                            "M1", "MTG", "Spinal Cord")) +
+  scale_x_continuous(labels = scales::label_number(drop0trailing=TRUE),
+                     limits = c(0,1)) +
+  scale_y_continuous(labels = scales::label_number(drop0trailing=TRUE),
+                     limits = c(0,1)) +
+  facet_wrap(~n_status) +
+  theme_classic() +
+  theme(panel.spacing.x = unit(4, "mm"))
+
+p2 <- ggplot(data = df_bind |> filter(set != "lncRNA")) + 
+  geom_density(aes(x = recall, y = after_stat(density), col = set, fill = set), alpha = 0.5) +
+  scale_fill_manual(values = c("Full" = "dodgerblue",
+                               "Coding" =  "darkorange")) +
+  scale_color_manual(values = c("Full" = "dodgerblue",
+                               "Coding" =  "darkorange")) +
+  facet_wrap(~n_status, scales = "free") +
+  scale_x_continuous(labels = scales::label_number(drop0trailing=TRUE), 
+                     limits = c(0,1)) +
+  labs(title = "Distribution of Recall",
+       x = "Recall",
+       y = "Density",
+       fill = "Gene Set",
+       col = "Gene Set") +
+  theme_classic() +
+  theme(panel.spacing.x = unit(4, "mm"))
+
+p_recall <- p1 / p2
+```
+
+```{r prec_recall_c_full}
+(p_precision | p_recall) +
+  plot_layout(guides = "collect")
+```
+
+# Coding-lncRNA Plot Creation
+
+```{r precision_c_lnc}
+p1 <- ggplot(data = df_join, aes(x=precision_coding, y=precision_lncRNA)) +
+  geom_abline(intercept = 0, slope = 1, col = "darkgray", lty = "dotted") +
+  geom_density_2d(col = "gray") +
+  geom_point(aes(col = tissue), size = 1.5, alpha = 0.5) +
+  labs(title = "Precision",
+       x = "Precision (Coding Gene Set)",
+       y = "Precision (lncRNA Set)",
+       col = "Tissue") +
+  scale_color_hue(labels = c("Bone Marrow", "Breast", "Kidney", "Liver", "Lung",
+                            "M1", "MTG", "Retina", "Spinal Cord")) +
+  scale_x_continuous(labels = scales::label_number(drop0trailing=TRUE),
+                     limits = c(0,1)) +
+  scale_y_continuous(labels = scales::label_number(drop0trailing=TRUE),
+                     limits = c(0,1)) +
+  facet_wrap(~n_status) +
+  theme_classic() +
+  theme(panel.spacing.x = unit(4, "mm"))
+
+p2 <- ggplot(data = df_bind |> filter(set != "Full")) + 
+  geom_density(aes(x = precision, y = after_stat(density), col = set, fill = set), alpha = 0.5) +
+  scale_fill_manual(values = c("dodgerblue", "darkorange")) +
+  scale_color_manual(values = c("dodgerblue", "darkorange")) +
+  facet_wrap(~n_status, scales = "free") +
+  scale_x_continuous(labels = scales::label_number(drop0trailing=TRUE), 
+                     limits = c(0,1)) +
+  labs(title = "Distribution of Precision",
+       x = "Precision",
+       y = "Density",
+       fill = "Gene Set",
+       col = "Gene Set") +
+  theme_classic() +
+  theme(panel.spacing.x = unit(4, "mm"))
+
+p_precision <- p1 / p2
+p_precision
+```
+
+```{r recall_c_lnc}
+p1 <- ggplot(data = df_join, aes(x=recall_coding, y=recall_lncRNA)) +
+  geom_abline(intercept = 0, slope = 1, col = "darkgray", lty = "dotted") +
+  geom_density_2d(col = "gray") +
+  geom_point(aes(col = tissue), size = 1.5, alpha = 0.5) +
+  labs(title = "Recall",
+       x = "Recall (Coding Gene Set)",
+       y = "Recall (lncRNA Set)",
+       col = "Tissue") +
+  scale_color_hue(labels = c("Bone Marrow", "Breast", "Kidney", "Liver", "Lung",
+                            "M1", "MTG", "Retina", "Spinal Cord")) +
+  scale_x_continuous(labels = scales::label_number(drop0trailing=TRUE),
+                     limits = c(0,1)) +
+  scale_y_continuous(labels = scales::label_number(drop0trailing=TRUE),
+                     limits = c(0,1)) +
+  facet_wrap(~n_status) +
+  theme_classic() +
+  theme(panel.spacing.x = unit(4, "mm"))
+
+p2 <- ggplot(data = df_bind |> filter(set != "Full")) + 
+  geom_density(aes(x = recall, y = after_stat(density), col = set, fill = set), alpha = 0.5) +
+  scale_fill_manual(values = c("dodgerblue", "darkorange")) +
+  scale_color_manual(values = c("dodgerblue", "darkorange")) +
+  facet_wrap(~n_status, scales = "free") +
+  scale_x_continuous(labels = scales::label_number(drop0trailing=TRUE), 
+                     limits = c(0,1)) +
+  labs(title = "Distribution of Recall",
+       x = "Recall",
+       y = "Density",
+       fill = "Gene Set",
+       col = "Gene Set") +
+  theme_classic() +
+  theme(panel.spacing.x = unit(4, "mm"))
+
+p_recall <- p1 / p2
+```
+
+```{r prec_recall_c_lnc}
+(p_precision | p_recall) +
+  plot_layout(guides = "collect")
+```
+
+# Supplemental Plots (F-Beta Score, On-Target)
+
+```{r fscore}
+p1 <- ggplot(data = df_join, aes(x=f_score_full, y=f_score_lncRNA)) +
+  geom_abline(intercept = 0, slope = 1, col = "lightgray", lty = "dotted") +
+  geom_density_2d(aes(fill = ..level..), geom = "polygon", col = "gray") +
+  geom_point(aes(col = tissue), size = 2, alpha = 0.7) +
+  labs(title = "F-Beta Score (Full vs lncRNA Sets)") +
+  facet_wrap(~n_status) +
+  theme_classic()
+
+p2 <- ggplot(data = df_bind) + 
+  geom_density(aes(x = f_score, y = after_stat(count), col = set, fill = set), alpha = 0.5) +
+  scale_fill_manual(values = c("dodgerblue", "darkorange")) +
+  scale_color_manual(values = c("dodgerblue", "darkorange")) +
+  facet_wrap(~n_status, scales = "free") +
+  labs(title = "F-Beta Score Distribution") +
+  theme_classic()
+
+p1 / p2
+```
+
+```{r onTarget}
+p1 <- ggplot(data = df_join, aes(x=onTarget_full, y=onTarget_lncRNA)) +
+  geom_abline(intercept = 0, slope = 1, col = "lightgray", lty = "dotted") +
+  geom_density_2d(aes(fill = ..level..), geom = "polygon", col = "gray") +
+  geom_point(aes(col = tissue), size = 2, alpha = 0.7) +
+  labs(title = "On-Target Fraction (Full vs lncRNA Sets)") +
+  facet_wrap(~n_status) +
+  theme_classic()
+
+p2 <- ggplot(data = df_bind) + 
+  geom_density(aes(x = f_score, y = after_stat(count), col = set, fill = set), alpha = 0.5) +
+  scale_fill_manual(values = c("dodgerblue", "darkorange")) +
+  scale_color_manual(values = c("dodgerblue", "darkorange")) +
+  facet_wrap(~n_status, scales = "free") +
+  labs(title = "On-Target Fraction Distribution") +
+  theme_classic()
+
+p1 / p2
+```
+
+# Metric Summary
+
+```{r distributions}
+ggplot(data = df_bind) + 
+  geom_density(aes(x = precision, y = ..scaled.., col = set), alpha = 0.7) + 
+  facet_wrap(~n_status) +
+  labs(title = "Precision Distribution") +
+  theme_classic()
+
+ggplot(data = df_bind) + 
+  geom_density(aes(x = recall, y = ..scaled.., col = set), alpha = 0.7) + 
+  facet_wrap(~n_status) +
+  labs(title = "Recall Distribution") +
+  theme_classic()
+
+ggplot(data = df_bind) + 
+  geom_density(aes(x = f_score, y = ..scaled.., col = set), alpha = 0.7) + 
+  facet_wrap(~n_status) +
+  labs(title = "F-Score Distribution") +
+  theme_classic()
+
+ggplot(data = df_bind) + 
+  geom_density(aes(x = onTarget, y = ..scaled.., col = set), alpha = 0.7) + 
+  facet_wrap(~n_status) +
+  labs(title = "On Target Fraction Distribution") +
+  theme_classic()
+```
+
+```{r performance_metrics}
+perf_sum <- df_bind |>
+  group_by(n_status, set) |>
+  summarize("median_precision" = median(precision),
+            "lwr_ci_precision" = MedianCI(precision, method = "boot")[2],
+            "upr_ci_precision" = MedianCI(precision, method = "boot")[3],
+            "median_recall" = median(recall),
+            "lwr_ci_recall" = MedianCI(recall, method = "boot")[2],
+            "upr_ci_recall" = MedianCI(recall, method = "boot")[3],
+            "median_f_score" = median(f_score),
+            "lwr_ci_f_score" = MedianCI(f_score, method = "boot")[2],
+            "upr_ci_f_score" = MedianCI(f_score, method = "boot")[3],
+            "median_onTarget" = median(onTarget),
+            "lwr_ci_onTarget" = MedianCI(onTarget, method = "boot")[2],
+            "upr_ci_onTarget" = MedianCI(onTarget, method = "boot")[3])
+
+perf_sum
+```
+
+```{r retention_metrics}
+met_sum <- df_join |>
+  group_by(n_status) |>
+  summarize("median_precision_retention" = median(precision_retention),
+            "median_recall_retention" = median(recall_retention),
+            "median_f_score_retention" = median(f_score_retention),
+            "median_onTarget_retention" = median(onTarget_retention),
+            "median_precision_dif" = median(precision_dif),
+            "median_recall_dif" = median(recall_dif),
+            "median_f_score_dif" = median(f_score_dif),
+            "median_onTarget_dif" = median(onTarget_dif)
+            )
+met_sum
+```
+
+# On-Target Retention Plots
+
+```{r onTarget_retention}
+vio_ot <- ggplot(data = df_bind) +
+  scale_fill_manual(values = c("dodgerblue", "darkorange")) +
+  geom_violin(aes(x=tissue, y=onTarget, fill = set), adjust = .5, draw_quantiles = c(0.25, 0.5, 0.75)) +
+  labs(title = "On-Target Fraction Expression Scores") +
+  theme_classic()
+
+vio_otr_t <- ggplot(data = df_join) +
+  geom_violin(aes(x=tissue, y=log10(onTarget_retention)), adjust = .5, draw_quantiles = c(0.25, 0.5, 0.75)) +
+  theme_classic() +
+  labs(title = "On-Target Fraction Retention")
+
+vio_otr_n <- ggplot(data = df_join) +
+  geom_violin(aes(x=factor(n_status,levels = c("non-neural", "neural")), y=log10(onTarget_retention)), adjust = .5, draw_quantiles = c(0.25, 0.5, 0.75)) +
+  theme_classic() +
+  labs(x = "n_status")
+
+p3 <- vio_otr_t | vio_otr_n
+
+vio_ot / p3
+
+```
+
+```{r}
+p1 <- ggplot(data = df_join) +
+  geom_violin(aes(x=factor(n_status,levels = c("non-neural", "neural")), y=log10(precision_retention), col = n_status), adjust = .5, draw_quantiles = c(0.25, 0.5, 0.75)) +
+  theme_classic() +
+  labs(title = "Precision Retention",
+       x = "n_status") +
+  coord_cartesian(ylim=c(-3, 2))
+
+p2 <- ggplot(data = df_join) +
+  geom_violin(aes(x=factor(n_status,levels = c("non-neural", "neural")), y=log10(recall_retention), col = n_status), adjust = .5, draw_quantiles = c(0.25, 0.5, 0.75)) +
+  theme_classic() +
+  labs(title = "Recall Retention",
+       x = "n_status") +
+  coord_cartesian(ylim=c(-3, 2))
+
+(p1 | p2) + 
+  plot_layout(axis_titles = "collect_x",
+              guides = "collect")
+```

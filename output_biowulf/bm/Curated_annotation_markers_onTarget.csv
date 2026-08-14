@@ -1,0 +1,46 @@
+clusterName,onTarget
+Age-associated B cells,0.69747734
+CD16+ NK cells,0.35697538
+CD16- NK cells,0.55239064
+CD24 neutrophils,1.0
+CMP,0.2354686
+CRTAM+ gamma-delta T cells,0.45088026
+Classical monocytes,0.6608386
+Cycling T&NK,0.2767236
+DC1,1.0
+DC2,1.0
+DC precursor,0.2883817
+ELP,0.25498468
+ETP,0.734885
+Early MK,0.95238245
+Early erythroid,0.2979887
+Erythrocytes,1.0
+Follicular helper T cells,0.3894306
+GMP,0.24488446
+HSC/MPP,1.0
+Late erythroid,1.0
+MAIT cells,0.27571672
+MEMP,0.20606853
+Mast cells,1.0
+Megakaryocyte precursor,0.21657807
+Megakaryocytes/platelets,1.0
+Memory B cells,0.3349274
+Mid erythroid,0.44956607
+NAMPT neutrophils,1.0
+Naive B cells,0.414738
+Neutrophil-myeloid progenitor,0.26286408
+Neutrophils,0.12832297
+Non-classical monocytes,0.64793456
+Plasma cells,0.61047244
+Plasmablasts,0.48322546
+Pro-B cells,0.4994432
+Promyelocytes,0.21263677
+Regulatory T cells,0.24616449
+Small pre-B cells,0.9803306
+Tcm/Naive cytotoxic T cells,0.5899486
+Tcm/Naive helper T cells,0.2991916
+Tem/Effector helper T cells,0.36141303
+Tem/Temra cytotoxic T cells,0.30692962
+Tem/Trm cytotoxic T cells,0.3149563
+pDC,1.0
+pDC precursor,0.21848708

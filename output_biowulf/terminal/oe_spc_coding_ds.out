@@ -1,0 +1,132 @@
+
+====================
+CONFIGURING ENVIRONMENT
+====================
+Tissue: spc
+Cluster Header: ThirdAnnotation
+
+====================
+IMPORTING/LOADING DATA
+====================
+AnnData object with n_obs × n_vars = 28625 × 35467
+    obs: 'donor_id', 'development_stage_ontology_term_id', 'sex_ontology_term_id', 'self_reported_ethnicity_ontology_term_id', 'disease_ontology_term_id', 'tissue_type', 'tissue_ontology_term_id', 'cell_type_ontology_term_id', 'assay_ontology_term_id', 'suspension_type', 'PrimaryAnnotation', 'ThirdAnnotation', 'percent.mt', 'is_primary_data', 'cell_type', 'assay', 'disease', 'sex', 'tissue', 'self_reported_ethnicity', 'development_stage', 'observation_joinid'
+    var: 'feature_is_filtered', 'feature_name', 'feature_reference', 'feature_biotype', 'feature_length', 'feature_type'
+    uns: 'citation', 'is_pre_analysis', 'organism', 'organism_ontology_term_id', 'schema_reference', 'schema_version', 'title'
+    obsm: 'X_umap_HM_01'
+
+====================
+NORMALIZE/SCALE DATA
+====================
+Data normalized and log1p transformed.
+
+====================
+CREATE PROTEIN_CODING SUBSET
+====================
+View of AnnData object with n_obs × n_vars = 28625 × 19261
+    obs: 'donor_id', 'development_stage_ontology_term_id', 'sex_ontology_term_id', 'self_reported_ethnicity_ontology_term_id', 'disease_ontology_term_id', 'tissue_type', 'tissue_ontology_term_id', 'cell_type_ontology_term_id', 'assay_ontology_term_id', 'suspension_type', 'PrimaryAnnotation', 'ThirdAnnotation', 'percent.mt', 'is_primary_data', 'cell_type', 'assay', 'disease', 'sex', 'tissue', 'self_reported_ethnicity', 'development_stage', 'observation_joinid'
+    var: 'feature_is_filtered', 'feature_name', 'feature_reference', 'feature_biotype', 'feature_length', 'feature_type'
+    uns: 'citation', 'is_pre_analysis', 'organism', 'organism_ontology_term_id', 'schema_reference', 'schema_version', 'title', 'log1p'
+    obsm: 'X_umap_HM_01'
+
+====================
+PREPROCESS: CLUSTER MEDIANS
+====================
+Calculating medians per cluster:   0%|          | 0/43 [00:00<?, ?it/s]Calculating medians per cluster:   2%|▏         | 1/43 [00:00<00:30,  1.36it/s]Calculating medians per cluster:   5%|▍         | 2/43 [00:01<00:25,  1.59it/s]Calculating medians per cluster:   7%|▋         | 3/43 [00:02<00:29,  1.36it/s]Calculating medians per cluster:  14%|█▍        | 6/43 [00:02<00:10,  3.63it/s]Calculating medians per cluster:  19%|█▊        | 8/43 [00:02<00:07,  4.97it/s]Calculating medians per cluster:  23%|██▎       | 10/43 [00:02<00:04,  6.70it/s]Calculating medians per cluster:  28%|██▊       | 12/43 [00:02<00:03,  7.79it/s]Calculating medians per cluster:  35%|███▍      | 15/43 [00:02<00:02, 10.53it/s]Calculating medians per cluster:  40%|███▉      | 17/43 [00:03<00:02, 10.03it/s]Calculating medians per cluster:  44%|████▍     | 19/43 [00:03<00:02, 11.31it/s]Calculating medians per cluster:  51%|█████     | 22/43 [00:03<00:01, 13.97it/s]Calculating medians per cluster:  56%|█████▌    | 24/43 [00:03<00:01, 13.89it/s]Calculating medians per cluster:  60%|██████    | 26/43 [00:03<00:01, 14.19it/s]Calculating medians per cluster:  65%|██████▌   | 28/43 [00:03<00:01, 14.36it/s]Calculating medians per cluster:  70%|██████▉   | 30/43 [00:03<00:00, 14.38it/s]Calculating medians per cluster:  74%|███████▍  | 32/43 [00:05<00:02,  4.71it/s]Calculating medians per cluster:  79%|███████▉  | 34/43 [00:05<00:02,  3.43it/s]Calculating medians per cluster:  81%|████████▏ | 35/43 [00:06<00:02,  3.83it/s]Calculating medians per cluster:  86%|████████▌ | 37/43 [00:06<00:01,  5.14it/s]Calculating medians per cluster:  91%|█████████ | 39/43 [00:08<00:02,  1.92it/s]Calculating medians per cluster:  93%|█████████▎| 40/43 [00:11<00:02,  1.15it/s]Calculating medians per cluster:  95%|█████████▌| 41/43 [00:11<00:01,  1.18it/s]Calculating medians per cluster:  98%|█████████▊| 42/43 [00:12<00:00,  1.24it/s]Calculating medians per cluster: 100%|██████████| 43/43 [00:12<00:00,  3.43it/s]
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/nsforest/preprocessing/_add_ann.py:118: ImplicitModificationWarning: Setting element `.varm['medians_ThirdAnnotation']` of view, initializing view as actual.
+  adata.varm['medians_' + cluster_header] = cluster_medians
+Saving medians as adata.varm.medians_ThirdAnnotation
+median: 0.0
+mean: 0.109
+std: 0.353
+Only positive genes selected. 7716 positive genes out of 19261 total genes
+--- 13.911067724227905 seconds ---
+
+====================
+PREPROCESS: BINARY SCORE
+====================
+Calculating binary scores per cluster:   0%|          | 0/43 [00:00<?, ?it/s]Calculating binary scores per cluster:   2%|▏         | 1/43 [00:00<00:31,  1.33it/s]Calculating binary scores per cluster:   5%|▍         | 2/43 [00:01<00:24,  1.70it/s]Calculating binary scores per cluster:   7%|▋         | 3/43 [00:01<00:21,  1.87it/s]Calculating binary scores per cluster:   9%|▉         | 4/43 [00:02<00:19,  1.96it/s]Calculating binary scores per cluster:  12%|█▏        | 5/43 [00:02<00:18,  2.01it/s]Calculating binary scores per cluster:  14%|█▍        | 6/43 [00:03<00:18,  2.05it/s]Calculating binary scores per cluster:  16%|█▋        | 7/43 [00:03<00:17,  2.07it/s]Calculating binary scores per cluster:  19%|█▊        | 8/43 [00:04<00:16,  2.08it/s]Calculating binary scores per cluster:  21%|██        | 9/43 [00:04<00:16,  2.09it/s]Calculating binary scores per cluster:  23%|██▎       | 10/43 [00:05<00:15,  2.10it/s]Calculating binary scores per cluster:  26%|██▌       | 11/43 [00:05<00:15,  2.11it/s]Calculating binary scores per cluster:  28%|██▊       | 12/43 [00:05<00:14,  2.11it/s]Calculating binary scores per cluster:  30%|███       | 13/43 [00:06<00:14,  2.11it/s]Calculating binary scores per cluster:  33%|███▎      | 14/43 [00:06<00:13,  2.11it/s]Calculating binary scores per cluster:  35%|███▍      | 15/43 [00:07<00:13,  2.11it/s]Calculating binary scores per cluster:  37%|███▋      | 16/43 [00:07<00:12,  2.11it/s]Calculating binary scores per cluster:  40%|███▉      | 17/43 [00:08<00:12,  2.12it/s]Calculating binary scores per cluster:  42%|████▏     | 18/43 [00:08<00:11,  2.15it/s]Calculating binary scores per cluster:  44%|████▍     | 19/43 [00:09<00:11,  2.18it/s]Calculating binary scores per cluster:  47%|████▋     | 20/43 [00:09<00:10,  2.19it/s]Calculating binary scores per cluster:  49%|████▉     | 21/43 [00:10<00:10,  2.20it/s]Calculating binary scores per cluster:  51%|█████     | 22/43 [00:10<00:09,  2.21it/s]Calculating binary scores per cluster:  53%|█████▎    | 23/43 [00:11<00:09,  2.21it/s]Calculating binary scores per cluster:  56%|█████▌    | 24/43 [00:11<00:08,  2.21it/s]Calculating binary scores per cluster:  58%|█████▊    | 25/43 [00:11<00:08,  2.22it/s]Calculating binary scores per cluster:  60%|██████    | 26/43 [00:12<00:07,  2.22it/s]Calculating binary scores per cluster:  63%|██████▎   | 27/43 [00:12<00:07,  2.22it/s]Calculating binary scores per cluster:  65%|██████▌   | 28/43 [00:13<00:06,  2.22it/s]Calculating binary scores per cluster:  67%|██████▋   | 29/43 [00:13<00:06,  2.22it/s]Calculating binary scores per cluster:  70%|██████▉   | 30/43 [00:14<00:05,  2.22it/s]Calculating binary scores per cluster:  72%|███████▏  | 31/43 [00:14<00:05,  2.22it/s]Calculating binary scores per cluster:  74%|███████▍  | 32/43 [00:15<00:04,  2.23it/s]Calculating binary scores per cluster:  77%|███████▋  | 33/43 [00:15<00:04,  2.23it/s]Calculating binary scores per cluster:  79%|███████▉  | 34/43 [00:15<00:04,  2.23it/s]Calculating binary scores per cluster:  81%|████████▏ | 35/43 [00:16<00:03,  2.23it/s]Calculating binary scores per cluster:  84%|████████▎ | 36/43 [00:16<00:03,  2.23it/s]Calculating binary scores per cluster:  86%|████████▌ | 37/43 [00:17<00:02,  2.23it/s]Calculating binary scores per cluster:  88%|████████▊ | 38/43 [00:17<00:02,  2.23it/s]Calculating binary scores per cluster:  91%|█████████ | 39/43 [00:18<00:01,  2.23it/s]Calculating binary scores per cluster:  93%|█████████▎| 40/43 [00:18<00:01,  2.22it/s]Calculating binary scores per cluster:  95%|█████████▌| 41/43 [00:19<00:00,  2.22it/s]Calculating binary scores per cluster:  98%|█████████▊| 42/43 [00:19<00:00,  2.22it/s]Calculating binary scores per cluster: 100%|██████████| 43/43 [00:19<00:00,  2.22it/s]Calculating binary scores per cluster: 100%|██████████| 43/43 [00:19<00:00,  2.15it/s]
+Calculating medians per cluster:   0%|          | 0/43 [00:00<?, ?it/s]Calculating medians per cluster:  26%|██▌       | 11/43 [00:00<00:00, 102.21it/s]Calculating medians per cluster:  63%|██████▎   | 27/43 [00:00<00:00, 131.90it/s]Calculating medians per cluster:  95%|█████████▌| 41/43 [00:00<00:00, 96.01it/s] Calculating medians per cluster: 100%|██████████| 43/43 [00:00<00:00, 99.82it/s]
+Calculating medians per cluster:   0%|          | 0/43 [00:00<?, ?it/s]Calculating medians per cluster:  21%|██        | 9/43 [00:00<00:00, 89.72it/s]Calculating medians per cluster:  58%|█████▊    | 25/43 [00:00<00:00, 129.20it/s]Calculating medians per cluster:  88%|████████▊ | 38/43 [00:00<00:00, 114.92it/s]Calculating medians per cluster: 100%|██████████| 43/43 [00:00<00:00, 91.03it/s] 
+Calculating medians per cluster:   0%|          | 0/43 [00:00<?, ?it/s]Calculating medians per cluster:  23%|██▎       | 10/43 [00:00<00:00, 95.50it/s]Calculating medians per cluster:  58%|█████▊    | 25/43 [00:00<00:00, 125.11it/s]Calculating medians per cluster:  88%|████████▊ | 38/43 [00:00<00:00, 112.75it/s]Calculating medians per cluster: 100%|██████████| 43/43 [00:00<00:00, 90.98it/s] 
+Calculating medians per cluster:   0%|          | 0/43 [00:00<?, ?it/s]Calculating medians per cluster:  19%|█▊        | 8/43 [00:00<00:00, 77.79it/s]Calculating medians per cluster:  47%|████▋     | 20/43 [00:00<00:00, 100.71it/s]Calculating medians per cluster:  74%|███████▍  | 32/43 [00:00<00:00, 106.41it/s]Calculating medians per cluster: 100%|██████████| 43/43 [00:00<00:00, 70.04it/s] Calculating medians per cluster: 100%|██████████| 43/43 [00:00<00:00, 77.87it/s]
+Calculating medians per cluster:   0%|          | 0/43 [00:00<?, ?it/s]Calculating medians per cluster:  21%|██        | 9/43 [00:00<00:00, 84.76it/s]Calculating medians per cluster:  51%|█████     | 22/43 [00:00<00:00, 107.61it/s]Calculating medians per cluster:  79%|███████▉  | 34/43 [00:00<00:00, 112.67it/s]Calculating medians per cluster: 100%|██████████| 43/43 [00:00<00:00, 81.33it/s] 
+Calculating medians per cluster:   0%|          | 0/43 [00:00<?, ?it/s]Calculating medians per cluster:  21%|██        | 9/43 [00:00<00:00, 89.31it/s]Calculating medians per cluster:  53%|█████▎    | 23/43 [00:00<00:00, 117.64it/s]Calculating medians per cluster:  84%|████████▎ | 36/43 [00:00<00:00, 119.79it/s]Calculating medians per cluster: 100%|██████████| 43/43 [00:00<00:00, 89.19it/s] 
+Calculating medians per cluster:   0%|          | 0/43 [00:00<?, ?it/s]Calculating medians per cluster:  23%|██▎       | 10/43 [00:00<00:00, 96.79it/s]Calculating medians per cluster:  58%|█████▊    | 25/43 [00:00<00:00, 124.98it/s]Calculating medians per cluster:  88%|████████▊ | 38/43 [00:00<00:00, 117.27it/s]Calculating medians per cluster: 100%|██████████| 43/43 [00:00<00:00, 96.66it/s] 
+Calculating medians per cluster:   0%|          | 0/43 [00:00<?, ?it/s]Calculating medians per cluster:  21%|██        | 9/43 [00:00<00:00, 89.50it/s]Calculating medians per cluster:  56%|█████▌    | 24/43 [00:00<00:00, 123.38it/s]Calculating medians per cluster:  86%|████████▌ | 37/43 [00:00<00:00, 123.98it/s]Calculating medians per cluster: 100%|██████████| 43/43 [00:00<00:00, 89.57it/s] 
+Calculating medians per cluster:   0%|          | 0/43 [00:00<?, ?it/s]Calculating medians per cluster:  19%|█▊        | 8/43 [00:00<00:00, 78.87it/s]Calculating medians per cluster:  53%|█████▎    | 23/43 [00:00<00:00, 119.35it/s]Calculating medians per cluster:  81%|████████▏ | 35/43 [00:00<00:00, 119.48it/s]Calculating medians per cluster: 100%|██████████| 43/43 [00:00<00:00, 86.70it/s] 
+Calculating medians per cluster:   0%|          | 0/43 [00:00<?, ?it/s]Calculating medians per cluster:  21%|██        | 9/43 [00:00<00:00, 84.24it/s]Calculating medians per cluster:  58%|█████▊    | 25/43 [00:00<00:00, 126.24it/s]Calculating medians per cluster:  88%|████████▊ | 38/43 [00:00<00:00, 124.80it/s]Calculating medians per cluster: 100%|██████████| 43/43 [00:00<00:00, 103.53it/s]
+Saving binary scores as adata.varm.binary_scores_ThirdAnnotation
+median: 0.0
+mean: 0.184
+std: 0.289
+--- 20.07784414291382 seconds ---
+
+====================
+PREPROCESS: SAVING PREPROCESSED DATA
+====================
+Saving new anndata object as...
+../data_preprocessed/data_spc_ds_subset_protein_coding_preprocessed.h5ad
+
+====================
+DIVIDE CODING GENES INTO FOLDS
+====================
+There are 7716 positive coding genes and 703 positive lncRNA genes for ThirdAnnotation. When downsampling to 703, we can create a maximum of 10 folds.
+We will divide the coding genes into 10 folds.
+
+====================
+RUN NSFOREST ON EACH FOLD
+====================
+Running NSForest on fold_1...
+Completed NS-Forest run on fold_1. Extracting results...
+
+Running NSForest on fold_2...
+Completed NS-Forest run on fold_2. Extracting results...
+
+Running NSForest on fold_3...
+Completed NS-Forest run on fold_3. Extracting results...
+
+Running NSForest on fold_4...
+Completed NS-Forest run on fold_4. Extracting results...
+
+Running NSForest on fold_5...
+Completed NS-Forest run on fold_5. Extracting results...
+
+Running NSForest on fold_6...
+Completed NS-Forest run on fold_6. Extracting results...
+
+Running NSForest on fold_7...
+Completed NS-Forest run on fold_7. Extracting results...
+
+Running NSForest on fold_8...
+Completed NS-Forest run on fold_8. Extracting results...
+
+Running NSForest on fold_9...
+Completed NS-Forest run on fold_9. Extracting results...
+
+Running NSForest on fold_10...
+Completed NS-Forest run on fold_10. Extracting results...
+
+
+====================
+CONCATENATING/AGGREGATING RESULTS
+====================
+First 10 rows of aggregated Results:
+  clusterName  avg_precision  avg_recall  avg_f_score  avg_onTarget
+0     Astro_1       0.739552    0.496503     0.661903      0.421340
+1     Astro_2       0.580919    0.385714     0.518363      0.444799
+2     Astro_3       0.334899    0.275803     0.305016      0.376251
+3        EX_1       0.575973    0.205556     0.365500      0.330646
+4       EX_10       0.126750    0.206154     0.110955      0.156966
+5       EX_11       0.595979    0.258442     0.466929      0.149421
+6       EX_12       0.786351    0.296429     0.582142      0.469789
+7       EX_13       0.814909    0.291411     0.582832      0.503324
+8        EX_2       0.833614    0.321795     0.622592      0.321248
+9        EX_3       0.588116    0.253947     0.445682      0.190911
+
+====================
+SAVING FULL AND AGGREGATED RESULTS
+====================
+Saving full results as...
+../output_biowulf/spc/dscoding_results_full_spc.csv
+Saving full results as...
+../output_biowulf/spc/dscoding_results_agg_spc.csv

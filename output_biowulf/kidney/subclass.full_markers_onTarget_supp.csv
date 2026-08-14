@@ -1,0 +1,159 @@
+clusterName,markerGene,onTarget_per_gene,onTarget
+Adaptive / Maladaptive / Repairing Fibroblast,ENSG00000077942,0.35995832,0.3339912
+Adaptive / Maladaptive / Repairing Fibroblast,ENSG00000185070,0.30802408,0.3339912
+Adaptive / Maladaptive / Repairing Proximal Tubule Epithelial Cell,ENSG00000284377,0.5240886,0.41570902
+Adaptive / Maladaptive / Repairing Proximal Tubule Epithelial Cell,ENSG00000170579,0.30732942,0.41570902
+Adaptive / Maladaptive / Repairing Thick Ascending Limb Cell,ENSG00000115221,0.30041674,0.22417736
+Adaptive / Maladaptive / Repairing Thick Ascending Limb Cell,ENSG00000036828,0.14793798,0.22417736
+Afferent / Efferent Arteriole Endothelial Cell,ENSG00000090006,1.0,1.0
+Afferent / Efferent Arteriole Endothelial Cell,ENSG00000184916,1.0,1.0
+Ascending Thin Limb Cell,ENSG00000064787,1.0,0.71319056
+Ascending Thin Limb Cell,ENSG00000140600,0.42638114,0.71319056
+Ascending Vasa Recta Endothelial Cell,ENSG00000148488,1.0,0.80758214
+Ascending Vasa Recta Endothelial Cell,ENSG00000150625,0.61516434,0.80758214
+B Cell,ENSG00000153064,1.0,1.0
+Classical Dendritic Cell,ENSG00000131203,1.0,1.0
+Connecting Tubule Cell,ENSG00000251504,1.0,0.55923104
+Connecting Tubule Cell,ENSG00000136531,0.11846212,0.55923104
+Connecting Tubule Intercalated Cell Type A,ENSG00000145147,0.22043793,0.18923183
+Connecting Tubule Intercalated Cell Type A,ENSG00000109684,0.15802573,0.18923183
+Connecting Tubule Principal Cell,ENSG00000159167,1.0,0.71792763
+Connecting Tubule Principal Cell,ENSG00000104327,0.43585524,0.71792763
+Cortical Collecting Duct Intercalated Cell Type A,ENSG00000144227,1.0,0.6945677
+Cortical Collecting Duct Intercalated Cell Type A,ENSG00000185274,0.38913536,0.6945677
+Cortical Collecting Duct Principal Cell,ENSG00000182752,0.5023287,0.4205201
+Cortical Collecting Duct Principal Cell,ENSG00000259905,0.3387115,0.4205201
+Cortical Thick Ascending Limb Cell,ENSG00000113946,1.0,0.64062965
+Cortical Thick Ascending Limb Cell,ENSG00000169344,0.28125936,0.64062965
+Cycling Connecting Tubule Cell,ENSG00000102870,1.0,1.0
+Cycling Connecting Tubule Cell,ENSG00000197372,1.0,1.0
+Cycling Connecting Tubule Cell,ENSG00000125107,0.47440192,1.0
+Cycling Distal Convoluted Tubule Cell,ENSG00000066279,1.0,1.0
+Cycling Distal Convoluted Tubule Cell,ENSG00000058404,1.0,1.0
+Cycling Endothelial Cell,ENSG00000165304,0.82093126,0.6239318
+Cycling Endothelial Cell,ENSG00000156802,0.4269324,0.6239318
+Cycling Mononuclear Phagocyte,ENSG00000170017,0.10774739,0.14607698
+Cycling Mononuclear Phagocyte,ENSG00000185811,0.18440658,0.14607698
+Cycling Myofibroblast,ENSG00000143476,1.0,1.0
+Cycling Myofibroblast,ENSG00000051341,1.0,1.0
+Cycling Natural Killer Cell / Natural Killer T Cell,ENSG00000164104,1.0,1.0
+Cycling Natural Killer Cell / Natural Killer T Cell,ENSG00000176890,1.0,1.0
+Cycling Proximal Tubule Epithelial Cell,ENSG00000100629,0.5523424,0.21648102
+Cycling Proximal Tubule Epithelial Cell,ENSG00000139734,0.21648102,0.21648102
+Cycling Proximal Tubule Epithelial Cell,ENSG00000109685,0.15463711,0.21648102
+Degenerative Ascending Thin Limb Cell,ENSG00000109610,0.15713817,0.30255237
+Degenerative Ascending Thin Limb Cell,ENSG00000140600,0.3071219,0.30255237
+Degenerative Ascending Thin Limb Cell,ENSG00000197249,0.30255237,0.30255237
+Degenerative Connecting Tubule Cell,ENSG00000162896,0.36764556,0.10641947
+Degenerative Connecting Tubule Cell,ENSG00000136531,0.10641947,0.10641947
+Degenerative Connecting Tubule Cell,ENSG00000101443,0.08526856,0.10641947
+Degenerative Cortical Intercalated Cell Type A,ENSG00000151418,0.465985,0.40125027
+Degenerative Cortical Intercalated Cell Type A,ENSG00000131981,0.40125027,0.40125027
+Degenerative Cortical Intercalated Cell Type A,ENSG00000173253,0.32973522,0.40125027
+Degenerative Cortical Thick Ascending Limb Cell,ENSG00000197249,0.42540926,0.30462462
+Degenerative Cortical Thick Ascending Limb Cell,ENSG00000124107,0.18383999,0.30462462
+Degenerative Descending Thin Limb Cell Type 3,ENSG00000172461,1.0,0.88804644
+Degenerative Descending Thin Limb Cell Type 3,ENSG00000115641,0.7760929,0.88804644
+Degenerative Distal Convoluted Tubule Cell,ENSG00000263146,1.0,0.62808824
+Degenerative Distal Convoluted Tubule Cell,ENSG00000104332,0.62808824,0.62808824
+Degenerative Distal Convoluted Tubule Cell,ENSG00000137731,0.33788925,0.62808824
+Degenerative Endothelial Cell,ENSG00000142089,0.23827009,0.14131092
+Degenerative Endothelial Cell,ENSG00000184831,0.14131092,0.14131092
+Degenerative Endothelial Cell,ENSG00000150991,0.08726401,0.14131092
+Degenerative Fibroblast,ENSG00000102265,1.0,1.0
+Degenerative Inner Medullary Collecting Duct Cell,ENSG00000095303,1.0,0.62666076
+Degenerative Inner Medullary Collecting Duct Cell,ENSG00000171303,0.62666076,0.62666076
+Degenerative Inner Medullary Collecting Duct Cell,ENSG00000150201,0.26387948,0.62666076
+Degenerative Medullary Fibroblast,ENSG00000049323,0.16638428,0.16638428
+Degenerative Medullary Fibroblast,ENSG00000085662,0.16966933,0.16638428
+Degenerative Medullary Fibroblast,ENSG00000167580,0.09826545,0.16638428
+Degenerative Medullary Thick Ascending Limb Cell,ENSG00000169344,0.25886828,0.13691063
+Degenerative Medullary Thick Ascending Limb Cell,ENSG00000074803,0.16999237,0.13691063
+Degenerative Medullary Thick Ascending Limb Cell,ENSG00000228716,0.103828885,0.13691063
+Degenerative Medullary Thick Ascending Limb Cell,ENSG00000167658,0.030578604,0.13691063
+Degenerative Outer Medullary Collecting Duct Principal Cell,ENSG00000160951,1.0,0.23941848
+Degenerative Outer Medullary Collecting Duct Principal Cell,ENSG00000165272,0.23941848,0.23941848
+Degenerative Outer Medullary Collecting Duct Principal Cell,ENSG00000166828,0.2069012,0.23941848
+Degenerative Peritubular Capilary Endothelial Cell,ENSG00000102755,0.16027266,0.11038502
+Degenerative Peritubular Capilary Endothelial Cell,ENSG00000184005,0.11038502,0.11038502
+Degenerative Peritubular Capilary Endothelial Cell,ENSG00000211445,0.089778066,0.11038502
+Degenerative Podocyte,ENSG00000166033,0.67862034,0.67862034
+Degenerative Proximal Tubule Epithelial Cell,ENSG00000197375,0.5115624,0.42871144
+Degenerative Proximal Tubule Epithelial Cell,ENSG00000158296,0.34586048,0.42871144
+Degenerative Vascular Smooth Muscle Cell,ENSG00000198467,1.0,1.0
+Degenerative Vascular Smooth Muscle Cell,ENSG00000198523,1.0,1.0
+Descending Thin Limb Cell Type 1,ENSG00000150471,0.26345706,0.25384519
+Descending Thin Limb Cell Type 1,ENSG00000007062,0.2442333,0.25384519
+Descending Thin Limb Cell Type 2,ENSG00000156687,1.0,0.7603636
+Descending Thin Limb Cell Type 2,ENSG00000229981,0.5207271,0.7603636
+Descending Thin Limb Cell Type 3,ENSG00000249776,1.0,0.780355
+Descending Thin Limb Cell Type 3,ENSG00000111799,0.56070995,0.780355
+Descending Vasa Recta Endothelial Cell,ENSG00000099260,0.5453392,0.52427375
+Descending Vasa Recta Endothelial Cell,ENSG00000049192,0.50320834,0.52427375
+Distal Convoluted Tubule Cell Type 1,ENSG00000242029,0.5153904,0.40629488
+Distal Convoluted Tubule Cell Type 1,ENSG00000119121,0.29719937,0.40629488
+Distal Convoluted Tubule Cell Type 2,ENSG00000082397,0.304365,0.26250505
+Distal Convoluted Tubule Cell Type 2,ENSG00000070915,0.26126876,0.26250505
+Distal Convoluted Tubule Cell Type 2,ENSG00000179399,0.26374137,0.26250505
+Distal Convoluted Tubule Cell Type 2,ENSG00000182168,0.07788815,0.26250505
+Fibroblast,ENSG00000112936,0.36249846,0.29411083
+Fibroblast,ENSG00000172260,0.22572318,0.29411083
+Glomerular Capillary Endothelial Cell,ENSG00000167941,1.0,1.0
+Glomerular Capillary Endothelial Cell,ENSG00000013016,1.0,1.0
+Inner Medullary Collecting Duct Cell,ENSG00000249853,0.60740846,0.56101686
+Inner Medullary Collecting Duct Cell,ENSG00000267134,0.56101686,0.56101686
+Inner Medullary Collecting Duct Cell,ENSG00000132874,0.43205822,0.56101686
+Intercalated Cell Type B,ENSG00000113073,0.5046417,0.5046417
+Lymphatic Endothelial Cell,ENSG00000138722,1.0,1.0
+M2 Macrophage,ENSG00000260314,1.0,1.0
+M2 Macrophage,ENSG00000177575,1.0,1.0
+Macula Densa Cell,ENSG00000139220,1.0,0.9043942
+Macula Densa Cell,ENSG00000089250,0.8087884,0.9043942
+Mast Cell,ENSG00000185052,1.0,1.0
+Mast Cell,ENSG00000163751,1.0,1.0
+Medullary Fibroblast,ENSG00000067715,1.0,1.0
+Medullary Fibroblast,ENSG00000079931,1.0,1.0
+Medullary Thick Ascending Limb Cell,ENSG00000171724,1.0,0.7423048
+Medullary Thick Ascending Limb Cell,ENSG00000242029,0.48460957,0.7423048
+Mesangial Cell,ENSG00000154864,1.0,0.8532845
+Mesangial Cell,ENSG00000169855,0.7065689,0.8532845
+Monocyte-derived Cell,ENSG00000223865,0.44106644,0.44106644
+Myofibroblast,ENSG00000108821,0.41652283,0.38263804
+Myofibroblast,ENSG00000198947,0.34875327,0.38263804
+Natural Killer Cell / Natural Killer T Cell,ENSG00000105374,1.0,1.0
+Natural Killer Cell / Natural Killer T Cell,ENSG00000275302,1.0,1.0
+Neutrophil,ENSG00000143546,1.0,1.0
+Neutrophil,ENSG00000163220,1.0,1.0
+Non-classical Monocyte,ENSG00000204482,1.0,1.0
+Outer Medullary Collecting Duct Intercalated Cell Type A,ENSG00000106302,1.0,1.0
+Outer Medullary Collecting Duct Intercalated Cell Type A,ENSG00000035720,1.0,1.0
+Outer Medullary Collecting Duct Principal Cell,ENSG00000254789,1.0,0.46680453
+Outer Medullary Collecting Duct Principal Cell,ENSG00000160111,0.46680453,0.46680453
+Outer Medullary Collecting Duct Principal Cell,ENSG00000259905,0.3612135,0.46680453
+Papillary Tip Epithelial Cell,ENSG00000176153,1.0,1.0
+Papillary Tip Epithelial Cell,ENSG00000073282,1.0,1.0
+Parietal Epithelial Cell,ENSG00000000971,0.75890857,0.61909074
+Parietal Epithelial Cell,ENSG00000229981,0.47927293,0.61909074
+Peritubular Capilary Endothelial Cell ,ENSG00000130300,0.32866827,0.30413347
+Peritubular Capilary Endothelial Cell ,ENSG00000174640,0.2795987,0.30413347
+Plasma Cell,ENSG00000170476,1.0,1.0
+Plasmacytoid Dendritic Cell,ENSG00000267337,1.0,1.0
+Podocyte,ENSG00000139304,1.0,0.81025803
+Podocyte,ENSG00000151490,0.6205161,0.81025803
+Proximal Tubule Epithelial Cell Segment 1 / Segment 2,ENSG00000250799,1.0,0.7938323
+Proximal Tubule Epithelial Cell Segment 1 / Segment 2,ENSG00000171759,0.5876646,0.7938323
+Proximal Tubule Epithelial Cell Segment 3,ENSG00000249252,0.5823619,0.46837696
+Proximal Tubule Epithelial Cell Segment 3,ENSG00000185046,0.46837696,0.46837696
+Proximal Tubule Epithelial Cell Segment 3,ENSG00000107611,0.32757202,0.46837696
+Renin-positive Juxtaglomerular Granular Cell,ENSG00000143839,1.0,0.65309554
+Renin-positive Juxtaglomerular Granular Cell,ENSG00000140538,0.30619112,0.65309554
+Schwann Cell / Neural,ENSG00000179915,1.0,1.0
+T Cell,ENSG00000168685,1.0,1.0
+Transitional Principal-Intercalated Cell,ENSG00000147606,0.15847841,0.14146051
+Transitional Principal-Intercalated Cell,ENSG00000166828,0.15379336,0.14146051
+Transitional Principal-Intercalated Cell,ENSG00000157404,0.08011073,0.14146051
+Transitional Principal-Intercalated Cell,ENSG00000150201,0.12912767,0.14146051
+Vascular Smooth Muscle Cell,ENSG00000169282,1.0,1.0
+Vascular Smooth Muscle Cell,ENSG00000182732,1.0,1.0
+Vascular Smooth Muscle Cell / Pericyte,ENSG00000138031,0.33845484,0.31188875
+Vascular Smooth Muscle Cell / Pericyte,ENSG00000074181,0.2853227,0.31188875

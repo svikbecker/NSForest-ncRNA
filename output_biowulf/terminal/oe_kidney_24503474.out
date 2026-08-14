@@ -1,0 +1,1312 @@
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/scanpy/tools/_dendrogram.py:192: ImplicitModificationWarning: Trying to modify attribute `._uns` of view, initializing view as actual.
+  adata.uns[key_added] = dat
+
+====================
+CONFIGURING ENVIRONMENT
+====================
+
+====================
+IMPORTING/LOADING DATA
+====================
+
+====================
+NORMALIZE/SCALE DATA
+====================
+
+====================
+CREATE LNCRNA SUBSET
+====================
+
+====================
+PREPROCESS: DENDROGRAMS
+====================
+Saving dendrogram as...
+../output/kidney/dendrogram_subclass.full_full.svg
+Saving dendrogram as...
+../output/kidney/dendrogram_subclass.full_subset.svg
+
+====================
+PREPROCESS: CLUSTER MEDIANS
+====================
+Calculating medians per cluster:   0%|          | 0/75 [00:00<?, ?it/s]Calculating medians per cluster:   1%|▏         | 1/75 [00:01<01:15,  1.02s/it]Calculating medians per cluster:   3%|▎         | 2/75 [00:09<06:48,  5.60s/it]Calculating medians per cluster:   4%|▍         | 3/75 [00:14<06:12,  5.17s/it]Calculating medians per cluster:   5%|▌         | 4/75 [00:16<04:25,  3.74s/it]Calculating medians per cluster:   7%|▋         | 5/75 [00:19<04:10,  3.58s/it]Calculating medians per cluster:   8%|▊         | 6/75 [00:23<04:29,  3.90s/it]Calculating medians per cluster:   9%|▉         | 7/75 [00:24<03:23,  3.00s/it]Calculating medians per cluster:  11%|█         | 8/75 [00:25<02:20,  2.10s/it]Calculating medians per cluster:  12%|█▏        | 9/75 [00:30<03:18,  3.01s/it]Calculating medians per cluster:  13%|█▎        | 10/75 [00:30<02:20,  2.16s/it]Calculating medians per cluster:  15%|█▍        | 11/75 [00:34<02:52,  2.70s/it]Calculating medians per cluster:  16%|█▌        | 12/75 [00:40<03:53,  3.70s/it]Calculating medians per cluster:  17%|█▋        | 13/75 [00:44<04:05,  3.96s/it]Calculating medians per cluster:  19%|█▊        | 14/75 [00:56<06:21,  6.26s/it]Calculating medians per cluster:  21%|██▏       | 16/75 [00:56<03:20,  3.40s/it]Calculating medians per cluster:  23%|██▎       | 17/75 [00:56<02:30,  2.59s/it]Calculating medians per cluster:  24%|██▍       | 18/75 [00:56<01:51,  1.95s/it]Calculating medians per cluster:  27%|██▋       | 20/75 [00:57<01:03,  1.15s/it]Calculating medians per cluster:  28%|██▊       | 21/75 [00:57<00:52,  1.03it/s]Calculating medians per cluster:  29%|██▉       | 22/75 [00:59<01:10,  1.32s/it]Calculating medians per cluster:  31%|███       | 23/75 [01:00<01:02,  1.21s/it]Calculating medians per cluster:  32%|███▏      | 24/75 [01:03<01:17,  1.51s/it]Calculating medians per cluster:  33%|███▎      | 25/75 [01:03<01:06,  1.32s/it]Calculating medians per cluster:  35%|███▍      | 26/75 [01:04<01:01,  1.25s/it]Calculating medians per cluster:  36%|███▌      | 27/75 [01:07<01:23,  1.74s/it]Calculating medians per cluster:  37%|███▋      | 28/75 [01:08<01:00,  1.29s/it]Calculating medians per cluster:  39%|███▊      | 29/75 [01:08<00:44,  1.03it/s]Calculating medians per cluster:  40%|████      | 30/75 [01:11<01:15,  1.68s/it]Calculating medians per cluster:  41%|████▏     | 31/75 [01:13<01:17,  1.75s/it]Calculating medians per cluster:  43%|████▎     | 32/75 [01:15<01:19,  1.84s/it]Calculating medians per cluster:  44%|████▍     | 33/75 [01:18<01:33,  2.23s/it]Calculating medians per cluster:  45%|████▌     | 34/75 [01:19<01:07,  1.65s/it]Calculating medians per cluster:  47%|████▋     | 35/75 [01:19<00:51,  1.30s/it]Calculating medians per cluster:  48%|████▊     | 36/75 [01:31<02:53,  4.44s/it]Calculating medians per cluster:  49%|████▉     | 37/75 [01:33<02:21,  3.73s/it]Calculating medians per cluster:  51%|█████     | 38/75 [01:36<02:09,  3.50s/it]Calculating medians per cluster:  52%|█████▏    | 39/75 [01:38<01:49,  3.03s/it]Calculating medians per cluster:  53%|█████▎    | 40/75 [01:41<01:43,  2.95s/it]Calculating medians per cluster:  55%|█████▍    | 41/75 [01:44<01:44,  3.08s/it]Calculating medians per cluster:  56%|█████▌    | 42/75 [01:50<02:13,  4.05s/it]Calculating medians per cluster:  57%|█████▋    | 43/75 [01:52<01:47,  3.35s/it]Calculating medians per cluster:  59%|█████▊    | 44/75 [01:55<01:43,  3.34s/it]Calculating medians per cluster:  60%|██████    | 45/75 [01:59<01:40,  3.34s/it]Calculating medians per cluster:  61%|██████▏   | 46/75 [02:06<02:14,  4.63s/it]Calculating medians per cluster:  63%|██████▎   | 47/75 [02:09<01:51,  3.98s/it]Calculating medians per cluster:  64%|██████▍   | 48/75 [02:09<01:18,  2.91s/it]Calculating medians per cluster:  65%|██████▌   | 49/75 [02:12<01:14,  2.86s/it]Calculating medians per cluster:  67%|██████▋   | 50/75 [02:14<01:08,  2.76s/it]Calculating medians per cluster:  68%|██████▊   | 51/75 [02:15<00:48,  2.01s/it]Calculating medians per cluster:  69%|██████▉   | 52/75 [02:22<01:24,  3.68s/it]Calculating medians per cluster:  71%|███████   | 53/75 [02:29<01:44,  4.73s/it]Calculating medians per cluster:  72%|███████▏  | 54/75 [02:30<01:13,  3.48s/it]Calculating medians per cluster:  73%|███████▎  | 55/75 [02:32<01:02,  3.12s/it]Calculating medians per cluster:  75%|███████▍  | 56/75 [02:34<00:52,  2.77s/it]Calculating medians per cluster:  76%|███████▌  | 57/75 [02:37<00:50,  2.80s/it]Calculating medians per cluster:  77%|███████▋  | 58/75 [02:37<00:34,  2.04s/it]Calculating medians per cluster:  79%|███████▊  | 59/75 [02:38<00:26,  1.66s/it]Calculating medians per cluster:  80%|████████  | 60/75 [02:40<00:27,  1.81s/it]Calculating medians per cluster:  81%|████████▏ | 61/75 [02:42<00:26,  1.91s/it]Calculating medians per cluster:  83%|████████▎ | 62/75 [02:44<00:22,  1.74s/it]Calculating medians per cluster:  84%|████████▍ | 63/75 [02:46<00:21,  1.79s/it]Calculating medians per cluster:  85%|████████▌ | 64/75 [02:53<00:36,  3.31s/it]Calculating medians per cluster:  87%|████████▋ | 65/75 [02:53<00:23,  2.40s/it]Calculating medians per cluster:  88%|████████▊ | 66/75 [02:53<00:15,  1.71s/it]Calculating medians per cluster:  89%|████████▉ | 67/75 [02:55<00:15,  1.91s/it]Calculating medians per cluster:  91%|█████████ | 68/75 [03:08<00:36,  5.28s/it]Calculating medians per cluster:  92%|█████████▏| 69/75 [03:12<00:28,  4.80s/it]Calculating medians per cluster:  93%|█████████▎| 70/75 [03:12<00:17,  3.41s/it]Calculating medians per cluster:  95%|█████████▍| 71/75 [03:12<00:09,  2.42s/it]Calculating medians per cluster:  96%|█████████▌| 72/75 [03:16<00:07,  2.65s/it]Calculating medians per cluster:  97%|█████████▋| 73/75 [03:16<00:03,  2.00s/it]Calculating medians per cluster:  99%|█████████▊| 74/75 [03:17<00:01,  1.81s/it]Calculating medians per cluster: 100%|██████████| 75/75 [03:20<00:00,  2.09s/it]Calculating medians per cluster: 100%|██████████| 75/75 [03:20<00:00,  2.68s/it]
+Saving medians as adata.varm.medians_subclass.full
+median: 0.0
+mean: 0.021
+std: 0.183
+Only positive genes selected. 5249 positive genes out of 33140 total genes
+--- 215.87539720535278 seconds ---
+Calculating medians per cluster:   0%|          | 0/75 [00:00<?, ?it/s]Calculating medians per cluster:   1%|▏         | 1/75 [00:00<00:25,  2.91it/s]Calculating medians per cluster:   3%|▎         | 2/75 [00:03<02:15,  1.86s/it]Calculating medians per cluster:   4%|▍         | 3/75 [00:04<02:09,  1.80s/it]Calculating medians per cluster:   5%|▌         | 4/75 [00:05<01:34,  1.34s/it]Calculating medians per cluster:   7%|▋         | 5/75 [00:06<01:28,  1.26s/it]Calculating medians per cluster:   8%|▊         | 6/75 [00:08<01:36,  1.40s/it]Calculating medians per cluster:   9%|▉         | 7/75 [00:08<01:12,  1.06s/it]Calculating medians per cluster:  12%|█▏        | 9/75 [00:10<01:03,  1.04it/s]Calculating medians per cluster:  13%|█▎        | 10/75 [00:10<00:48,  1.34it/s]Calculating medians per cluster:  15%|█▍        | 11/75 [00:11<00:56,  1.13it/s]Calculating medians per cluster:  16%|█▌        | 12/75 [00:13<01:12,  1.15s/it]Calculating medians per cluster:  17%|█▋        | 13/75 [00:15<01:16,  1.23s/it]Calculating medians per cluster:  19%|█▊        | 14/75 [00:18<01:53,  1.86s/it]Calculating medians per cluster:  23%|██▎       | 17/75 [00:18<00:50,  1.16it/s]Calculating medians per cluster:  25%|██▌       | 19/75 [00:18<00:32,  1.70it/s]Calculating medians per cluster:  28%|██▊       | 21/75 [00:19<00:23,  2.34it/s]Calculating medians per cluster:  29%|██▉       | 22/75 [00:19<00:25,  2.06it/s]Calculating medians per cluster:  31%|███       | 23/75 [00:20<00:23,  2.23it/s]Calculating medians per cluster:  32%|███▏      | 24/75 [00:20<00:26,  1.95it/s]Calculating medians per cluster:  33%|███▎      | 25/75 [00:21<00:22,  2.22it/s]Calculating medians per cluster:  35%|███▍      | 26/75 [00:21<00:20,  2.38it/s]Calculating medians per cluster:  36%|███▌      | 27/75 [00:22<00:24,  1.93it/s]Calculating medians per cluster:  39%|███▊      | 29/75 [00:22<00:15,  3.04it/s]Calculating medians per cluster:  40%|████      | 30/75 [00:23<00:23,  1.91it/s]Calculating medians per cluster:  41%|████▏     | 31/75 [00:24<00:24,  1.79it/s]Calculating medians per cluster:  43%|████▎     | 32/75 [00:24<00:25,  1.71it/s]Calculating medians per cluster:  44%|████▍     | 33/75 [00:25<00:27,  1.54it/s]Calculating medians per cluster:  45%|████▌     | 34/75 [00:25<00:20,  2.01it/s]Calculating medians per cluster:  47%|████▋     | 35/75 [00:25<00:16,  2.49it/s]Calculating medians per cluster:  48%|████▊     | 36/75 [00:29<00:49,  1.27s/it]Calculating medians per cluster:  49%|████▉     | 37/75 [00:30<00:42,  1.11s/it]Calculating medians per cluster:  51%|█████     | 38/75 [00:31<00:39,  1.08s/it]Calculating medians per cluster:  52%|█████▏    | 39/75 [00:31<00:35,  1.02it/s]Calculating medians per cluster:  53%|█████▎    | 40/75 [00:32<00:34,  1.03it/s]Calculating medians per cluster:  55%|█████▍    | 41/75 [00:33<00:34,  1.03s/it]Calculating medians per cluster:  56%|█████▌    | 42/75 [00:35<00:42,  1.28s/it]Calculating medians per cluster:  57%|█████▋    | 43/75 [00:36<00:31,  1.01it/s]Calculating medians per cluster:  59%|█████▊    | 44/75 [00:37<00:31,  1.03s/it]Calculating medians per cluster:  60%|██████    | 45/75 [00:38<00:31,  1.05s/it]Calculating medians per cluster:  61%|██████▏   | 46/75 [00:40<00:39,  1.38s/it]Calculating medians per cluster:  63%|██████▎   | 47/75 [00:41<00:33,  1.21s/it]Calculating medians per cluster:  64%|██████▍   | 48/75 [00:41<00:23,  1.13it/s]Calculating medians per cluster:  65%|██████▌   | 49/75 [00:42<00:23,  1.13it/s]Calculating medians per cluster:  67%|██████▋   | 50/75 [00:43<00:21,  1.14it/s]Calculating medians per cluster:  68%|██████▊   | 51/75 [00:43<00:15,  1.54it/s]Calculating medians per cluster:  69%|██████▉   | 52/75 [00:45<00:26,  1.15s/it]Calculating medians per cluster:  71%|███████   | 53/75 [00:47<00:31,  1.45s/it]Calculating medians per cluster:  72%|███████▏  | 54/75 [00:47<00:22,  1.08s/it]Calculating medians per cluster:  73%|███████▎  | 55/75 [00:48<00:19,  1.03it/s]Calculating medians per cluster:  75%|███████▍  | 56/75 [00:49<00:16,  1.14it/s]Calculating medians per cluster:  76%|███████▌  | 57/75 [00:49<00:13,  1.32it/s]Calculating medians per cluster:  77%|███████▋  | 58/75 [00:49<00:09,  1.78it/s]Calculating medians per cluster:  79%|███████▊  | 59/75 [00:50<00:07,  2.22it/s]Calculating medians per cluster:  80%|████████  | 60/75 [00:50<00:07,  1.90it/s]Calculating medians per cluster:  81%|████████▏ | 61/75 [00:51<00:08,  1.74it/s]Calculating medians per cluster:  83%|████████▎ | 62/75 [00:51<00:06,  1.96it/s]Calculating medians per cluster:  84%|████████▍ | 63/75 [00:52<00:06,  1.79it/s]Calculating medians per cluster:  85%|████████▌ | 64/75 [00:54<00:10,  1.00it/s]Calculating medians per cluster:  87%|████████▋ | 65/75 [00:54<00:07,  1.37it/s]Calculating medians per cluster:  89%|████████▉ | 67/75 [00:55<00:04,  1.74it/s]Calculating medians per cluster:  91%|█████████ | 68/75 [00:59<00:09,  1.36s/it]Calculating medians per cluster:  92%|█████████▏| 69/75 [01:00<00:08,  1.34s/it]Calculating medians per cluster:  95%|█████████▍| 71/75 [01:00<00:03,  1.26it/s]Calculating medians per cluster:  96%|█████████▌| 72/75 [01:01<00:02,  1.17it/s]Calculating medians per cluster:  97%|█████████▋| 73/75 [01:01<00:01,  1.46it/s]Calculating medians per cluster:  99%|█████████▊| 74/75 [01:02<00:00,  1.61it/s]Calculating medians per cluster: 100%|██████████| 75/75 [01:03<00:00,  1.40it/s]Calculating medians per cluster: 100%|██████████| 75/75 [01:03<00:00,  1.19it/s]
+Saving medians as adata.varm.medians_subclass.full
+median: 0.0
+mean: 0.002
+std: 0.081
+Only positive genes selected. 203 positive genes out of 11509 total genes
+--- 70.38975167274475 seconds ---
+
+====================
+PREPROCESS: BINARY SCORE
+====================
+Calculating binary scores per cluster:   0%|          | 0/75 [00:00<?, ?it/s]Calculating binary scores per cluster:   1%|▏         | 1/75 [00:02<02:38,  2.14s/it]Calculating binary scores per cluster:   3%|▎         | 2/75 [00:03<01:59,  1.64s/it]Calculating binary scores per cluster:   4%|▍         | 3/75 [00:04<01:46,  1.48s/it]Calculating binary scores per cluster:   5%|▌         | 4/75 [00:05<01:39,  1.40s/it]Calculating binary scores per cluster:   7%|▋         | 5/75 [00:07<01:34,  1.36s/it]Calculating binary scores per cluster:   8%|▊         | 6/75 [00:08<01:31,  1.33s/it]Calculating binary scores per cluster:   9%|▉         | 7/75 [00:09<01:29,  1.31s/it]Calculating binary scores per cluster:  11%|█         | 8/75 [00:11<01:27,  1.30s/it]Calculating binary scores per cluster:  12%|█▏        | 9/75 [00:12<01:25,  1.29s/it]Calculating binary scores per cluster:  13%|█▎        | 10/75 [00:13<01:23,  1.29s/it]Calculating binary scores per cluster:  15%|█▍        | 11/75 [00:14<01:22,  1.29s/it]Calculating binary scores per cluster:  16%|█▌        | 12/75 [00:16<01:20,  1.28s/it]Calculating binary scores per cluster:  17%|█▋        | 13/75 [00:17<01:19,  1.28s/it]Calculating binary scores per cluster:  19%|█▊        | 14/75 [00:18<01:18,  1.28s/it]Calculating binary scores per cluster:  20%|██        | 15/75 [00:20<01:16,  1.28s/it]Calculating binary scores per cluster:  21%|██▏       | 16/75 [00:21<01:15,  1.28s/it]Calculating binary scores per cluster:  23%|██▎       | 17/75 [00:22<01:14,  1.28s/it]Calculating binary scores per cluster:  24%|██▍       | 18/75 [00:23<01:12,  1.28s/it]Calculating binary scores per cluster:  25%|██▌       | 19/75 [00:25<01:11,  1.28s/it]Calculating binary scores per cluster:  27%|██▋       | 20/75 [00:26<01:10,  1.28s/it]Calculating binary scores per cluster:  28%|██▊       | 21/75 [00:27<01:08,  1.28s/it]Calculating binary scores per cluster:  29%|██▉       | 22/75 [00:28<01:07,  1.28s/it]Calculating binary scores per cluster:  31%|███       | 23/75 [00:30<01:06,  1.28s/it]Calculating binary scores per cluster:  32%|███▏      | 24/75 [00:31<01:05,  1.28s/it]Calculating binary scores per cluster:  33%|███▎      | 25/75 [00:32<01:03,  1.28s/it]Calculating binary scores per cluster:  35%|███▍      | 26/75 [00:34<01:02,  1.27s/it]Calculating binary scores per cluster:  36%|███▌      | 27/75 [00:35<01:01,  1.27s/it]Calculating binary scores per cluster:  37%|███▋      | 28/75 [00:36<00:59,  1.27s/it]Calculating binary scores per cluster:  39%|███▊      | 29/75 [00:37<00:58,  1.27s/it]Calculating binary scores per cluster:  40%|████      | 30/75 [00:39<00:57,  1.27s/it]Calculating binary scores per cluster:  41%|████▏     | 31/75 [00:40<00:56,  1.27s/it]Calculating binary scores per cluster:  43%|████▎     | 32/75 [00:41<00:54,  1.27s/it]Calculating binary scores per cluster:  44%|████▍     | 33/75 [00:43<00:53,  1.27s/it]Calculating binary scores per cluster:  45%|████▌     | 34/75 [00:44<00:52,  1.27s/it]Calculating binary scores per cluster:  47%|████▋     | 35/75 [00:45<00:50,  1.27s/it]Calculating binary scores per cluster:  48%|████▊     | 36/75 [00:46<00:49,  1.27s/it]Calculating binary scores per cluster:  49%|████▉     | 37/75 [00:48<00:48,  1.28s/it]Calculating binary scores per cluster:  51%|█████     | 38/75 [00:49<00:47,  1.28s/it]Calculating binary scores per cluster:  52%|█████▏    | 39/75 [00:50<00:46,  1.28s/it]Calculating binary scores per cluster:  53%|█████▎    | 40/75 [00:51<00:44,  1.28s/it]Calculating binary scores per cluster:  55%|█████▍    | 41/75 [00:53<00:43,  1.28s/it]Calculating binary scores per cluster:  56%|█████▌    | 42/75 [00:54<00:42,  1.28s/it]Calculating binary scores per cluster:  57%|█████▋    | 43/75 [00:55<00:40,  1.28s/it]Calculating binary scores per cluster:  59%|█████▊    | 44/75 [00:57<00:39,  1.28s/it]Calculating binary scores per cluster:  60%|██████    | 45/75 [00:58<00:38,  1.28s/it]Calculating binary scores per cluster:  61%|██████▏   | 46/75 [00:59<00:37,  1.28s/it]Calculating binary scores per cluster:  63%|██████▎   | 47/75 [01:00<00:35,  1.28s/it]Calculating binary scores per cluster:  64%|██████▍   | 48/75 [01:02<00:34,  1.28s/it]Calculating binary scores per cluster:  65%|██████▌   | 49/75 [01:03<00:33,  1.28s/it]Calculating binary scores per cluster:  67%|██████▋   | 50/75 [01:04<00:32,  1.28s/it]Calculating binary scores per cluster:  68%|██████▊   | 51/75 [01:06<00:30,  1.28s/it]Calculating binary scores per cluster:  69%|██████▉   | 52/75 [01:07<00:29,  1.28s/it]Calculating binary scores per cluster:  71%|███████   | 53/75 [01:08<00:28,  1.28s/it]Calculating binary scores per cluster:  72%|███████▏  | 54/75 [01:09<00:26,  1.28s/it]Calculating binary scores per cluster:  73%|███████▎  | 55/75 [01:11<00:25,  1.28s/it]Calculating binary scores per cluster:  75%|███████▍  | 56/75 [01:12<00:24,  1.28s/it]Calculating binary scores per cluster:  76%|███████▌  | 57/75 [01:13<00:22,  1.28s/it]Calculating binary scores per cluster:  77%|███████▋  | 58/75 [01:14<00:21,  1.27s/it]Calculating binary scores per cluster:  79%|███████▊  | 59/75 [01:16<00:20,  1.27s/it]Calculating binary scores per cluster:  80%|████████  | 60/75 [01:17<00:19,  1.27s/it]Calculating binary scores per cluster:  81%|████████▏ | 61/75 [01:18<00:17,  1.27s/it]Calculating binary scores per cluster:  83%|████████▎ | 62/75 [01:20<00:16,  1.27s/it]Calculating binary scores per cluster:  84%|████████▍ | 63/75 [01:21<00:15,  1.27s/it]Calculating binary scores per cluster:  85%|████████▌ | 64/75 [01:22<00:14,  1.27s/it]Calculating binary scores per cluster:  87%|████████▋ | 65/75 [01:23<00:12,  1.28s/it]Calculating binary scores per cluster:  88%|████████▊ | 66/75 [01:25<00:11,  1.28s/it]Calculating binary scores per cluster:  89%|████████▉ | 67/75 [01:26<00:10,  1.28s/it]Calculating binary scores per cluster:  91%|█████████ | 68/75 [01:27<00:08,  1.28s/it]Calculating binary scores per cluster:  92%|█████████▏| 69/75 [01:29<00:07,  1.28s/it]Calculating binary scores per cluster:  93%|█████████▎| 70/75 [01:30<00:06,  1.28s/it]Calculating binary scores per cluster:  95%|█████████▍| 71/75 [01:31<00:05,  1.28s/it]Calculating binary scores per cluster:  96%|█████████▌| 72/75 [01:32<00:03,  1.28s/it]Calculating binary scores per cluster:  97%|█████████▋| 73/75 [01:34<00:02,  1.28s/it]Calculating binary scores per cluster:  99%|█████████▊| 74/75 [01:35<00:01,  1.28s/it]Calculating binary scores per cluster: 100%|██████████| 75/75 [01:36<00:00,  1.28s/it]Calculating binary scores per cluster: 100%|██████████| 75/75 [01:36<00:00,  1.29s/it]
+Saving binary scores as adata.varm.binary_scores_subclass.full
+median: 0.0
+mean: 0.083
+std: 0.243
+--- 96.83722472190857 seconds ---
+Calculating binary scores per cluster:   0%|          | 0/75 [00:00<?, ?it/s]Calculating binary scores per cluster:   3%|▎         | 2/75 [00:00<00:03, 18.77it/s]Calculating binary scores per cluster:   7%|▋         | 5/75 [00:00<00:03, 19.73it/s]Calculating binary scores per cluster:  11%|█         | 8/75 [00:00<00:03, 19.91it/s]Calculating binary scores per cluster:  15%|█▍        | 11/75 [00:00<00:03, 19.98it/s]Calculating binary scores per cluster:  17%|█▋        | 13/75 [00:00<00:03, 19.81it/s]Calculating binary scores per cluster:  21%|██▏       | 16/75 [00:00<00:02, 19.91it/s]Calculating binary scores per cluster:  25%|██▌       | 19/75 [00:00<00:02, 19.97it/s]Calculating binary scores per cluster:  29%|██▉       | 22/75 [00:01<00:02, 20.05it/s]Calculating binary scores per cluster:  33%|███▎      | 25/75 [00:01<00:02, 20.08it/s]Calculating binary scores per cluster:  37%|███▋      | 28/75 [00:01<00:02, 20.08it/s]Calculating binary scores per cluster:  41%|████▏     | 31/75 [00:01<00:02, 20.09it/s]Calculating binary scores per cluster:  45%|████▌     | 34/75 [00:01<00:02, 20.11it/s]Calculating binary scores per cluster:  49%|████▉     | 37/75 [00:01<00:01, 20.14it/s]Calculating binary scores per cluster:  53%|█████▎    | 40/75 [00:01<00:01, 20.15it/s]Calculating binary scores per cluster:  57%|█████▋    | 43/75 [00:02<00:01, 20.15it/s]Calculating binary scores per cluster:  61%|██████▏   | 46/75 [00:02<00:01, 20.15it/s]Calculating binary scores per cluster:  65%|██████▌   | 49/75 [00:02<00:01, 20.14it/s]Calculating binary scores per cluster:  69%|██████▉   | 52/75 [00:02<00:01, 20.14it/s]Calculating binary scores per cluster:  73%|███████▎  | 55/75 [00:02<00:00, 20.16it/s]Calculating binary scores per cluster:  77%|███████▋  | 58/75 [00:02<00:00, 20.16it/s]Calculating binary scores per cluster:  81%|████████▏ | 61/75 [00:03<00:00, 20.15it/s]Calculating binary scores per cluster:  85%|████████▌ | 64/75 [00:03<00:00, 20.13it/s]Calculating binary scores per cluster:  89%|████████▉ | 67/75 [00:03<00:00, 20.12it/s]Calculating binary scores per cluster:  93%|█████████▎| 70/75 [00:03<00:00, 20.08it/s]Calculating binary scores per cluster:  97%|█████████▋| 73/75 [00:03<00:00, 20.12it/s]Calculating binary scores per cluster: 100%|██████████| 75/75 [00:03<00:00, 20.07it/s]
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+Saving binary scores as adata.varm.binary_scores_subclass.full
+median: 0.0
+mean: 0.055
+std: 0.205
+--- 3.7576847076416016 seconds ---
+
+====================
+PREPROCESS: SAVING PREPROCESSED DATA
+====================
+Saving new anndata object as...
+../data_preprocessed/data_kidney_ds_filter_preprocessed.h5ad
+Saving new anndata object as...
+../data_preprocessed/data_kidney_ds_filter_subset_lncRNA_preprocessed.h5ad
+
+====================
+PREPROCESS: VISUALIZING PREPROCESSED DATA
+====================
+Saving adata.varm[medians_subclass.full] as histogram as...
+../output/kidney/histogram_medians_subclass.full.svg
+Saving adata.varm[medians_subclass.full] as histogram as...
+../output/kidney/histogram_medians_subclass.full.svg
+Saving adata.varm[medians_subclass.full] as histogram as...
+../output/kidney/histogram_medians_subclass.full.svg
+Saving adata.varm[medians_subclass.full] as histogram as...
+../output/kidney/histogram_medians_subclass.full.svg
+Saving adata.varm[binary_scores_subclass.full] as histogram as...
+../output/kidney/histogram_binary_scores_subclass.full.svg
+Saving adata.varm[binary_scores_subclass.full] as histogram as...
+../output/kidney/histogram_binary_scores_subclass.full.svg
+Saving adata.varm[binary_scores_subclass.full] as histogram as...
+../output/kidney/histogram_binary_scores_subclass.full.svg
+Saving adata.varm[binary_scores_subclass.full] as histogram as...
+../output/kidney/histogram_binary_scores_subclass.full.svg
+
+====================
+NS-FOREST: FULL DATA RUN
+====================
+Running NS-Forest version 4.1
+
+Preparing adata...
+Pre-selecting genes based on binary scores...
+	BinaryFirst_high Threshold (mean + 2 * std): 0.569
+	Average number of genes after gene_selection in each cluster: 465.61333333333334
+Saving number of genes selected per cluster as...
+../output/kidney/subclass.full_gene_selection.csv
+--- 2.074174404144287 seconds ---
+
+Number of clusters to evaluate: 75
+1 out of 75:
+	Adaptive / Maladaptive / Repairing Fibroblast
+	Pre-selected 197 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000077942', 'ENSG00000185070']
+	fbeta: 0.465
+	precision: 0.574
+	recall: 0.264
+2 out of 75:
+	Adaptive / Maladaptive / Repairing Proximal Tubule Epithelial Cell
+	Pre-selected 577 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000284377', 'ENSG00000170579']
+	fbeta: 0.623
+	precision: 0.874
+	recall: 0.29
+3 out of 75:
+	Adaptive / Maladaptive / Repairing Thick Ascending Limb Cell
+	Pre-selected 887 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000115221', 'ENSG00000036828']
+	fbeta: 0.514
+	precision: 0.605
+	recall: 0.32
+4 out of 75:
+	Afferent / Efferent Arteriole Endothelial Cell
+	Pre-selected 253 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000090006', 'ENSG00000184916']
+	fbeta: 0.509
+	precision: 0.792
+	recall: 0.21
+5 out of 75:
+	Ascending Thin Limb Cell
+	Pre-selected 849 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000064787', 'ENSG00000140600']
+	fbeta: 0.622
+	precision: 0.652
+	recall: 0.525
+6 out of 75:
+	Ascending Vasa Recta Endothelial Cell
+	Pre-selected 324 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000148488', 'ENSG00000150625']
+	fbeta: 0.749
+	precision: 0.953
+	recall: 0.404
+7 out of 75:
+	B Cell
+	Pre-selected 36 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000153064']
+	fbeta: 0.738
+	precision: 0.87
+	recall: 0.46
+8 out of 75:
+	Classical Dendritic Cell
+	Pre-selected 354 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000131203']
+	fbeta: 0.601
+	precision: 0.76
+	recall: 0.328
+9 out of 75:
+	Connecting Tubule Cell
+	Pre-selected 352 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000251504', 'ENSG00000136531']
+	fbeta: 0.492
+	precision: 0.594
+	recall: 0.291
+10 out of 75:
+	Connecting Tubule Intercalated Cell Type A
+	Pre-selected 629 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000145147', 'ENSG00000109684']
+	fbeta: 0.026
+	precision: 0.021
+	recall: 0.245
+11 out of 75:
+	Connecting Tubule Principal Cell
+	Pre-selected 539 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000159167', 'ENSG00000104327']
+	fbeta: 0.552
+	precision: 0.687
+	recall: 0.309
+12 out of 75:
+	Cortical Collecting Duct Intercalated Cell Type A
+	Pre-selected 425 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000144227', 'ENSG00000185274']
+	fbeta: 0.698
+	precision: 0.882
+	recall: 0.38
+13 out of 75:
+	Cortical Collecting Duct Principal Cell
+	Pre-selected 820 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000182752', 'ENSG00000259905']
+	fbeta: 0.571
+	precision: 0.679
+	recall: 0.348
+14 out of 75:
+	Cortical Thick Ascending Limb Cell
+	Pre-selected 269 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000113946', 'ENSG00000169344']
+	fbeta: 0.727
+	precision: 0.865
+	recall: 0.444
+15 out of 75:
+	Cycling Connecting Tubule Cell
+	Pre-selected 1113 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000102870', 'ENSG00000197372', 'ENSG00000125107']
+	fbeta: 0.312
+	precision: 1.0
+	recall: 0.083
+16 out of 75:
+	Cycling Distal Convoluted Tubule Cell
+	Pre-selected 1766 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000066279', 'ENSG00000058404']
+	fbeta: 0.714
+	precision: 1.0
+	recall: 0.333
+17 out of 75:
+	Cycling Endothelial Cell
+	Pre-selected 313 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000165304', 'ENSG00000156802']
+	fbeta: 0.41
+	precision: 0.55
+	recall: 0.204
+18 out of 75:
+	Cycling Mononuclear Phagocyte
+	Pre-selected 183 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000170017', 'ENSG00000185811']
+	fbeta: 0.109
+	precision: 0.182
+	recall: 0.042
+19 out of 75:
+	Cycling Myofibroblast
+	Pre-selected 763 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000143476', 'ENSG00000051341']
+	fbeta: 0.227
+	precision: 1.0
+	recall: 0.056
+20 out of 75:
+	Cycling Natural Killer Cell / Natural Killer T Cell
+	Pre-selected 723 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000164104', 'ENSG00000176890']
+	fbeta: 0.682
+	precision: 0.857
+	recall: 0.375
+21 out of 75:
+	Cycling Proximal Tubule Epithelial Cell
+	Pre-selected 220 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000100629', 'ENSG00000139734', 'ENSG00000109685']
+	fbeta: 0.24
+	precision: 0.524
+	recall: 0.076
+22 out of 75:
+	Degenerative Ascending Thin Limb Cell
+	Pre-selected 667 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000109610', 'ENSG00000140600', 'ENSG00000197249']
+	fbeta: 0.512
+	precision: 0.678
+	recall: 0.258
+23 out of 75:
+	Degenerative Connecting Tubule Cell
+	Pre-selected 582 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000162896', 'ENSG00000136531', 'ENSG00000101443']
+	fbeta: 0.175
+	precision: 0.196
+	recall: 0.121
+24 out of 75:
+	Degenerative Cortical Intercalated Cell Type A
+	Pre-selected 1089 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000151418', 'ENSG00000131981', 'ENSG00000173253']
+	fbeta: 0.573
+	precision: 0.664
+	recall: 0.37
+25 out of 75:
+	Degenerative Cortical Thick Ascending Limb Cell
+	Pre-selected 156 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000197249', 'ENSG00000124107']
+	fbeta: 0.448
+	precision: 0.756
+	recall: 0.171
+26 out of 75:
+	Degenerative Descending Thin Limb Cell Type 3
+	Pre-selected 1679 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000172461', 'ENSG00000115641']
+	fbeta: 0.533
+	precision: 0.667
+	recall: 0.296
+27 out of 75:
+	Degenerative Distal Convoluted Tubule Cell
+	Pre-selected 955 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000263146', 'ENSG00000104332', 'ENSG00000137731']
+	fbeta: 0.705
+	precision: 0.912
+	recall: 0.37
+28 out of 75:
+	Degenerative Endothelial Cell
+	Pre-selected 56 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000142089', 'ENSG00000184831', 'ENSG00000150991']
+	fbeta: 0.211
+	precision: 0.267
+	recall: 0.114
+29 out of 75:
+	Degenerative Fibroblast
+	Pre-selected 190 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000102265']
+	fbeta: 0.482
+	precision: 0.842
+	recall: 0.178
+30 out of 75:
+	Degenerative Inner Medullary Collecting Duct Cell
+	Pre-selected 945 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000095303', 'ENSG00000171303', 'ENSG00000150201']
+	fbeta: 0.518
+	precision: 0.648
+	recall: 0.288
+31 out of 75:
+	Degenerative Medullary Fibroblast
+	Pre-selected 14 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000049323', 'ENSG00000085662', 'ENSG00000167580']
+	fbeta: 0.35
+	precision: 0.449
+	recall: 0.186
+32 out of 75:
+	Degenerative Medullary Thick Ascending Limb Cell
+	Pre-selected 138 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000169344', 'ENSG00000074803', 'ENSG00000228716', 'ENSG00000167658']
+	fbeta: 0.27
+	precision: 0.32
+	recall: 0.166
+33 out of 75:
+	Degenerative Outer Medullary Collecting Duct Principal Cell
+	Pre-selected 778 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000160951', 'ENSG00000165272', 'ENSG00000166828']
+	fbeta: 0.457
+	precision: 0.552
+	recall: 0.271
+34 out of 75:
+	Degenerative Peritubular Capilary Endothelial Cell
+	Pre-selected 118 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000102755', 'ENSG00000184005', 'ENSG00000211445']
+	fbeta: 0.166
+	precision: 0.833
+	recall: 0.039
+35 out of 75:
+	Degenerative Podocyte
+	Pre-selected 143 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000166033']
+	fbeta: 0.642
+	precision: 0.688
+	recall: 0.505
+36 out of 75:
+	Degenerative Proximal Tubule Epithelial Cell
+	Pre-selected 132 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000197375', 'ENSG00000158296']
+	fbeta: 0.505
+	precision: 0.573
+	recall: 0.343
+37 out of 75:
+	Degenerative Vascular Smooth Muscle Cell
+	Pre-selected 496 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000198467', 'ENSG00000198523']
+	fbeta: 0.846
+	precision: 0.972
+	recall: 0.556
+38 out of 75:
+	Descending Thin Limb Cell Type 1
+	Pre-selected 379 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000150471', 'ENSG00000007062']
+	fbeta: 0.547
+	precision: 0.727
+	recall: 0.274
+39 out of 75:
+	Descending Thin Limb Cell Type 2
+	Pre-selected 582 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000156687', 'ENSG00000229981']
+	fbeta: 0.54
+	precision: 0.654
+	recall: 0.318
+40 out of 75:
+	Descending Thin Limb Cell Type 3
+	Pre-selected 700 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000249776', 'ENSG00000111799']
+	fbeta: 0.541
+	precision: 0.624
+	recall: 0.353
+41 out of 75:
+	Descending Vasa Recta Endothelial Cell
+	Pre-selected 351 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000099260', 'ENSG00000049192']
+	fbeta: 0.67
+	precision: 0.777
+	recall: 0.433
+42 out of 75:
+	Distal Convoluted Tubule Cell Type 1
+	Pre-selected 727 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000242029', 'ENSG00000119121']
+	fbeta: 0.656
+	precision: 0.882
+	recall: 0.324
+43 out of 75:
+	Distal Convoluted Tubule Cell Type 2
+	Pre-selected 440 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000082397', 'ENSG00000070915', 'ENSG00000179399', 'ENSG00000182168']
+	fbeta: 0.234
+	precision: 0.243
+	recall: 0.201
+44 out of 75:
+	Fibroblast
+	Pre-selected 159 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000112936', 'ENSG00000172260']
+	fbeta: 0.643
+	precision: 0.723
+	recall: 0.445
+45 out of 75:
+	Glomerular Capillary Endothelial Cell
+	Pre-selected 205 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000167941', 'ENSG00000013016']
+	fbeta: 0.746
+	precision: 0.966
+	recall: 0.391
+46 out of 75:
+	Inner Medullary Collecting Duct Cell
+	Pre-selected 1300 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000249853', 'ENSG00000267134', 'ENSG00000132874']
+	fbeta: 0.754
+	precision: 0.779
+	recall: 0.666
+47 out of 75:
+	Intercalated Cell Type B
+	Pre-selected 235 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000113073']
+	fbeta: 0.717
+	precision: 0.846
+	recall: 0.444
+48 out of 75:
+	Lymphatic Endothelial Cell
+	Pre-selected 199 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000138722']
+	fbeta: 0.707
+	precision: 0.75
+	recall: 0.574
+49 out of 75:
+	M2 Macrophage
+	Pre-selected 88 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000260314', 'ENSG00000177575']
+	fbeta: 0.745
+	precision: 0.871
+	recall: 0.472
+50 out of 75:
+	Macula Densa Cell
+	Pre-selected 550 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000139220', 'ENSG00000089250']
+	fbeta: 0.489
+	precision: 0.676
+	recall: 0.232
+51 out of 75:
+	Mast Cell
+	Pre-selected 37 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000185052', 'ENSG00000163751']
+	fbeta: 0.801
+	precision: 1.0
+	recall: 0.446
+52 out of 75:
+	Medullary Fibroblast
+	Pre-selected 359 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000067715', 'ENSG00000079931']
+	fbeta: 0.809
+	precision: 0.905
+	recall: 0.568
+53 out of 75:
+	Medullary Thick Ascending Limb Cell
+	Pre-selected 990 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000171724', 'ENSG00000242029']
+	fbeta: 0.674
+	precision: 0.825
+	recall: 0.389
+54 out of 75:
+	Mesangial Cell
+	Pre-selected 204 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000154864', 'ENSG00000169855']
+	fbeta: 0.433
+	precision: 0.868
+	recall: 0.144
+55 out of 75:
+	Monocyte-derived Cell
+	Pre-selected 61 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000223865']
+	fbeta: 0.512
+	precision: 0.831
+	recall: 0.202
+56 out of 75:
+	Myofibroblast
+	Pre-selected 315 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000108821', 'ENSG00000198947']
+	fbeta: 0.413
+	precision: 0.605
+	recall: 0.182
+57 out of 75:
+	Natural Killer Cell / Natural Killer T Cell
+	Pre-selected 147 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000105374', 'ENSG00000275302']
+	fbeta: 0.79
+	precision: 0.918
+	recall: 0.508
+58 out of 75:
+	Neutrophil
+	Pre-selected 31 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000143546', 'ENSG00000163220']
+	fbeta: 0.788
+	precision: 1.0
+	recall: 0.427
+59 out of 75:
+	Non-classical Monocyte
+	Pre-selected 135 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000204482']
+	fbeta: 0.569
+	precision: 0.836
+	recall: 0.25
+60 out of 75:
+	Outer Medullary Collecting Duct Intercalated Cell Type A
+	Pre-selected 1665 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000106302', 'ENSG00000035720']
+	fbeta: 0.69
+	precision: 0.824
+	recall: 0.418
+61 out of 75:
+	Outer Medullary Collecting Duct Principal Cell
+	Pre-selected 1176 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000254789', 'ENSG00000160111', 'ENSG00000259905']
+	fbeta: 0.512
+	precision: 0.579
+	recall: 0.35
+62 out of 75:
+	Papillary Tip Epithelial Cell
+	Pre-selected 923 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000176153', 'ENSG00000073282']
+	fbeta: 0.687
+	precision: 0.795
+	recall: 0.445
+63 out of 75:
+	Parietal Epithelial Cell
+	Pre-selected 129 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000000971', 'ENSG00000229981']
+	fbeta: 0.548
+	precision: 0.981
+	recall: 0.198
+64 out of 75:
+	Peritubular Capilary Endothelial Cell 
+	Pre-selected 92 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000130300', 'ENSG00000174640']
+	fbeta: 0.647
+	precision: 0.746
+	recall: 0.422
+65 out of 75:
+	Plasma Cell
+	Pre-selected 60 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000170476']
+	fbeta: 0.582
+	precision: 0.653
+	recall: 0.405
+66 out of 75:
+	Plasmacytoid Dendritic Cell
+	Pre-selected 198 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000267337']
+	fbeta: 0.783
+	precision: 1.0
+	recall: 0.419
+67 out of 75:
+	Podocyte
+	Pre-selected 744 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000139304', 'ENSG00000151490']
+	fbeta: 0.944
+	precision: 0.979
+	recall: 0.826
+68 out of 75:
+	Proximal Tubule Epithelial Cell Segment 1 / Segment 2
+	Pre-selected 97 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000250799', 'ENSG00000171759']
+	fbeta: 0.619
+	precision: 0.663
+	recall: 0.49
+69 out of 75:
+	Proximal Tubule Epithelial Cell Segment 3
+	Pre-selected 239 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000249252', 'ENSG00000185046', 'ENSG00000107611']
+	fbeta: 0.474
+	precision: 0.617
+	recall: 0.246
+70 out of 75:
+	Renin-positive Juxtaglomerular Granular Cell
+	Pre-selected 158 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000143839', 'ENSG00000140538']
+	fbeta: 0.792
+	precision: 0.804
+	recall: 0.75
+71 out of 75:
+	Schwann Cell / Neural
+	Pre-selected 92 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000179915']
+	fbeta: 0.874
+	precision: 0.926
+	recall: 0.714
+72 out of 75:
+	T Cell
+	Pre-selected 27 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000168685']
+	fbeta: 0.714
+	precision: 0.784
+	recall: 0.525
+73 out of 75:
+	Transitional Principal-Intercalated Cell
+	Pre-selected 1095 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000147606', 'ENSG00000166828', 'ENSG00000157404', 'ENSG00000150201']
+	fbeta: 0.281
+	precision: 0.288
+	recall: 0.257
+74 out of 75:
+	Vascular Smooth Muscle Cell
+	Pre-selected 165 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000169282', 'ENSG00000182732']
+	fbeta: 0.59
+	precision: 0.794
+	recall: 0.291
+75 out of 75:
+	Vascular Smooth Muscle Cell / Pericyte
+	Pre-selected 137 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000138031', 'ENSG00000074181']
+	fbeta: 0.447
+	precision: 0.622
+	recall: 0.21
+--- 29464.678735017776 seconds ---
+
+Saving supplementary table as...
+../output/kidney/subclass.full_supplementary.csv
+Saving markers table as...
+../output/kidney/subclass.full_markers.csv
+using median
+Calculating medians per cluster:   0%|          | 0/75 [00:00<?, ?it/s]Calculating medians per cluster:   3%|▎         | 2/75 [00:00<00:05, 12.39it/s]Calculating medians per cluster:   5%|▌         | 4/75 [00:00<00:04, 14.48it/s]Calculating medians per cluster:   8%|▊         | 6/75 [00:00<00:04, 14.88it/s]Calculating medians per cluster:  12%|█▏        | 9/75 [00:00<00:03, 17.22it/s]Calculating medians per cluster:  16%|█▌        | 12/75 [00:00<00:03, 17.13it/s]Calculating medians per cluster:  19%|█▊        | 14/75 [00:00<00:04, 14.29it/s]Calculating medians per cluster:  24%|██▍       | 18/75 [00:01<00:02, 19.40it/s]Calculating medians per cluster:  29%|██▉       | 22/75 [00:01<00:02, 22.08it/s]Calculating medians per cluster:  33%|███▎      | 25/75 [00:01<00:02, 22.68it/s]Calculating medians per cluster:  37%|███▋      | 28/75 [00:01<00:02, 23.11it/s]Calculating medians per cluster:  41%|████▏     | 31/75 [00:01<00:01, 22.86it/s]Calculating medians per cluster:  45%|████▌     | 34/75 [00:01<00:01, 22.53it/s]Calculating medians per cluster:  49%|████▉     | 37/75 [00:01<00:01, 19.52it/s]Calculating medians per cluster:  53%|█████▎    | 40/75 [00:02<00:01, 19.30it/s]Calculating medians per cluster:  56%|█████▌    | 42/75 [00:02<00:01, 17.80it/s]Calculating medians per cluster:  60%|██████    | 45/75 [00:02<00:01, 18.22it/s]Calculating medians per cluster:  63%|██████▎   | 47/75 [00:02<00:01, 17.10it/s]Calculating medians per cluster:  67%|██████▋   | 50/75 [00:02<00:01, 18.66it/s]Calculating medians per cluster:  69%|██████▉   | 52/75 [00:02<00:01, 18.11it/s]Calculating medians per cluster:  72%|███████▏  | 54/75 [00:02<00:01, 17.56it/s]Calculating medians per cluster:  76%|███████▌  | 57/75 [00:03<00:00, 18.88it/s]Calculating medians per cluster:  80%|████████  | 60/75 [00:03<00:00, 20.96it/s]Calculating medians per cluster:  84%|████████▍ | 63/75 [00:03<00:00, 21.47it/s]Calculating medians per cluster:  88%|████████▊ | 66/75 [00:03<00:00, 21.38it/s]Calculating medians per cluster:  92%|█████████▏| 69/75 [00:03<00:00, 17.47it/s]Calculating medians per cluster:  96%|█████████▌| 72/75 [00:03<00:00, 19.61it/s]Calculating medians per cluster: 100%|██████████| 75/75 [00:03<00:00, 20.85it/s]Calculating medians per cluster: 100%|██████████| 75/75 [00:03<00:00, 19.29it/s]
+Saving supplementary table as...
+../output/kidney/subclass.full_markers_onTarget_supp.csv
+Saving supplementary table as...
+../output/kidney/subclass.full_markers_onTarget.csv
+
+Saving final results table as...
+../output/kidney/subclass.full_results.csv
+Saving final results table as...
+../output/kidney/subclass.full_results.pkl
+
+====================
+NS-FOREST: LNCRNA SUBSET RUN
+====================
+Running NS-Forest version 4.1
+
+Preparing adata...
+Pre-selecting genes based on binary scores...
+	BinaryFirst_high Threshold (mean + 2 * std): 0.465
+	Average number of genes after gene_selection in each cluster: 12.813333333333333
+Saving number of genes selected per cluster as...
+../output/kidney/subclass.full_subset_lncRNA_gene_selection.csv
+--- 0.046982765197753906 seconds ---
+
+Number of clusters to evaluate: 75
+1 out of 75:
+	Adaptive / Maladaptive / Repairing Fibroblast
+	Pre-selected 5 genes to feed into Random Forest.
+	Only 5 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000237187', 'ENSG00000215386', 'ENSG00000247809']
+	fbeta: 0.176
+	precision: 0.189
+	recall: 0.139
+2 out of 75:
+	Adaptive / Maladaptive / Repairing Proximal Tubule Epithelial Cell
+	Pre-selected 21 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000251432', 'ENSG00000284377']
+	fbeta: 0.459
+	precision: 0.552
+	recall: 0.274
+3 out of 75:
+	Adaptive / Maladaptive / Repairing Thick Ascending Limb Cell
+	Pre-selected 27 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000253301', 'ENSG00000172965', 'ENSG00000228262']
+	fbeta: 0.371
+	precision: 0.46
+	recall: 0.21
+4 out of 75:
+	Afferent / Efferent Arteriole Endothelial Cell
+	Pre-selected 1 genes to feed into Random Forest.
+	Only 1 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000153113']
+	fbeta: 0.011
+	precision: 0.009
+	recall: 0.384
+5 out of 75:
+	Ascending Thin Limb Cell
+	Pre-selected 28 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000251513', 'ENSG00000245694', 'ENSG00000258667']
+	fbeta: 0.314
+	precision: 0.373
+	recall: 0.192
+6 out of 75:
+	Ascending Vasa Recta Endothelial Cell
+	Pre-selected 11 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000248300']
+	fbeta: 0.719
+	precision: 0.811
+	recall: 0.496
+7 out of 75:
+	B Cell
+	Pre-selected 1 genes to feed into Random Forest.
+	Only 1 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000278996']
+	fbeta: 0.025
+	precision: 0.021
+	recall: 0.187
+8 out of 75:
+	Classical Dendritic Cell
+	Pre-selected 8 genes to feed into Random Forest.
+	Only 8 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000231873', 'ENSG00000229140']
+	fbeta: 0.51
+	precision: 1.0
+	recall: 0.172
+9 out of 75:
+	Connecting Tubule Cell
+	Pre-selected 11 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000251504', 'ENSG00000236283']
+	fbeta: 0.501
+	precision: 0.598
+	recall: 0.304
+10 out of 75:
+	Connecting Tubule Intercalated Cell Type A
+	Pre-selected 17 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000249601', 'ENSG00000260658', 'ENSG00000229807', 'ENSG00000226674', 'ENSG00000251136']
+	fbeta: 0.227
+	precision: 0.409
+	recall: 0.082
+11 out of 75:
+	Connecting Tubule Principal Cell
+	Pre-selected 5 genes to feed into Random Forest.
+	Only 5 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000226674', 'ENSG00000235142', 'ENSG00000236283']
+	fbeta: 0.217
+	precision: 0.212
+	recall: 0.238
+12 out of 75:
+	Cortical Collecting Duct Intercalated Cell Type A
+	Pre-selected 7 genes to feed into Random Forest.
+	Only 7 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000249601', 'ENSG00000236283']
+	fbeta: 0.502
+	precision: 0.532
+	recall: 0.409
+13 out of 75:
+	Cortical Collecting Duct Principal Cell
+	Pre-selected 23 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000259905', 'ENSG00000267659', 'ENSG00000226674']
+	fbeta: 0.403
+	precision: 0.517
+	recall: 0.214
+14 out of 75:
+	Cortical Thick Ascending Limb Cell
+	Pre-selected 7 genes to feed into Random Forest.
+	Only 7 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000233154', 'ENSG00000228262', 'ENSG00000247809']
+	fbeta: 0.292
+	precision: 0.32
+	recall: 0.216
+15 out of 75:
+	Cycling Connecting Tubule Cell
+	Pre-selected 33 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000231535', 'ENSG00000231079', 'ENSG00000277268']
+	fbeta: 0.027
+	precision: 0.023
+	recall: 0.083
+16 out of 75:
+	Cycling Distal Convoluted Tubule Cell
+	Pre-selected 65 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000255910', 'ENSG00000228340', 'ENSG00000232160']
+	fbeta: 0.357
+	precision: 0.5
+	recall: 0.167
+17 out of 75:
+	Cycling Endothelial Cell
+	Pre-selected 4 genes to feed into Random Forest.
+	Only 4 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000231607', 'ENSG00000280441', 'ENSG00000278996']
+	fbeta: 0.012
+	precision: 0.01
+	recall: 0.037
+18 out of 75:
+	Cycling Mononuclear Phagocyte
+	Pre-selected 3 genes to feed into Random Forest.
+	Only 3 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000231607', 'ENSG00000278996']
+	fbeta: 0.089
+	precision: 0.5
+	recall: 0.021
+19 out of 75:
+	Cycling Myofibroblast
+	Pre-selected 15 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000224905', 'ENSG00000231889', 'ENSG00000172965']
+	fbeta: 0.238
+	precision: 0.333
+	recall: 0.111
+20 out of 75:
+	Cycling Natural Killer Cell / Natural Killer T Cell
+	Pre-selected 6 genes to feed into Random Forest.
+	Only 6 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000203875']
+	fbeta: 0.25
+	precision: 1.0
+	recall: 0.062
+21 out of 75:
+	Cycling Proximal Tubule Epithelial Cell
+	Pre-selected 6 genes to feed into Random Forest.
+	Only 6 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000225470', 'ENSG00000242086']
+	fbeta: 0.034
+	precision: 1.0
+	recall: 0.007
+22 out of 75:
+	Degenerative Ascending Thin Limb Cell
+	Pre-selected 17 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000245694', 'ENSG00000176728', 'ENSG00000258667', 'ENSG00000260032']
+	fbeta: 0.23
+	precision: 0.273
+	recall: 0.141
+23 out of 75:
+	Degenerative Connecting Tubule Cell
+	Pre-selected 13 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000231079', 'ENSG00000172965', 'ENSG00000260658', 'ENSG00000226674', 'ENSG00000229847']
+	fbeta: 0.062
+	precision: 0.059
+	recall: 0.081
+24 out of 75:
+	Degenerative Cortical Intercalated Cell Type A
+	Pre-selected 10 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000152931', 'ENSG00000177410', 'ENSG00000261183', 'ENSG00000269293', 'ENSG00000213373']
+	fbeta: 0.439
+	precision: 0.587
+	recall: 0.219
+25 out of 75:
+	Degenerative Cortical Thick Ascending Limb Cell
+	Pre-selected 0 genes to feed into Random Forest.
+WARNING: 0 genes to feed into Random Forest. Skipping...
+26 out of 75:
+	Degenerative Descending Thin Limb Cell Type 3
+	Pre-selected 60 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000226337', 'ENSG00000250320', 'ENSG00000227036']
+	fbeta: 0.523
+	precision: 0.65
+	recall: 0.293
+27 out of 75:
+	Degenerative Distal Convoluted Tubule Cell
+	Pre-selected 11 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000263146', 'ENSG00000269893']
+	fbeta: 0.494
+	precision: 0.497
+	recall: 0.479
+28 out of 75:
+	Degenerative Endothelial Cell
+	Pre-selected 0 genes to feed into Random Forest.
+WARNING: 0 genes to feed into Random Forest. Skipping...
+29 out of 75:
+	Degenerative Fibroblast
+	Pre-selected 0 genes to feed into Random Forest.
+WARNING: 0 genes to feed into Random Forest. Skipping...
+30 out of 75:
+	Degenerative Inner Medullary Collecting Duct Cell
+	Pre-selected 21 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000236449', 'ENSG00000267134', 'ENSG00000223561']
+	fbeta: 0.317
+	precision: 0.303
+	recall: 0.395
+31 out of 75:
+	Degenerative Medullary Fibroblast
+	Pre-selected 0 genes to feed into Random Forest.
+WARNING: 0 genes to feed into Random Forest. Skipping...
+32 out of 75:
+	Degenerative Medullary Thick Ascending Limb Cell
+	Pre-selected 10 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000233154', 'ENSG00000228262', 'ENSG00000247809', 'ENSG00000280441']
+	fbeta: 0.07
+	precision: 0.065
+	recall: 0.1
+33 out of 75:
+	Degenerative Outer Medullary Collecting Duct Principal Cell
+	Pre-selected 11 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000260032', 'ENSG00000177133', 'ENSG00000229847', 'ENSG00000153113', 'ENSG00000235142']
+	fbeta: 0.104
+	precision: 0.1
+	recall: 0.12
+34 out of 75:
+	Degenerative Peritubular Capilary Endothelial Cell
+	Pre-selected 4 genes to feed into Random Forest.
+	Only 4 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000280441', 'ENSG00000215386']
+	fbeta: 0.016
+	precision: 0.014
+	recall: 0.071
+35 out of 75:
+	Degenerative Podocyte
+	Pre-selected 0 genes to feed into Random Forest.
+WARNING: 0 genes to feed into Random Forest. Skipping...
+36 out of 75:
+	Degenerative Proximal Tubule Epithelial Cell
+	Pre-selected 8 genes to feed into Random Forest.
+	Only 8 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000248373', 'ENSG00000284418', 'ENSG00000227258']
+	fbeta: 0.461
+	precision: 0.541
+	recall: 0.291
+37 out of 75:
+	Degenerative Vascular Smooth Muscle Cell
+	Pre-selected 1 genes to feed into Random Forest.
+	Only 1 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000249669']
+	fbeta: 0.076
+	precision: 0.063
+	recall: 0.514
+38 out of 75:
+	Descending Thin Limb Cell Type 1
+	Pre-selected 17 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000272168', 'ENSG00000253438', 'ENSG00000241158']
+	fbeta: 0.285
+	precision: 0.636
+	recall: 0.089
+39 out of 75:
+	Descending Thin Limb Cell Type 2
+	Pre-selected 21 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000235139', 'ENSG00000272168']
+	fbeta: 0.411
+	precision: 0.449
+	recall: 0.308
+40 out of 75:
+	Descending Thin Limb Cell Type 3
+	Pre-selected 34 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000249776', 'ENSG00000223914']
+	fbeta: 0.524
+	precision: 0.668
+	recall: 0.282
+41 out of 75:
+	Descending Vasa Recta Endothelial Cell
+	Pre-selected 5 genes to feed into Random Forest.
+	Only 5 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000226688', 'ENSG00000231607', 'ENSG00000241684']
+	fbeta: 0.147
+	precision: 0.185
+	recall: 0.081
+42 out of 75:
+	Distal Convoluted Tubule Cell Type 1
+	Pre-selected 29 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000242029', 'ENSG00000277268']
+	fbeta: 0.522
+	precision: 0.78
+	recall: 0.225
+43 out of 75:
+	Distal Convoluted Tubule Cell Type 2
+	Pre-selected 14 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000177133', 'ENSG00000260658', 'ENSG00000233154', 'ENSG00000226674', 'ENSG00000231312']
+	fbeta: 0.091
+	precision: 0.092
+	recall: 0.088
+44 out of 75:
+	Fibroblast
+	Pre-selected 6 genes to feed into Random Forest.
+	Only 6 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000247809', 'ENSG00000215386']
+	fbeta: 0.284
+	precision: 0.352
+	recall: 0.161
+45 out of 75:
+	Glomerular Capillary Endothelial Cell
+	Pre-selected 0 genes to feed into Random Forest.
+WARNING: 0 genes to feed into Random Forest. Skipping...
+46 out of 75:
+	Inner Medullary Collecting Duct Cell
+	Pre-selected 45 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000228624', 'ENSG00000258551']
+	fbeta: 0.636
+	precision: 0.725
+	recall: 0.426
+47 out of 75:
+	Intercalated Cell Type B
+	Pre-selected 4 genes to feed into Random Forest.
+	Only 4 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000249601']
+	fbeta: 0.2
+	precision: 0.17
+	recall: 0.662
+48 out of 75:
+	Lymphatic Endothelial Cell
+	Pre-selected 7 genes to feed into Random Forest.
+	Only 7 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000237187', 'ENSG00000272168', 'ENSG00000247809', 'ENSG00000215386']
+	fbeta: 0.056
+	precision: 0.05
+	recall: 0.11
+49 out of 75:
+	M2 Macrophage
+	Pre-selected 2 genes to feed into Random Forest.
+	Only 2 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000280441']
+	fbeta: 0.029
+	precision: 0.024
+	recall: 0.295
+50 out of 75:
+	Macula Densa Cell
+	Pre-selected 23 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000249464', 'ENSG00000223392']
+	fbeta: 0.366
+	precision: 0.446
+	recall: 0.214
+51 out of 75:
+	Mast Cell
+	Pre-selected 1 genes to feed into Random Forest.
+	Only 1 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000278996']
+	fbeta: 0.033
+	precision: 0.043
+	recall: 0.018
+52 out of 75:
+	Medullary Fibroblast
+	Pre-selected 16 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000259134', 'ENSG00000275443']
+	fbeta: 0.598
+	precision: 0.779
+	recall: 0.309
+53 out of 75:
+	Medullary Thick Ascending Limb Cell
+	Pre-selected 45 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000223392', 'ENSG00000242029']
+	fbeta: 0.599
+	precision: 0.676
+	recall: 0.412
+54 out of 75:
+	Mesangial Cell
+	Pre-selected 7 genes to feed into Random Forest.
+	Only 7 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000242759', 'ENSG00000226674', 'ENSG00000231607']
+	fbeta: 0.273
+	precision: 0.394
+	recall: 0.122
+55 out of 75:
+	Monocyte-derived Cell
+	Pre-selected 0 genes to feed into Random Forest.
+WARNING: 0 genes to feed into Random Forest. Skipping...
+56 out of 75:
+	Myofibroblast
+	Pre-selected 8 genes to feed into Random Forest.
+	Only 8 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000249669', 'ENSG00000215386']
+	fbeta: 0.32
+	precision: 0.492
+	recall: 0.133
+57 out of 75:
+	Natural Killer Cell / Natural Killer T Cell
+	Pre-selected 0 genes to feed into Random Forest.
+WARNING: 0 genes to feed into Random Forest. Skipping...
+58 out of 75:
+	Neutrophil
+	Pre-selected 0 genes to feed into Random Forest.
+WARNING: 0 genes to feed into Random Forest. Skipping...
+59 out of 75:
+	Non-classical Monocyte
+	Pre-selected 1 genes to feed into Random Forest.
+	Only 1 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000231607']
+	fbeta: 0.063
+	precision: 0.055
+	recall: 0.168
+60 out of 75:
+	Outer Medullary Collecting Duct Intercalated Cell Type A
+	Pre-selected 50 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000233215', 'ENSG00000253675']
+	fbeta: 0.614
+	precision: 0.831
+	recall: 0.3
+61 out of 75:
+	Outer Medullary Collecting Duct Principal Cell
+	Pre-selected 42 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000254789', 'ENSG00000269043', 'ENSG00000259905']
+	fbeta: 0.442
+	precision: 0.514
+	recall: 0.283
+62 out of 75:
+	Papillary Tip Epithelial Cell
+	Pre-selected 12 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000271758', 'ENSG00000237773', 'ENSG00000227036', 'ENSG00000260032']
+	fbeta: 0.461
+	precision: 0.717
+	recall: 0.19
+63 out of 75:
+	Parietal Epithelial Cell
+	Pre-selected 4 genes to feed into Random Forest.
+	Only 4 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000229981', 'ENSG00000247809']
+	fbeta: 0.359
+	precision: 0.442
+	recall: 0.206
+64 out of 75:
+	Peritubular Capilary Endothelial Cell 
+	Pre-selected 1 genes to feed into Random Forest.
+	Only 1 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000215386']
+	fbeta: 0.106
+	precision: 0.092
+	recall: 0.29
+65 out of 75:
+	Plasma Cell
+	Pre-selected 5 genes to feed into Random Forest.
+	Only 5 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000255733', 'ENSG00000257261']
+	fbeta: 0.463
+	precision: 0.905
+	recall: 0.157
+66 out of 75:
+	Plasmacytoid Dendritic Cell
+	Pre-selected 7 genes to feed into Random Forest.
+	Only 7 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000267337']
+	fbeta: 0.783
+	precision: 1.0
+	recall: 0.419
+67 out of 75:
+	Podocyte
+	Pre-selected 30 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000230027', 'ENSG00000241956']
+	fbeta: 0.821
+	precision: 0.975
+	recall: 0.503
+68 out of 75:
+	Proximal Tubule Epithelial Cell Segment 1 / Segment 2
+	Pre-selected 2 genes to feed into Random Forest.
+	Only 2 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000227258']
+	fbeta: 0.354
+	precision: 0.337
+	recall: 0.444
+69 out of 75:
+	Proximal Tubule Epithelial Cell Segment 3
+	Pre-selected 21 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000213373', 'ENSG00000249252']
+	fbeta: 0.431
+	precision: 0.584
+	recall: 0.21
+70 out of 75:
+	Renin-positive Juxtaglomerular Granular Cell
+	Pre-selected 2 genes to feed into Random Forest.
+	Only 2 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000249669']
+	fbeta: 0.006
+	precision: 0.005
+	recall: 0.533
+71 out of 75:
+	Schwann Cell / Neural
+	Pre-selected 4 genes to feed into Random Forest.
+	Only 4 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000230490', 'ENSG00000278996']
+	fbeta: 0.319
+	precision: 1.0
+	recall: 0.086
+72 out of 75:
+	T Cell
+	Pre-selected 1 genes to feed into Random Forest.
+	Only 1 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000278996']
+	fbeta: 0.059
+	precision: 0.05
+	recall: 0.27
+73 out of 75:
+	Transitional Principal-Intercalated Cell
+	Pre-selected 15 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000197308', 'ENSG00000177133', 'ENSG00000260032', 'ENSG00000249601', 'ENSG00000229807', 'ENSG00000229847']
+	fbeta: 0.188
+	precision: 0.191
+	recall: 0.175
+74 out of 75:
+	Vascular Smooth Muscle Cell
+	Pre-selected 5 genes to feed into Random Forest.
+	Only 5 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000249669', 'ENSG00000280441', 'ENSG00000278996']
+	fbeta: 0.235
+	precision: 0.225
+	recall: 0.281
+75 out of 75:
+	Vascular Smooth Muscle Cell / Pericyte
+	Pre-selected 5 genes to feed into Random Forest.
+	Only 5 out of 15 top Random Forest features with median > 0 will be further evaluated.
+	NSForest-selected markers: ['ENSG00000249669', 'ENSG00000172965']
+	fbeta: 0.287
+	precision: 0.313
+	recall: 0.216
+--- 4269.9227867126465 seconds ---
+
+Saving supplementary table as...
+../output/kidney/subclass.full_subset_lncRNA_supplementary.csv
+Saving markers table as...
+../output/kidney/subclass.full_subset_lncRNA_markers.csv
+using median
+Calculating medians per cluster:   0%|          | 0/75 [00:00<?, ?it/s]Calculating medians per cluster:   3%|▎         | 2/75 [00:00<00:04, 15.37it/s]Calculating medians per cluster:   5%|▌         | 4/75 [00:00<00:04, 15.56it/s]Calculating medians per cluster:   8%|▊         | 6/75 [00:00<00:04, 16.92it/s]Calculating medians per cluster:  12%|█▏        | 9/75 [00:00<00:03, 20.00it/s]Calculating medians per cluster:  16%|█▌        | 12/75 [00:00<00:03, 20.05it/s]Calculating medians per cluster:  20%|██        | 15/75 [00:00<00:03, 17.00it/s]Calculating medians per cluster:  25%|██▌       | 19/75 [00:00<00:02, 21.69it/s]Calculating medians per cluster:  29%|██▉       | 22/75 [00:01<00:02, 23.54it/s]Calculating medians per cluster:  33%|███▎      | 25/75 [00:01<00:02, 24.44it/s]Calculating medians per cluster:  37%|███▋      | 28/75 [00:01<00:01, 24.71it/s]Calculating medians per cluster:  41%|████▏     | 31/75 [00:01<00:01, 24.62it/s]Calculating medians per cluster:  45%|████▌     | 34/75 [00:01<00:01, 24.71it/s]Calculating medians per cluster:  49%|████▉     | 37/75 [00:01<00:01, 22.47it/s]Calculating medians per cluster:  53%|█████▎    | 40/75 [00:01<00:01, 22.35it/s]Calculating medians per cluster:  57%|█████▋    | 43/75 [00:01<00:01, 21.61it/s]Calculating medians per cluster:  61%|██████▏   | 46/75 [00:02<00:01, 19.84it/s]Calculating medians per cluster:  65%|██████▌   | 49/75 [00:02<00:01, 21.23it/s]Calculating medians per cluster:  69%|██████▉   | 52/75 [00:02<00:01, 20.78it/s]Calculating medians per cluster:  73%|███████▎  | 55/75 [00:02<00:00, 20.61it/s]Calculating medians per cluster:  77%|███████▋  | 58/75 [00:02<00:00, 22.54it/s]Calculating medians per cluster:  81%|████████▏ | 61/75 [00:02<00:00, 23.34it/s]Calculating medians per cluster:  85%|████████▌ | 64/75 [00:02<00:00, 22.59it/s]Calculating medians per cluster:  89%|████████▉ | 67/75 [00:03<00:00, 24.39it/s]Calculating medians per cluster:  93%|█████████▎| 70/75 [00:03<00:00, 21.72it/s]Calculating medians per cluster:  97%|█████████▋| 73/75 [00:03<00:00, 23.33it/s]Calculating medians per cluster: 100%|██████████| 75/75 [00:03<00:00, 21.93it/s]
+Saving supplementary table as...
+../output/kidney/subclass.full_subset_lncRNA_markers_onTarget_supp.csv
+Saving supplementary table as...
+../output/kidney/subclass.full_subset_lncRNA_markers_onTarget.csv
+
+Saving final results table as...
+../output/kidney/subclass.full_subset_lncRNA_results.csv
+Saving final results table as...
+../output/kidney/subclass.full_subset_lncRNA_results.pkl
+
+====================
+PREPARING FOR VISUALIZATION
+====================
+
+====================
+VISUALIZATION: SELECTED MARKER
+====================
+
+====================
+VISUALIZATION: CLASSIFICATION METRICS
+====================
+Saving...
+ ../output/kidney/subclass.full_boxplot_f_score_precision_recall_onTarget.html
+Saving...
+ ../output/kidney/subclass.full_subset_lncRNA_boxplot_f_score_precision_recall_onTarget.html
+Saving...
+ ../output/kidney/subclass.full_scatter_f_score.html
+Saving...
+ ../output/kidney/subclass.full_subset_lncRNA_scatter_f_score.html
+Saving...
+ ../output/kidney/subclass.full_scatter_precision.html
+Saving...
+ ../output/kidney/subclass.full_subset_lncRNA_scatter_precision.html
+Saving...
+ ../output/kidney/subclass.full_scatter_recall.html
+Saving...
+ ../output/kidney/subclass.full_subset_lncRNA_scatter_recall.html
+Saving...
+ ../output/kidney/subclass.full_scatter_onTarget.html
+Saving...
+ ../output/kidney/subclass.full_subset_lncRNA_scatter_onTarget.html

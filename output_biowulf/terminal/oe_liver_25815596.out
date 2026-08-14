@@ -1,0 +1,316 @@
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/scanpy/preprocessing/_pca/__init__.py:384: ImplicitModificationWarning: Setting element `.obsm['X_pca']` of view, initializing view as actual.
+  adata.obsm[key_obsm] = x_pca
+
+====================
+CONFIGURING ENVIRONMENT
+====================
+
+====================
+IMPORTING/LOADING DATA
+====================
+
+====================
+NORMALIZE/SCALE DATA
+====================
+
+====================
+CREATE PROTEIN_CODING SUBSET
+====================
+
+====================
+PREPROCESS: DENDROGRAMS
+====================
+Saving dendrogram as...
+../output/liver/dendrogram_Curated_annotation_subset.svg
+
+====================
+PREPROCESS: CLUSTER MEDIANS
+====================
+Calculating medians per cluster:   0%|          | 0/29 [00:00<?, ?it/s]Calculating medians per cluster:   3%|▎         | 1/29 [00:00<00:15,  1.81it/s]Calculating medians per cluster:   7%|▋         | 2/29 [00:03<00:57,  2.13s/it]Calculating medians per cluster:  10%|█         | 3/29 [00:06<01:08,  2.62s/it]Calculating medians per cluster:  14%|█▍        | 4/29 [00:08<00:55,  2.21s/it]Calculating medians per cluster:  17%|█▋        | 5/29 [00:11<00:59,  2.49s/it]Calculating medians per cluster:  21%|██        | 6/29 [00:12<00:44,  1.96s/it]Calculating medians per cluster:  24%|██▍       | 7/29 [00:17<01:01,  2.80s/it]Calculating medians per cluster:  28%|██▊       | 8/29 [00:17<00:42,  2.04s/it]Calculating medians per cluster:  31%|███       | 9/29 [00:17<00:30,  1.53s/it]Calculating medians per cluster:  34%|███▍      | 10/29 [00:18<00:22,  1.18s/it]Calculating medians per cluster:  38%|███▊      | 11/29 [00:19<00:21,  1.22s/it]Calculating medians per cluster:  41%|████▏     | 12/29 [00:21<00:26,  1.54s/it]Calculating medians per cluster:  45%|████▍     | 13/29 [00:24<00:31,  1.96s/it]Calculating medians per cluster:  48%|████▊     | 14/29 [00:30<00:48,  3.20s/it]Calculating medians per cluster:  52%|█████▏    | 15/29 [00:31<00:34,  2.49s/it]Calculating medians per cluster:  59%|█████▊    | 17/29 [00:32<00:17,  1.44s/it]Calculating medians per cluster:  62%|██████▏   | 18/29 [00:32<00:13,  1.24s/it]Calculating medians per cluster:  66%|██████▌   | 19/29 [00:35<00:17,  1.72s/it]Calculating medians per cluster:  69%|██████▉   | 20/29 [00:36<00:13,  1.54s/it]Calculating medians per cluster:  72%|███████▏  | 21/29 [00:43<00:24,  3.06s/it]Calculating medians per cluster:  76%|███████▌  | 22/29 [00:44<00:16,  2.30s/it]Calculating medians per cluster:  79%|███████▉  | 23/29 [00:52<00:23,  3.89s/it]Calculating medians per cluster:  83%|████████▎ | 24/29 [00:52<00:14,  2.90s/it]Calculating medians per cluster:  86%|████████▌ | 25/29 [00:52<00:08,  2.14s/it]Calculating medians per cluster:  90%|████████▉ | 26/29 [00:53<00:04,  1.66s/it]Calculating medians per cluster:  93%|█████████▎| 27/29 [00:56<00:04,  2.11s/it]Calculating medians per cluster:  97%|█████████▋| 28/29 [01:05<00:04,  4.19s/it]Calculating medians per cluster: 100%|██████████| 29/29 [01:06<00:00,  3.06s/it]Calculating medians per cluster: 100%|██████████| 29/29 [01:06<00:00,  2.28s/it]
+Saving medians as adata.varm.medians_Curated_annotation
+median: 0.0
+mean: 0.04
+std: 0.299
+Only positive genes selected. 3031 positive genes out of 18181 total genes
+--- 72.1798324584961 seconds ---
+
+====================
+PREPROCESS: BINARY SCORE
+====================
+Calculating binary scores per cluster:   0%|          | 0/29 [00:00<?, ?it/s]Calculating binary scores per cluster:   3%|▎         | 1/29 [00:00<00:06,  4.51it/s]Calculating binary scores per cluster:   7%|▋         | 2/29 [00:00<00:05,  5.11it/s]Calculating binary scores per cluster:  10%|█         | 3/29 [00:00<00:04,  5.33it/s]Calculating binary scores per cluster:  14%|█▍        | 4/29 [00:00<00:04,  5.45it/s]Calculating binary scores per cluster:  17%|█▋        | 5/29 [00:00<00:04,  5.52it/s]Calculating binary scores per cluster:  21%|██        | 6/29 [00:01<00:04,  5.55it/s]Calculating binary scores per cluster:  24%|██▍       | 7/29 [00:01<00:03,  5.56it/s]Calculating binary scores per cluster:  28%|██▊       | 8/29 [00:01<00:03,  5.57it/s]Calculating binary scores per cluster:  31%|███       | 9/29 [00:01<00:03,  5.57it/s]Calculating binary scores per cluster:  34%|███▍      | 10/29 [00:01<00:03,  5.58it/s]Calculating binary scores per cluster:  38%|███▊      | 11/29 [00:02<00:03,  5.58it/s]Calculating binary scores per cluster:  41%|████▏     | 12/29 [00:02<00:03,  5.59it/s]Calculating binary scores per cluster:  45%|████▍     | 13/29 [00:02<00:02,  5.60it/s]Calculating binary scores per cluster:  48%|████▊     | 14/29 [00:02<00:02,  5.60it/s]Calculating binary scores per cluster:  52%|█████▏    | 15/29 [00:02<00:02,  5.61it/s]Calculating binary scores per cluster:  55%|█████▌    | 16/29 [00:02<00:02,  5.60it/s]Calculating binary scores per cluster:  59%|█████▊    | 17/29 [00:03<00:02,  5.60it/s]Calculating binary scores per cluster:  62%|██████▏   | 18/29 [00:03<00:01,  5.60it/s]Calculating binary scores per cluster:  66%|██████▌   | 19/29 [00:03<00:01,  5.60it/s]Calculating binary scores per cluster:  69%|██████▉   | 20/29 [00:03<00:01,  5.60it/s]Calculating binary scores per cluster:  72%|███████▏  | 21/29 [00:03<00:01,  5.60it/s]Calculating binary scores per cluster:  76%|███████▌  | 22/29 [00:03<00:01,  5.60it/s]Calculating binary scores per cluster:  79%|███████▉  | 23/29 [00:04<00:01,  5.61it/s]Calculating binary scores per cluster:  83%|████████▎ | 24/29 [00:04<00:00,  5.63it/s]Calculating binary scores per cluster:  86%|████████▌ | 25/29 [00:04<00:00,  5.63it/s]Calculating binary scores per cluster:  90%|████████▉ | 26/29 [00:04<00:00,  5.62it/s]Calculating binary scores per cluster:  93%|█████████▎| 27/29 [00:04<00:00,  5.60it/s]Calculating binary scores per cluster:  97%|█████████▋| 28/29 [00:05<00:00,  5.58it/s]Calculating binary scores per cluster: 100%|██████████| 29/29 [00:05<00:00,  5.57it/s]Calculating binary scores per cluster: 100%|██████████| 29/29 [00:05<00:00,  5.56it/s]
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+/data/beckersv/conda/envs/nsforest/lib/python3.11/site-packages/anndata/_io/utils.py:272: FutureWarning: Forward slashes will be disallowed in h5 stores in the next minor release
+  return func(*args, **kwargs)
+Saving binary scores as adata.varm.binary_scores_Curated_annotation
+median: 0.0
+mean: 0.106
+std: 0.271
+--- 5.249929189682007 seconds ---
+
+====================
+PREPROCESS: SAVING PREPROCESSED DATA
+====================
+Saving new anndata object as...
+../data_preprocessed/data_liver_subset_protein_coding_preprocessed.h5ad
+
+====================
+NS-FOREST: PROTEIN_CODING SUBSET RUN
+====================
+Running NS-Forest version 4.1
+
+Preparing adata...
+Pre-selecting genes based on binary scores...
+	BinaryFirst_high Threshold (mean + 2 * std): 0.649
+	Average number of genes after gene_selection in each cluster: 292.0
+Saving number of genes selected per cluster as...
+../output/liver/Curated_annotation_subset_protein_coding_gene_selection.csv
+--- 0.9696469306945801 seconds ---
+
+Number of clusters to evaluate: 29
+1 out of 29:
+	B cells
+	Pre-selected 36 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000156738', 'ENSG00000105369']
+	fbeta: 0.845
+	precision: 0.943
+	recall: 0.597
+2 out of 29:
+	CD4 T cells
+	Pre-selected 44 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000111678', 'ENSG00000168685', 'ENSG00000111716']
+	fbeta: 0.292
+	precision: 0.341
+	recall: 0.185
+3 out of 29:
+	CD16+ NK cells
+	Pre-selected 133 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000137441', 'ENSG00000100453', 'ENSG00000150045']
+	fbeta: 0.769
+	precision: 0.835
+	recall: 0.585
+4 out of 29:
+	CD16- NK cells
+	Pre-selected 136 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000143184', 'ENSG00000100385']
+	fbeta: 0.685
+	precision: 0.799
+	recall: 0.436
+5 out of 29:
+	Central venous LSECs
+	Pre-selected 176 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000145708', 'ENSG00000136011']
+	fbeta: 0.839
+	precision: 0.973
+	recall: 0.542
+6 out of 29:
+	Cholangiocytes
+	Pre-selected 448 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000122870', 'ENSG00000146038']
+	fbeta: 0.828
+	precision: 0.937
+	recall: 0.567
+7 out of 29:
+	Classical monocytes
+	Pre-selected 229 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000038427', 'ENSG00000143546']
+	fbeta: 0.827
+	precision: 0.885
+	recall: 0.656
+8 out of 29:
+	DC1
+	Pre-selected 643 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000197992', 'ENSG00000128815']
+	fbeta: 0.865
+	precision: 0.978
+	recall: 0.59
+9 out of 29:
+	DC2
+	Pre-selected 584 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000158481', 'ENSG00000149269', 'ENSG00000180817']
+	fbeta: 0.343
+	precision: 0.353
+	recall: 0.307
+10 out of 29:
+	Fibroblasts
+	Pre-selected 379 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000042062']
+	fbeta: 0.688
+	precision: 0.737
+	recall: 0.542
+11 out of 29:
+	Immune mix
+	Pre-selected 19 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000229314']
+	fbeta: 0.111
+	precision: 0.091
+	recall: 0.731
+12 out of 29:
+	Inflammatory macrophages
+	Pre-selected 408 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000143226', 'ENSG00000173369']
+	fbeta: 0.574
+	precision: 0.618
+	recall: 0.446
+13 out of 29:
+	Interzonal hepatocytes
+	Pre-selected 1034 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000084110', 'ENSG00000099937', 'ENSG00000132693', 'ENSG00000129988']
+	fbeta: 0.418
+	precision: 0.47
+	recall: 0.29
+14 out of 29:
+	MAIT cells
+	Pre-selected 69 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000185697', 'ENSG00000107742', 'ENSG00000113088']
+	fbeta: 0.496
+	precision: 0.607
+	recall: 0.286
+15 out of 29:
+	Macrophages
+	Pre-selected 140 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000248905']
+	fbeta: 0.595
+	precision: 0.699
+	recall: 0.373
+16 out of 29:
+	Migratory DCs
+	Pre-selected 467 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000172724', 'ENSG00000075618']
+	fbeta: 0.686
+	precision: 0.933
+	recall: 0.333
+17 out of 29:
+	NK cells
+	Pre-selected 70 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000161405', 'ENSG00000173212', 'ENSG00000185885']
+	fbeta: 0.366
+	precision: 0.547
+	recall: 0.158
+18 out of 29:
+	Neutrophils
+	Pre-selected 58 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000162747']
+	fbeta: 0.918
+	precision: 0.959
+	recall: 0.783
+19 out of 29:
+	Non-classical monocytes
+	Pre-selected 280 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000203747', 'ENSG00000103187']
+	fbeta: 0.753
+	precision: 0.932
+	recall: 0.426
+20 out of 29:
+	Non-inflammatory macrophages
+	Pre-selected 353 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000073754', 'ENSG00000019169']
+	fbeta: 0.888
+	precision: 0.953
+	recall: 0.696
+21 out of 29:
+	Pericentral hepatocytes
+	Pre-selected 1310 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000160868', 'ENSG00000007933', 'ENSG00000108924', 'ENSG00000198099']
+	fbeta: 0.701
+	precision: 0.771
+	recall: 0.513
+22 out of 29:
+	Periportal LSECs
+	Pre-selected 134 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000111341', 'ENSG00000152583']
+	fbeta: 0.712
+	precision: 0.863
+	recall: 0.42
+23 out of 29:
+	Periportal hepatocytes
+	Pre-selected 82 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000229314']
+	fbeta: 0.534
+	precision: 0.543
+	recall: 0.5
+24 out of 29:
+	Plasma cells
+	Pre-selected 277 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000048462', 'ENSG00000110777']
+	fbeta: 0.788
+	precision: 0.945
+	recall: 0.474
+25 out of 29:
+	Portal endothelial cells
+	Pre-selected 118 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000146374', 'ENSG00000241644']
+	fbeta: 0.618
+	precision: 0.917
+	recall: 0.268
+26 out of 29:
+	Stellate cells
+	Pre-selected 347 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000117114', 'ENSG00000019991']
+	fbeta: 0.694
+	precision: 0.973
+	recall: 0.323
+27 out of 29:
+	Tem/Temra cytotoxic T cells
+	Pre-selected 77 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000137441', 'ENSG00000100450', 'ENSG00000167286']
+	fbeta: 0.701
+	precision: 0.814
+	recall: 0.45
+28 out of 29:
+	Tem/Trm cytotoxic T cells
+	Pre-selected 47 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000113088', 'ENSG00000100450', 'ENSG00000167286']
+	fbeta: 0.651
+	precision: 0.767
+	recall: 0.405
+29 out of 29:
+	pDC
+	Pre-selected 370 genes to feed into Random Forest.
+	NSForest-selected markers: ['ENSG00000166963', 'ENSG00000269404']
+	fbeta: 0.842
+	precision: 0.971
+	recall: 0.55
+--- 7405.690380811691 seconds ---
+
+Saving supplementary table as...
+../output/liver/Curated_annotation_subset_protein_coding_supplementary.csv
+Saving markers table as...
+../output/liver/Curated_annotation_subset_protein_coding_markers.csv
+using median
+Calculating medians per cluster:   0%|          | 0/29 [00:00<?, ?it/s]Calculating medians per cluster:  10%|█         | 3/29 [00:00<00:01, 20.22it/s]Calculating medians per cluster:  21%|██        | 6/29 [00:00<00:00, 23.54it/s]Calculating medians per cluster:  31%|███       | 9/29 [00:00<00:00, 25.41it/s]Calculating medians per cluster:  45%|████▍     | 13/29 [00:00<00:00, 26.57it/s]Calculating medians per cluster:  55%|█████▌    | 16/29 [00:00<00:00, 25.05it/s]Calculating medians per cluster:  69%|██████▉   | 20/29 [00:00<00:00, 29.26it/s]Calculating medians per cluster:  83%|████████▎ | 24/29 [00:01<00:00, 20.15it/s]Calculating medians per cluster:  97%|█████████▋| 28/29 [00:01<00:00, 19.27it/s]Calculating medians per cluster: 100%|██████████| 29/29 [00:01<00:00, 22.45it/s]
+Saving supplementary table as...
+../output/liver/Curated_annotation_subset_protein_coding_markers_onTarget_supp.csv
+Saving supplementary table as...
+../output/liver/Curated_annotation_subset_protein_coding_markers_onTarget.csv
+
+Saving final results table as...
+../output/liver/Curated_annotation_subset_protein_coding_results.csv
+Saving final results table as...
+../output/liver/Curated_annotation_subset_protein_coding_results.pkl
+
+====================
+PREPARING FOR VISUALIZATION
+====================
+
+====================
+VISUALIZATION: SELECTED MARKER
+====================
+
+====================
+VISUALIZATION: CLASSIFICATION METRICS
+====================
+Saving...
+ ../output/liver/Curated_annotation_subset_protein_coding_boxplot_f_score_precision_recall_onTarget.html
+Saving...
+ ../output/liver/Curated_annotation_subset_protein_coding_scatter_f_score.html
+Saving...
+ ../output/liver/Curated_annotation_subset_protein_coding_scatter_precision.html
+Saving...
+ ../output/liver/Curated_annotation_subset_protein_coding_scatter_recall.html
+Saving...
+ ../output/liver/Curated_annotation_subset_protein_coding_scatter_onTarget.html
